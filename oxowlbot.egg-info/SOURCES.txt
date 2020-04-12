@@ -1,0 +1,8 @@
+README.md
+setup.py
+oxowlbot/__init__.py
+oxowlbot.egg-info/PKG-INFO
+oxowlbot.egg-info/SOURCES.txt
+oxowlbot.egg-info/dependency_links.txt
+oxowlbot.egg-info/requires.txt
+oxowlbot.egg-info/top_level.txt
