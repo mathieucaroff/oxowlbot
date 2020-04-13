@@ -1,3 +1,2 @@
 #!/bin/bash
-DISPLAY=localhost:0 \
 poetry run $@

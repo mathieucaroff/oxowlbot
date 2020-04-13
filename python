@@ -1,2 +1,2 @@
 #!/bin/bash
-./run python $@
+poetry run python $@

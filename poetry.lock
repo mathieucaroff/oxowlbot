@@ -676,8 +676,8 @@ test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [metadata]
-content-hash = "12bd3c58c797e5d1df66068b96b1234c122139512542e50cde4603f8a3d4b439"
-python-versions = "^3.8"
+content-hash = "b042bb579ad0bf0b2ea9ad807af7fff934d69ee12be6d8054f1b880e5b7e0c87"
+python-versions = "3.8.2"
 
 [metadata.files]
 aioredis = [

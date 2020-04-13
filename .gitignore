@@ -5,10 +5,12 @@ __pycache__/
 !/chatbot/
 !/oxowlbot/
 !/script/
+!/vendor/
 
 !/.gitignore
 
 !/README.md
+!/app.json
 
 !/manage.py
 
