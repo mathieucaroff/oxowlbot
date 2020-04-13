@@ -25,7 +25,7 @@ SECRET_KEY = '!fjqzzic$*-6(n7r=&od4^7pzznie2pgsp%5w$dl$1%@0y@-5$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["oxowlbot.herokuapp.com"]
 
 
 # Application definition
