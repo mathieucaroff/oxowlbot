@@ -1,26 +1,44 @@
+# Python
 __pycache__/
 
+## ## Root ## ##
 /*
 
-!/chatbot/
+## Root Directories ##
+
+# Django project
 !/oxowlbot/
+# Django application
+!/chatbot/
+# OWL ontology files
+!/owl/
+# 
 !/script/
 !/vendor/
+!/static/
 
+## Root Files ##
+
+# Git
 !/.gitignore
 
+# Doc
 !/README.md
 !/LICENSE
 
+# Heroku
 !/app.json
 !/Procfile
 
+# Django
 !/manage.py
 
+# Poetry and Pyenv
 !/.python-version
 !/poetry.lock
 !/pyproject.toml
 !/oxowlbot.egg-info/
 
+# Convenience scripts
 !/python
 !/run

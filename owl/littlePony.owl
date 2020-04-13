@@ -1,0 +1,5065 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://oxie.cc/theLittlePonyOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://oxie.cc/theLittlePonyOntology"
+     versionIRI="http://oxie.cc/theLittlePonyOntology/1.0.0">
+    <Prefix name="" IRI="http://oxie.cc/theLittlePonyOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Alicorn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Changeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Draconequus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dragon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earth_Pony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Griffon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hippogriff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kirin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pegasus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sea_Serpent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Siren"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sphinx"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unicorn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zebra"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ascendant_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#child_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#descendant_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#friend_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#in_love_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lover_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#married_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parent_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#body_color"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eye_color"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hair_color"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aloe_Vera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amethyst_Star"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angel_Wings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Applejack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aunt_Holiday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auntie_Lofty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autumn_Afternoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Babs_Seed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berry_Punch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berryshine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bon_Bon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Braeburn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bright_Mac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carrot_Top"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Celestia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cheerilee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cinder_Glow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clear_Sky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cloud_Chaser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coco_Pommel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coloratura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coriander_Cumin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cozy_Glow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DJ_Pon-3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daisy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daring_Do"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dear_Darling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Derpy_Hooves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dinky_Hooves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Discord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doctor_Fauna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ember"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feather_Bangs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fern_Flare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Firelight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flash_Sentry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fleetfoot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fond_Feather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Forest_Fall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gabby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gallus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gilda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lemon_Hearts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lily_Valley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lotus_Blossom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luster_Dawn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lyra_Heartstrings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maple_Brown"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marble_Pie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maud_Pie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mayor_Mare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meadowbrook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minuette"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mistmane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moon_Dancer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mudbriar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Night_Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Noi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Novo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nurse_Redheart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ocellus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Octavia_Melody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pear_Butter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Petunia_Paleo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pharynx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Photo_Finish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pipsqueak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Posey_Shy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pumpkin_Smoke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rain_Shine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rarity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#River_Song"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rockhoof"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rolling_Thunder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roseluck"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ruby_Pinch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saffron_Masala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sandbar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sea_Swirl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Seafoam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shining_Armor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Silver_Spoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Silverstream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sky_Stinger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skystar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smolder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soarin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sombra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Somnambula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sparkler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sparkling_Brook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sphinx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spitfire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spring_Glow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stellar_Flare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steven_Magnet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stygian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Summer_Chills"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Summer_Flare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunburst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunset_Shimmer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sweetie_Drops"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Swoon_Song"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tempest_Shadow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thorax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thunderlane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tootsie_Flute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tree_Hugger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twinkleshine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vapor_Trail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vinyl_Scratch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wind_Sprint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zecora"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zipporwhill"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#alias"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#hexColor"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Alicorn"/>
+        <Class IRI="#Pony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Changeling"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Draconequus"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dragon"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earth_Pony"/>
+        <Class IRI="#Pony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Griffon"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hippogriff"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kirin"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pegasus"/>
+        <Class IRI="#Pony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pony"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sea_Serpent"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siren"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sphinx"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unicorn"/>
+        <Class IRI="#Pony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yak"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zebra"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Siren"/>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Aloe_Vera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Aloe_Vera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Amethyst_Star"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Amethyst_Star"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Angel_Wings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Angel_Wings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Applejack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Applejack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Siren"/>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Aunt_Holiday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Aunt_Holiday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Auntie_Lofty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Auntie_Lofty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Autumn_Afternoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Autumn_Afternoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dragon"/>
+        <NamedIndividual IRI="#Basil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Basil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Berryshine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Berryshine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Bon_Bon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Bon_Bon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Braeburn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Braeburn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alicorn"/>
+        <NamedIndividual IRI="#Cadance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Cadance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Carrot_Top"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Carrot_Top"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alicorn"/>
+        <NamedIndividual IRI="#Celestia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Celestia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Cheerilee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Cheerilee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Cinder_Glow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Cinder_Glow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Clear_Sky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Clear_Sky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Cloud_Chaser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Cloud_Chaser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Coco_Pommel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Coco_Pommel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Coloratura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Coloratura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Coriander_Cumin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Coriander_Cumin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Cozy_Glow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Cozy_Glow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Daisy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Daisy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Dear_Darling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Dear_Darling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Derpy_Hooves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Derpy_Hooves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Dinky_Hooves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Dinky_Hooves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Draconequus"/>
+        <NamedIndividual IRI="#Discord"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Discord"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Doctor_Fauna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Doctor_Fauna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dragon"/>
+        <NamedIndividual IRI="#Ember"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Ember"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Feather_Bangs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Feather_Bangs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Fern_Flare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Fern_Flare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Firelight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Firelight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Flash_Sentry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Flash_Sentry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Fleetfoot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Fleetfoot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Flitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Flitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alicorn"/>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Fond_Feather"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Fond_Feather"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Forest_Fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Forest_Fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Gabby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Griffon"/>
+        <NamedIndividual IRI="#Gabby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Griffon"/>
+        <NamedIndividual IRI="#Gallus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Gallus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Gilda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Griffon"/>
+        <NamedIndividual IRI="#Gilda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Lemon_Hearts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Lemon_Hearts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Lily_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Lily_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Lotus_Blossom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Lotus_Blossom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alicorn"/>
+        <NamedIndividual IRI="#Luna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Luna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Luster_Dawn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Luster_Dawn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Lyra_Heartstrings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Lyra_Heartstrings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Maple_Brown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Maple_Brown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Marble_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Marble_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Mayor_Mare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Mayor_Mare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Minuette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Minuette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Mistmane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Mistmane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Moon_Dancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Moon_Dancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Mudbriar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Mudbriar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Night_Light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Night_Light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Noi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Noi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Novo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hippogriff"/>
+        <NamedIndividual IRI="#Novo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Nurse_Redheart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Nurse_Redheart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Changeling"/>
+        <NamedIndividual IRI="#Ocellus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Ocellus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Octavia_Melody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Octavia_Melody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Petunia_Paleo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Petunia_Paleo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Changeling"/>
+        <NamedIndividual IRI="#Pharynx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Pharynx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Photo_Finish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Photo_Finish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Pipsqueak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Pipsqueak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Pumpkin_Smoke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Pumpkin_Smoke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Rain_Shine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Rain_Shine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#River_Song"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#River_Song"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Rolling_Thunder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Rolling_Thunder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Roseluck"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Roseluck"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Ruby_Pinch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Ruby_Pinch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Saffron_Masala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Saffron_Masala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Sandbar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Sandbar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Sea_Swirl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Sea_Swirl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Silver_Spoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Silver_Spoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Silverstream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hippogriff"/>
+        <NamedIndividual IRI="#Silverstream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Sky_Stinger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Sky_Stinger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Skystar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hippogriff"/>
+        <NamedIndividual IRI="#Skystar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dragon"/>
+        <NamedIndividual IRI="#Smolder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Smolder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Soarin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Soarin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Sombra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Sombra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Somnambula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Somnambula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Siren"/>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Sparkling_Brook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Sparkling_Brook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Sphinx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Sphinx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sphinx"/>
+        <NamedIndividual IRI="#Sphinx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dragon"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Spitfire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Spitfire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Spring_Glow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Spring_Glow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Spur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Spur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Stellar_Flare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Stellar_Flare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Steven_Magnet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sea_Serpent"/>
+        <NamedIndividual IRI="#Steven_Magnet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Summer_Chills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kirin"/>
+        <NamedIndividual IRI="#Summer_Chills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Sunburst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Sunburst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Sunset_Shimmer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Sunset_Shimmer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Swoon_Song"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Swoon_Song"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Changeling"/>
+        <NamedIndividual IRI="#Thorax"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Thorax"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Thunderlane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Thunderlane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Tootsie_Flute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Tootsie_Flute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Tree_Hugger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Tree_Hugger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alicorn"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Twinkleshine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Twinkleshine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Earth_Pony"/>
+        <NamedIndividual IRI="#Twist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Twist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Vapor_Trail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Vapor_Trail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Vinyl_Scratch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Vinyl_Scratch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Wind_Sprint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Wind_Sprint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Yona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yak"/>
+        <NamedIndividual IRI="#Yona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Zecora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Zebra"/>
+        <NamedIndividual IRI="#Zecora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Zipporwhill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Zipporwhill"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+        <NamedIndividual IRI="#Daring_Do"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Amethyst_Star"/>
+        <NamedIndividual IRI="#Sparkler"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Berry_Punch"/>
+        <NamedIndividual IRI="#Berryshine"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Bon_Bon"/>
+        <NamedIndividual IRI="#Sweetie_Drops"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Cinder_Glow"/>
+        <NamedIndividual IRI="#Summer_Flare"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#DJ_Pon-3"/>
+        <NamedIndividual IRI="#Vinyl_Scratch"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+        <NamedIndividual IRI="#Tempest_Shadow"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Sea_Swirl"/>
+        <NamedIndividual IRI="#Seafoam"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Aloe_Vera"/>
+        <NamedIndividual IRI="#Lotus_Blossom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <NamedIndividual IRI="#Applejack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lover_of"/>
+        <NamedIndividual IRI="#Aunt_Holiday"/>
+        <NamedIndividual IRI="#Auntie_Lofty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Berryshine"/>
+        <NamedIndividual IRI="#Ruby_Pinch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lover_of"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lover_of"/>
+        <NamedIndividual IRI="#Bon_Bon"/>
+        <NamedIndividual IRI="#Lyra_Heartstrings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+        <NamedIndividual IRI="#Applejack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lover_of"/>
+        <NamedIndividual IRI="#Cadance"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Cadance"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Cadance"/>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lover_of"/>
+        <NamedIndividual IRI="#Clear_Sky"/>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Clear_Sky"/>
+        <NamedIndividual IRI="#Wind_Sprint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Cloud_Chaser"/>
+        <NamedIndividual IRI="#Flitter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <NamedIndividual IRI="#Marble_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Coco_Pommel"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Coriander_Cumin"/>
+        <NamedIndividual IRI="#Saffron_Masala"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#DJ_Pon-3"/>
+        <NamedIndividual IRI="#Octavia_Melody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Dear_Darling"/>
+        <NamedIndividual IRI="#Fond_Feather"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Dear_Darling"/>
+        <NamedIndividual IRI="#Swoon_Song"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Derpy_Hooves"/>
+        <NamedIndividual IRI="#Dinky_Hooves"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+        <NamedIndividual IRI="#Silver_Spoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Discord"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Doctor_Fauna"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Ember"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Firelight"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <NamedIndividual IRI="#Mistmane"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <NamedIndividual IRI="#Somnambula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <NamedIndividual IRI="#Tree_Hugger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Gabby"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <NamedIndividual IRI="#Ocellus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <NamedIndividual IRI="#Sandbar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <NamedIndividual IRI="#Silverstream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <NamedIndividual IRI="#Smolder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <NamedIndividual IRI="#Yona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+        <NamedIndividual IRI="#Marble_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lover_of"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+        <NamedIndividual IRI="#Mudbriar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+        <NamedIndividual IRI="#Mudbriar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <NamedIndividual IRI="#Mistmane"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <NamedIndividual IRI="#Somnambula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Mistmane"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Mistmane"/>
+        <NamedIndividual IRI="#Somnambula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Mistmane"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Mistmane"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Moon_Dancer"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Night_Light"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Night_Light"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Night_Light"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Novo"/>
+        <NamedIndividual IRI="#Skystar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Ocellus"/>
+        <NamedIndividual IRI="#Sandbar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Ocellus"/>
+        <NamedIndividual IRI="#Silverstream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Ocellus"/>
+        <NamedIndividual IRI="#Smolder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Ocellus"/>
+        <NamedIndividual IRI="#Yona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+        <NamedIndividual IRI="#Applejack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Pharynx"/>
+        <NamedIndividual IRI="#Thorax"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rarity"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rarity"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+        <NamedIndividual IRI="#Somnambula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Sandbar"/>
+        <NamedIndividual IRI="#Silverstream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Sandbar"/>
+        <NamedIndividual IRI="#Smolder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Sandbar"/>
+        <NamedIndividual IRI="#Yona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Silverstream"/>
+        <NamedIndividual IRI="#Smolder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Silverstream"/>
+        <NamedIndividual IRI="#Yona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Sky_Stinger"/>
+        <NamedIndividual IRI="#Vapor_Trail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Smolder"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Smolder"/>
+        <NamedIndividual IRI="#Yona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Somnambula"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Somnambula"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Spike"/>
+        <NamedIndividual IRI="#Thorax"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Spike"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#in_love_with"/>
+        <NamedIndividual IRI="#Spike"/>
+        <NamedIndividual IRI="#Rarity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+        <NamedIndividual IRI="#Stygian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <NamedIndividual IRI="#Sunburst"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Stellar_Flare"/>
+        <NamedIndividual IRI="#Sunburst"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Sunset_Shimmer"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friend_with"/>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#parent_of"/>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+        <Literal datatypeIRI="#hexColor">#D9BF61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+        <Literal datatypeIRI="#hexColor">#BC1D75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#A.K._Yearling"/>
+        <Literal datatypeIRI="#hexColor">#262626</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+        <Literal datatypeIRI="#hexColor">#F3F89C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+        <Literal datatypeIRI="#hexColor">#9B1358</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Adagio_Dazzle"/>
+        <Literal datatypeIRI="#hexColor">#E48C04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Aloe_Vera"/>
+        <Literal datatypeIRI="#hexColor">#FFB2D6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Aloe_Vera"/>
+        <Literal datatypeIRI="#hexColor">#3877B8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Aloe_Vera"/>
+        <Literal datatypeIRI="#hexColor">#7CD6FF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Amethyst_Star"/>
+        <Literal datatypeIRI="#hexColor">#F3A3F2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Amethyst_Star"/>
+        <Literal datatypeIRI="#hexColor">#A656D9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Amethyst_Star"/>
+        <Literal datatypeIRI="#hexColor">#B572E0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Angel_Wings"/>
+        <Literal datatypeIRI="#hexColor">#F0E3DB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Angel_Wings"/>
+        <Literal datatypeIRI="#hexColor">#8DF2ED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Angel_Wings"/>
+        <Literal datatypeIRI="#hexColor">#CFACA1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+        <Literal datatypeIRI="#hexColor">#F3F49B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+        <Literal datatypeIRI="#hexColor">#FBA93F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Apple_Bloom"/>
+        <Literal datatypeIRI="#hexColor">#F5415F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <Literal datatypeIRI="#hexColor">#FABA62</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <Literal datatypeIRI="#hexColor">#61BA4E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Applejack"/>
+        <Literal datatypeIRI="#hexColor">#EC3F41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#F5BDE0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#642187</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Aria_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#7B16A5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Aunt_Holiday"/>
+        <Literal datatypeIRI="#hexColor">#FFE1A1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Aunt_Holiday"/>
+        <Literal datatypeIRI="#hexColor">#FFAC7A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Aunt_Holiday"/>
+        <Literal datatypeIRI="#hexColor">#F07053</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Auntie_Lofty"/>
+        <Literal datatypeIRI="#hexColor">#F8F8BB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Auntie_Lofty"/>
+        <Literal datatypeIRI="#hexColor">#A2F9F9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Auntie_Lofty"/>
+        <Literal datatypeIRI="#hexColor">#0995B5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#FEFADF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#F8FAFC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#BF5B1F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Autumn_Afternoon"/>
+        <Literal datatypeIRI="#hexColor">#E7D994</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Autumn_Afternoon"/>
+        <Literal datatypeIRI="#hexColor">#25CED3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Autumn_Afternoon"/>
+        <Literal datatypeIRI="#hexColor">#C17A02</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+        <Literal datatypeIRI="#hexColor">#DC9E41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+        <Literal datatypeIRI="#hexColor">#DCF79B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Babs_Seed"/>
+        <Literal datatypeIRI="#hexColor">#F7415F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Basil"/>
+        <Literal datatypeIRI="#hexColor">#AA322A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Basil"/>
+        <Literal datatypeIRI="#hexColor">#FAD333</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Basil"/>
+        <Literal datatypeIRI="#hexColor">#E29291</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Berryshine"/>
+        <Literal datatypeIRI="#hexColor">#E497F8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Berryshine"/>
+        <Literal datatypeIRI="#hexColor">#BD1C76</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Berryshine"/>
+        <Literal datatypeIRI="#hexColor">#BA3588</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+        <Literal datatypeIRI="#hexColor">#E64A57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+        <Literal datatypeIRI="#hexColor">#5FBB4B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Big_McIntosh"/>
+        <Literal datatypeIRI="#hexColor">#FBBA62</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Bon_Bon"/>
+        <Literal datatypeIRI="#hexColor">#F7FBCF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Bon_Bon"/>
+        <Literal datatypeIRI="#hexColor">#2BB1B9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Bon_Bon"/>
+        <Literal datatypeIRI="#hexColor">#365A93</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+        <Literal datatypeIRI="#hexColor">#ABB4FF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+        <Literal datatypeIRI="#hexColor">#F6E340</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Bow_Hothoof"/>
+        <Literal datatypeIRI="#hexColor">#1B98D1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Braeburn"/>
+        <Literal datatypeIRI="#hexColor">#EDE58E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Braeburn"/>
+        <Literal datatypeIRI="#hexColor">#8BE64E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Braeburn"/>
+        <Literal datatypeIRI="#hexColor">#DB9E44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+        <Literal datatypeIRI="#hexColor">#F3F399</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+        <Literal datatypeIRI="#hexColor">#5FBB4B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Bright_Mac"/>
+        <Literal datatypeIRI="#hexColor">#F54144</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cadance"/>
+        <Literal datatypeIRI="#hexColor">#FFCBE4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cadance"/>
+        <Literal datatypeIRI="#hexColor">#C181DA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Cadance"/>
+        <Literal datatypeIRI="#hexColor">#732DA2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Carrot_Top"/>
+        <Literal datatypeIRI="#hexColor">#FFFF99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Carrot_Top"/>
+        <Literal datatypeIRI="#hexColor">#68CC3E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Carrot_Top"/>
+        <Literal datatypeIRI="#hexColor">#FFB13D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Celestia"/>
+        <Literal datatypeIRI="#hexColor">#FEF7FB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Celestia"/>
+        <Literal datatypeIRI="#hexColor">#E68CE3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Celestia"/>
+        <Literal datatypeIRI="#hexColor">#44B1CE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cheerilee"/>
+        <Literal datatypeIRI="#hexColor">#C05B92</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cheerilee"/>
+        <Literal datatypeIRI="#hexColor">#ABD79D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Cheerilee"/>
+        <Literal datatypeIRI="#hexColor">#F5B5CF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cinder_Glow"/>
+        <Literal datatypeIRI="#hexColor">#F8FAFC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cinder_Glow"/>
+        <Literal datatypeIRI="#hexColor">#FFB629</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Cinder_Glow"/>
+        <Literal datatypeIRI="#hexColor">#85BF72</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Clear_Sky"/>
+        <Literal datatypeIRI="#hexColor">#FFABCA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Clear_Sky"/>
+        <Literal datatypeIRI="#hexColor">#9FEFD6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Clear_Sky"/>
+        <Literal datatypeIRI="#hexColor">#FFE3EC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cloud_Chaser"/>
+        <Literal datatypeIRI="#hexColor">#C0B6F3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cloud_Chaser"/>
+        <Literal datatypeIRI="#hexColor">#DE9FBF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Cloud_Chaser"/>
+        <Literal datatypeIRI="#hexColor">#BBEAFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <Literal datatypeIRI="#hexColor">#D8DDEA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <Literal datatypeIRI="#hexColor">#91CFE1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Cloudy_Quartz"/>
+        <Literal datatypeIRI="#hexColor">#508383</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Coco_Pommel"/>
+        <Literal datatypeIRI="#hexColor">#FBF4DF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Coco_Pommel"/>
+        <Literal datatypeIRI="#hexColor">#D7FFFA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Coco_Pommel"/>
+        <Literal datatypeIRI="#hexColor">#96E5EF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Coloratura"/>
+        <Literal datatypeIRI="#hexColor">#DCF3E9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Coloratura"/>
+        <Literal datatypeIRI="#hexColor">#46B6BA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Coloratura"/>
+        <Literal datatypeIRI="#hexColor">#3E3860</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+        <Literal datatypeIRI="#hexColor">#FAB6E5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+        <Literal datatypeIRI="#hexColor">#89DAEC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Cookie_Crumbles"/>
+        <Literal datatypeIRI="#hexColor">#5D4E9F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Coriander_Cumin"/>
+        <Literal datatypeIRI="#hexColor">#E0B44E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Coriander_Cumin"/>
+        <Literal datatypeIRI="#hexColor">#A74BA3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Coriander_Cumin"/>
+        <Literal datatypeIRI="#hexColor">#562A36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cozy_Glow"/>
+        <Literal datatypeIRI="#hexColor">#FBD7D2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cozy_Glow"/>
+        <Literal datatypeIRI="#hexColor">#FADAD0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Cozy_Glow"/>
+        <Literal datatypeIRI="#hexColor">#98DDED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="#hexColor">#FFA9F8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="#hexColor">#33B668</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="#hexColor">#C7F184</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Dear_Darling"/>
+        <Literal datatypeIRI="#hexColor">#C0E5C6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Dear_Darling"/>
+        <Literal datatypeIRI="#hexColor">#7BD0F3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Dear_Darling"/>
+        <Literal datatypeIRI="#hexColor">#F8F3A7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Derpy_Hooves"/>
+        <Literal datatypeIRI="#hexColor">#C2C5D5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Derpy_Hooves"/>
+        <Literal datatypeIRI="#hexColor">#EBFC82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Derpy_Hooves"/>
+        <Literal datatypeIRI="#hexColor">#FFFAAD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+        <Literal datatypeIRI="#hexColor">#FDC3FC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+        <Literal datatypeIRI="#hexColor">#A4EEF2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Diamond_Tiara"/>
+        <Literal datatypeIRI="#hexColor">#BB99DC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Dinky_Hooves"/>
+        <Literal datatypeIRI="#hexColor">#CDB8E6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Dinky_Hooves"/>
+        <Literal datatypeIRI="#hexColor">#FCF89A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Dinky_Hooves"/>
+        <Literal datatypeIRI="#hexColor">#F7F0A6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Discord"/>
+        <Literal datatypeIRI="#hexColor">#68413D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Discord"/>
+        <Literal datatypeIRI="#hexColor">#EAE13D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Discord"/>
+        <Literal datatypeIRI="#hexColor">#AA4747</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Doctor_Fauna"/>
+        <Literal datatypeIRI="#hexColor">#EFE36F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Doctor_Fauna"/>
+        <Literal datatypeIRI="#hexColor">#C4A854</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Doctor_Fauna"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Ember"/>
+        <Literal datatypeIRI="#hexColor">#4BC9DC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Ember"/>
+        <Literal datatypeIRI="#hexColor">#F8834F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Ember"/>
+        <Literal datatypeIRI="#hexColor">#30478F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Feather_Bangs"/>
+        <Literal datatypeIRI="#hexColor">#EBD989</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Feather_Bangs"/>
+        <Literal datatypeIRI="#hexColor">#5EBC4A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Feather_Bangs"/>
+        <Literal datatypeIRI="#hexColor">#C48441</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Fern_Flare"/>
+        <Literal datatypeIRI="#hexColor">#BC9D67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Fern_Flare"/>
+        <Literal datatypeIRI="#hexColor">#CF1650</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Fern_Flare"/>
+        <Literal datatypeIRI="#hexColor">#B57A2A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+        <Literal datatypeIRI="#hexColor">#BCA979</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+        <Literal datatypeIRI="#hexColor">#A9E6FB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Filthy_Rich"/>
+        <Literal datatypeIRI="#hexColor">#323232</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Firelight"/>
+        <Literal datatypeIRI="#hexColor">#AF7ECE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Firelight"/>
+        <Literal datatypeIRI="#hexColor">#754600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Firelight"/>
+        <Literal datatypeIRI="#hexColor">#3ABC9A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+        <Literal datatypeIRI="#hexColor">#57234F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+        <Literal datatypeIRI="#hexColor">#24CCC8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
+        <Literal datatypeIRI="#hexColor">#B31B56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <Literal datatypeIRI="#hexColor">#F0C150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <Literal datatypeIRI="#hexColor">#73D6DC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Flash_Magnus"/>
+        <Literal datatypeIRI="#hexColor">#AE1A1A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Flash_Sentry"/>
+        <Literal datatypeIRI="#hexColor">#FFC861</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Flash_Sentry"/>
+        <Literal datatypeIRI="#hexColor">#AFEAFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Flash_Sentry"/>
+        <Literal datatypeIRI="#hexColor">#2B4FA2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Fleetfoot"/>
+        <Literal datatypeIRI="#hexColor">#8BD8DF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Fleetfoot"/>
+        <Literal datatypeIRI="#hexColor">#BC1D75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Fleetfoot"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Flitter"/>
+        <Literal datatypeIRI="#hexColor">#CCC3F3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Flitter"/>
+        <Literal datatypeIRI="#hexColor">#DD9EBD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Flitter"/>
+        <Literal datatypeIRI="#hexColor">#C4F3EB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+        <Literal datatypeIRI="#hexColor">#FFF2FB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+        <Literal datatypeIRI="#hexColor">#8AE9E9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Flurry_Heart"/>
+        <Literal datatypeIRI="#hexColor">#F592C9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <Literal datatypeIRI="#hexColor">#FAF5AB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <Literal datatypeIRI="#hexColor">#02ACA4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Fluttershy"/>
+        <Literal datatypeIRI="#hexColor">#F3B5CF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Fond_Feather"/>
+        <Literal datatypeIRI="#hexColor">#B898E1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Fond_Feather"/>
+        <Literal datatypeIRI="#hexColor">#7DD0F2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Fond_Feather"/>
+        <Literal datatypeIRI="#hexColor">#C8E6F1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Forest_Fall"/>
+        <Literal datatypeIRI="#hexColor">#9DC675</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Forest_Fall"/>
+        <Literal datatypeIRI="#hexColor">#3FBEC6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Forest_Fall"/>
+        <Literal datatypeIRI="#hexColor">#D1CF8C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Gabby"/>
+        <Literal datatypeIRI="#hexColor">#4C5760</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Gabby"/>
+        <Literal datatypeIRI="#hexColor">#005652</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Gabby"/>
+        <Literal datatypeIRI="#hexColor">#85A6A9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <Literal datatypeIRI="#hexColor">#32ABD9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <Literal datatypeIRI="#hexColor">#69BAFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Gallus"/>
+        <Literal datatypeIRI="#hexColor">#327898</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+        <Literal datatypeIRI="#hexColor">#9ACCAF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+        <Literal datatypeIRI="#hexColor">#63A59C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Gentle_Breeze"/>
+        <Literal datatypeIRI="#hexColor">#E5DEDB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Gilda"/>
+        <Literal datatypeIRI="#hexColor">#BC993C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Gilda"/>
+        <Literal datatypeIRI="#hexColor">#FFF842</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Gilda"/>
+        <Literal datatypeIRI="#hexColor">#E5E7E2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+        <Literal datatypeIRI="#hexColor">#EEECEA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+        <Literal datatypeIRI="#hexColor">#7CD7E2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Hondo_Flanks"/>
+        <Literal datatypeIRI="#hexColor">#665340</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+        <Literal datatypeIRI="#hexColor">#C39D4D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+        <Literal datatypeIRI="#hexColor">#FAE695</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Igneous_Rock_Pie"/>
+        <Literal datatypeIRI="#hexColor">#989898</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Lemon_Hearts"/>
+        <Literal datatypeIRI="#hexColor">#FBFC63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Lemon_Hearts"/>
+        <Literal datatypeIRI="#hexColor">#BC1D75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Lemon_Hearts"/>
+        <Literal datatypeIRI="#hexColor">#68B5CF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Lily_Valley"/>
+        <Literal datatypeIRI="#hexColor">#F296BB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Lily_Valley"/>
+        <Literal datatypeIRI="#hexColor">#FFF3A7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Lily_Valley"/>
+        <Literal datatypeIRI="#hexColor">#FBECB2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+        <Literal datatypeIRI="#hexColor">#9495B9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+        <Literal datatypeIRI="#hexColor">#DDE261</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Limestone_Pie"/>
+        <Literal datatypeIRI="#hexColor">#C7CECF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Lotus_Blossom"/>
+        <Literal datatypeIRI="#hexColor">#7CD6FF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Lotus_Blossom"/>
+        <Literal datatypeIRI="#hexColor">#3877B8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Lotus_Blossom"/>
+        <Literal datatypeIRI="#hexColor">#FFB2D6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Luna"/>
+        <Literal datatypeIRI="#hexColor">#363E7A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Luna"/>
+        <Literal datatypeIRI="#hexColor">#00B6A3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Luna"/>
+        <Literal datatypeIRI="#hexColor">#4B37CA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Luster_Dawn"/>
+        <Literal datatypeIRI="#hexColor">#FF96CD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Luster_Dawn"/>
+        <Literal datatypeIRI="#hexColor">#F4CE45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Luster_Dawn"/>
+        <Literal datatypeIRI="#hexColor">#FF8B5E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Lyra_Heartstrings"/>
+        <Literal datatypeIRI="#hexColor">#8CFFDB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Lyra_Heartstrings"/>
+        <Literal datatypeIRI="#hexColor">#FAD542</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Lyra_Heartstrings"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+        <Literal datatypeIRI="#hexColor">#F7AD7F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+        <Literal datatypeIRI="#hexColor">#B08BBD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Mane_Allgood"/>
+        <Literal datatypeIRI="#hexColor">#FBEEAB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Maple_Brown"/>
+        <Literal datatypeIRI="#hexColor">#81774F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Maple_Brown"/>
+        <Literal datatypeIRI="#hexColor">#D28C32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Maple_Brown"/>
+        <Literal datatypeIRI="#hexColor">#AC4749</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Marble_Pie"/>
+        <Literal datatypeIRI="#hexColor">#C2CDCD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Marble_Pie"/>
+        <Literal datatypeIRI="#hexColor">#B792DD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Marble_Pie"/>
+        <Literal datatypeIRI="#hexColor">#607878</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+        <Literal datatypeIRI="#hexColor">#B8B7BE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+        <Literal datatypeIRI="#hexColor">#99EAD7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Maud_Pie"/>
+        <Literal datatypeIRI="#hexColor">#9885B7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Mayor_Mare"/>
+        <Literal datatypeIRI="#hexColor">#DECB9B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Mayor_Mare"/>
+        <Literal datatypeIRI="#hexColor">#A5D6E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Mayor_Mare"/>
+        <Literal datatypeIRI="#hexColor">#E2E7E3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <Literal datatypeIRI="#hexColor">#6BBFE0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <Literal datatypeIRI="#hexColor">#84EFD9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Meadowbrook"/>
+        <Literal datatypeIRI="#hexColor">#E67365</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Minuette"/>
+        <Literal datatypeIRI="#hexColor">#83C6ED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Minuette"/>
+        <Literal datatypeIRI="#hexColor">#506ACF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Minuette"/>
+        <Literal datatypeIRI="#hexColor">#393CB1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Mistmane"/>
+        <Literal datatypeIRI="#hexColor">#D4C1DF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Mistmane"/>
+        <Literal datatypeIRI="#hexColor">#89C6DC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Mistmane"/>
+        <Literal datatypeIRI="#hexColor">#009093</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Moon_Dancer"/>
+        <Literal datatypeIRI="#hexColor">#F9F8D3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Moon_Dancer"/>
+        <Literal datatypeIRI="#hexColor">#622E87</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Moon_Dancer"/>
+        <Literal datatypeIRI="#hexColor">#FCA1CB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Mudbriar"/>
+        <Literal datatypeIRI="#hexColor">#C4C3B6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Mudbriar"/>
+        <Literal datatypeIRI="#hexColor">#75EC83</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Mudbriar"/>
+        <Literal datatypeIRI="#hexColor">#8E7045</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Night_Light"/>
+        <Literal datatypeIRI="#hexColor">#6398C9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Night_Light"/>
+        <Literal datatypeIRI="#hexColor">#F8E38C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Night_Light"/>
+        <Literal datatypeIRI="#hexColor">#243871</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Noi"/>
+        <Literal datatypeIRI="#hexColor">#F3F0B1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Noi"/>
+        <Literal datatypeIRI="#hexColor">#D4A7D7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Noi"/>
+        <Literal datatypeIRI="#hexColor">#F0D284</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Novo"/>
+        <Literal datatypeIRI="#hexColor">#FFFBFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Novo"/>
+        <Literal datatypeIRI="#hexColor">#B000AE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Novo"/>
+        <Literal datatypeIRI="#hexColor">#CC0086</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Nurse_Redheart"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Nurse_Redheart"/>
+        <Literal datatypeIRI="#hexColor">#B7D9F9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Nurse_Redheart"/>
+        <Literal datatypeIRI="#hexColor">#F6D3D7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Ocellus"/>
+        <Literal datatypeIRI="#hexColor">#AFDAE2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Ocellus"/>
+        <Literal datatypeIRI="#hexColor">#319098</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Ocellus"/>
+        <Literal datatypeIRI="#hexColor">#FA9696</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Octavia_Melody"/>
+        <Literal datatypeIRI="#hexColor">#BAB8AF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Octavia_Melody"/>
+        <Literal datatypeIRI="#hexColor">#B465CB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Octavia_Melody"/>
+        <Literal datatypeIRI="#hexColor">#343434</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+        <Literal datatypeIRI="#hexColor">#FFE7BE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+        <Literal datatypeIRI="#hexColor">#39DAC8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Pear_Butter"/>
+        <Literal datatypeIRI="#hexColor">#FFAE40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Petunia_Paleo"/>
+        <Literal datatypeIRI="#hexColor">#A5E6E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Petunia_Paleo"/>
+        <Literal datatypeIRI="#hexColor">#939DF0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Petunia_Paleo"/>
+        <Literal datatypeIRI="#hexColor">#608DBE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Pharynx"/>
+        <Literal datatypeIRI="#hexColor">#292929</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Pharynx"/>
+        <Literal datatypeIRI="#hexColor">#B398D7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Pharynx"/>
+        <Literal datatypeIRI="#hexColor">#750017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Photo_Finish"/>
+        <Literal datatypeIRI="#hexColor">#BAEBFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Photo_Finish"/>
+        <Literal datatypeIRI="#hexColor">#652F8A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Photo_Finish"/>
+        <Literal datatypeIRI="#hexColor">#EDEDED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+        <Literal datatypeIRI="#hexColor">#F5B7D0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+        <Literal datatypeIRI="#hexColor">#7DD0F1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Pinkie_Pie"/>
+        <Literal datatypeIRI="#hexColor">#EB458B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Pipsqueak"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Pipsqueak"/>
+        <Literal datatypeIRI="#hexColor">#451D17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Pipsqueak"/>
+        <Literal datatypeIRI="#hexColor">#6E4122</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+        <Literal datatypeIRI="#hexColor">#FCECB0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+        <Literal datatypeIRI="#hexColor">#C1067F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Posey_Shy"/>
+        <Literal datatypeIRI="#hexColor">#C63D74</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Pumpkin_Smoke"/>
+        <Literal datatypeIRI="#hexColor">#C38721</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Pumpkin_Smoke"/>
+        <Literal datatypeIRI="#hexColor">#31C9D2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Pumpkin_Smoke"/>
+        <Literal datatypeIRI="#hexColor">#3E2E2E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+        <Literal datatypeIRI="#hexColor">#DDA351</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+        <Literal datatypeIRI="#hexColor">#ABE5FF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Quibble_Pants"/>
+        <Literal datatypeIRI="#hexColor">#252525</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Rain_Shine"/>
+        <Literal datatypeIRI="#hexColor">#CFC7A5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Rain_Shine"/>
+        <Literal datatypeIRI="#hexColor">#DE4020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Rain_Shine"/>
+        <Literal datatypeIRI="#hexColor">#5EB3A3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+        <Literal datatypeIRI="#hexColor">#9BDBF5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+        <Literal datatypeIRI="#hexColor">#BC1D75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Rainbow_Dash"/>
+        <Literal datatypeIRI="#hexColor">#1B98D1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Rarity"/>
+        <Literal datatypeIRI="#hexColor">#EAEEF0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Rarity"/>
+        <Literal datatypeIRI="#hexColor">#3977B8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Rarity"/>
+        <Literal datatypeIRI="#hexColor">#4A1767</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#River_Song"/>
+        <Literal datatypeIRI="#hexColor">#C8B8A1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#River_Song"/>
+        <Literal datatypeIRI="#hexColor">#844A8E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#River_Song"/>
+        <Literal datatypeIRI="#hexColor">#397C79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+        <Literal datatypeIRI="#hexColor">#98D0D3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+        <Literal datatypeIRI="#hexColor">#9DA2FF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Rockhoof"/>
+        <Literal datatypeIRI="#hexColor">#CE7E00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Rolling_Thunder"/>
+        <Literal datatypeIRI="#hexColor">#655A9D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Rolling_Thunder"/>
+        <Literal datatypeIRI="#hexColor">#84EBF8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Rolling_Thunder"/>
+        <Literal datatypeIRI="#hexColor">#CEE9FF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Roseluck"/>
+        <Literal datatypeIRI="#hexColor">#FFFBD3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Roseluck"/>
+        <Literal datatypeIRI="#hexColor">#B8E78C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Roseluck"/>
+        <Literal datatypeIRI="#hexColor">#B82C57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Ruby_Pinch"/>
+        <Literal datatypeIRI="#hexColor">#E8A3C5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Ruby_Pinch"/>
+        <Literal datatypeIRI="#hexColor">#D3EAAB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Ruby_Pinch"/>
+        <Literal datatypeIRI="#hexColor">#C24D87</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Saffron_Masala"/>
+        <Literal datatypeIRI="#hexColor">#F2A259</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Saffron_Masala"/>
+        <Literal datatypeIRI="#hexColor">#8D4D8C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Saffron_Masala"/>
+        <Literal datatypeIRI="#hexColor">#FF6532</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sandbar"/>
+        <Literal datatypeIRI="#hexColor">#E5F4B6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sandbar"/>
+        <Literal datatypeIRI="#hexColor">#82D7A9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sandbar"/>
+        <Literal datatypeIRI="#hexColor">#09A099</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+        <Literal datatypeIRI="#hexColor">#F9B764</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+        <Literal datatypeIRI="#hexColor">#B28EC0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Scootaloo"/>
+        <Literal datatypeIRI="#hexColor">#BF5D93</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sea_Swirl"/>
+        <Literal datatypeIRI="#hexColor">#EFC6FB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sea_Swirl"/>
+        <Literal datatypeIRI="#hexColor">#BD1C77</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sea_Swirl"/>
+        <Literal datatypeIRI="#hexColor">#9598FF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+        <Literal datatypeIRI="#hexColor">#63D1E9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Shining_Armor"/>
+        <Literal datatypeIRI="#hexColor">#325394</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Silver_Spoon"/>
+        <Literal datatypeIRI="#hexColor">#ABB8C1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Silver_Spoon"/>
+        <Literal datatypeIRI="#hexColor">#A684D2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Silver_Spoon"/>
+        <Literal datatypeIRI="#hexColor">#D9E4EA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Silverstream"/>
+        <Literal datatypeIRI="#hexColor">#FBDCFB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Silverstream"/>
+        <Literal datatypeIRI="#hexColor">#D09CF1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Silverstream"/>
+        <Literal datatypeIRI="#hexColor">#D2E9F6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sky_Stinger"/>
+        <Literal datatypeIRI="#hexColor">#0E81A8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sky_Stinger"/>
+        <Literal datatypeIRI="#hexColor">#7BEEAC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sky_Stinger"/>
+        <Literal datatypeIRI="#hexColor">#8AECBC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Skystar"/>
+        <Literal datatypeIRI="#hexColor">#DCE0AD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Skystar"/>
+        <Literal datatypeIRI="#hexColor">#6BB7C2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Skystar"/>
+        <Literal datatypeIRI="#hexColor">#91E0E4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Smolder"/>
+        <Literal datatypeIRI="#hexColor">#EA9A24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Smolder"/>
+        <Literal datatypeIRI="#hexColor">#14C4E3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Smolder"/>
+        <Literal datatypeIRI="#hexColor">#C64DB0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+        <Literal datatypeIRI="#hexColor">#B59965</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+        <Literal datatypeIRI="#hexColor">#E56E92</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Snap_Shutter"/>
+        <Literal datatypeIRI="#hexColor">#783359</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Soarin"/>
+        <Literal datatypeIRI="#hexColor">#D8E6F5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Soarin"/>
+        <Literal datatypeIRI="#hexColor">#52E25F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Soarin"/>
+        <Literal datatypeIRI="#hexColor">#2D3263</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sombra"/>
+        <Literal datatypeIRI="#hexColor">#838383</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sombra"/>
+        <Literal datatypeIRI="#hexColor">#EB9359</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sombra"/>
+        <Literal datatypeIRI="#hexColor">#050505</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Somnambula"/>
+        <Literal datatypeIRI="#hexColor">#F29D83</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Somnambula"/>
+        <Literal datatypeIRI="#hexColor">#9483C5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Somnambula"/>
+        <Literal datatypeIRI="#hexColor">#1A657D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+        <Literal datatypeIRI="#hexColor">#CCEEEE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+        <Literal datatypeIRI="#hexColor">#C34A93</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sonata_Dusk"/>
+        <Literal datatypeIRI="#hexColor">#44AACC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sparkling_Brook"/>
+        <Literal datatypeIRI="#hexColor">#739DA7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sparkling_Brook"/>
+        <Literal datatypeIRI="#hexColor">#2BC4CA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sparkling_Brook"/>
+        <Literal datatypeIRI="#hexColor">#C2B595</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sphinx"/>
+        <Literal datatypeIRI="#hexColor">#730B49</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sphinx"/>
+        <Literal datatypeIRI="#hexColor">#E59E1B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sphinx"/>
+        <Literal datatypeIRI="#hexColor">#6D50A6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Spike"/>
+        <Literal datatypeIRI="#hexColor">#C290C6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Spike"/>
+        <Literal datatypeIRI="#hexColor">#5EBA4A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Spike"/>
+        <Literal datatypeIRI="#hexColor">#51BE55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Spitfire"/>
+        <Literal datatypeIRI="#hexColor">#F8EA62</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Spitfire"/>
+        <Literal datatypeIRI="#hexColor">#CF6E00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Spitfire"/>
+        <Literal datatypeIRI="#hexColor">#ED7B00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+        <Literal datatypeIRI="#hexColor">#FAACAE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+        <Literal datatypeIRI="#hexColor">#00B1A6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Spoiled_Rich"/>
+        <Literal datatypeIRI="#hexColor">#9F4CA4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Spring_Glow"/>
+        <Literal datatypeIRI="#hexColor">#F1CCCB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Spring_Glow"/>
+        <Literal datatypeIRI="#hexColor">#F6D6CD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Spring_Glow"/>
+        <Literal datatypeIRI="#hexColor">#C9F0F8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Spur"/>
+        <Literal datatypeIRI="#hexColor">#9C6534</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Spur"/>
+        <Literal datatypeIRI="#hexColor">#3CDBC6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Spur"/>
+        <Literal datatypeIRI="#hexColor">#84EBDD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+        <Literal datatypeIRI="#hexColor">#C1C1C1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+        <Literal datatypeIRI="#hexColor">#489FC0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <Literal datatypeIRI="#hexColor">#F2C7F8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <Literal datatypeIRI="#hexColor">#98A2EF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Starlight_Glimmer"/>
+        <Literal datatypeIRI="#hexColor">#08BAB7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Stellar_Flare"/>
+        <Literal datatypeIRI="#hexColor">#EA9039</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Stellar_Flare"/>
+        <Literal datatypeIRI="#hexColor">#C3E275</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Stellar_Flare"/>
+        <Literal datatypeIRI="#hexColor">#BB3612</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Steven_Magnet"/>
+        <Literal datatypeIRI="#hexColor">#5D4081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Steven_Magnet"/>
+        <Literal datatypeIRI="#hexColor">#02061B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Steven_Magnet"/>
+        <Literal datatypeIRI="#hexColor">#B17130</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Stygian"/>
+        <Literal datatypeIRI="#hexColor">#B7B7B7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Stygian"/>
+        <Literal datatypeIRI="#hexColor">#3296FA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Stygian"/>
+        <Literal datatypeIRI="#hexColor">#07364F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+        <Literal datatypeIRI="#hexColor">#FFBCDD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+        <Literal datatypeIRI="#hexColor">#BE1D76</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sugar_Belle"/>
+        <Literal datatypeIRI="#hexColor">#00CBCA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Summer_Chills"/>
+        <Literal datatypeIRI="#hexColor">#6F4745</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Summer_Chills"/>
+        <Literal datatypeIRI="#hexColor">#C83547</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Summer_Chills"/>
+        <Literal datatypeIRI="#hexColor">#4CA19A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sunburst"/>
+        <Literal datatypeIRI="#hexColor">#FEBC40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sunburst"/>
+        <Literal datatypeIRI="#hexColor">#2ECCCF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sunburst"/>
+        <Literal datatypeIRI="#hexColor">#EB5926</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sunset_Shimmer"/>
+        <Literal datatypeIRI="#hexColor">#FFCA54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sunset_Shimmer"/>
+        <Literal datatypeIRI="#hexColor">#7FF3CF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sunset_Shimmer"/>
+        <Literal datatypeIRI="#hexColor">#E1464A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+        <Literal datatypeIRI="#hexColor">#EFEDED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+        <Literal datatypeIRI="#hexColor">#AED79E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Sweetie_Belle"/>
+        <Literal datatypeIRI="#hexColor">#B28DC1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Swoon_Song"/>
+        <Literal datatypeIRI="#hexColor">#FF8F71</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Swoon_Song"/>
+        <Literal datatypeIRI="#hexColor">#9785C6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Swoon_Song"/>
+        <Literal datatypeIRI="#hexColor">#883F35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Thorax"/>
+        <Literal datatypeIRI="#hexColor">#2A2A2A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Thorax"/>
+        <Literal datatypeIRI="#hexColor">#00CBCB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Thorax"/>
+        <Literal datatypeIRI="#hexColor">#3F3F3F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Thunderlane"/>
+        <Literal datatypeIRI="#hexColor">#555555</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Thunderlane"/>
+        <Literal datatypeIRI="#hexColor">#F9E485</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Thunderlane"/>
+        <Literal datatypeIRI="#hexColor">#A9D5D4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Tootsie_Flute"/>
+        <Literal datatypeIRI="#hexColor">#DBEFEA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Tootsie_Flute"/>
+        <Literal datatypeIRI="#hexColor">#E7C7EF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Tootsie_Flute"/>
+        <Literal datatypeIRI="#hexColor">#CAA2DF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Tree_Hugger"/>
+        <Literal datatypeIRI="#hexColor">#B9DF80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Tree_Hugger"/>
+        <Literal datatypeIRI="#hexColor">#C9A5E0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Tree_Hugger"/>
+        <Literal datatypeIRI="#hexColor">#EE7676</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+        <Literal datatypeIRI="#hexColor">#6CB2EA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+        <Literal datatypeIRI="#hexColor">#E0A0D3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Trixie_Lulamoon"/>
+        <Literal datatypeIRI="#hexColor">#B8E0F9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+        <Literal datatypeIRI="#hexColor">#CC9CDF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+        <Literal datatypeIRI="#hexColor">#662F89</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Twilight_Sparkle"/>
+        <Literal datatypeIRI="#hexColor">#243870</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+        <Literal datatypeIRI="#hexColor">#DCDCDC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+        <Literal datatypeIRI="#hexColor">#7CD8E9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Twilight_Velvet"/>
+        <Literal datatypeIRI="#hexColor">#9567B6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Twinkleshine"/>
+        <Literal datatypeIRI="#hexColor">#F9FAED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Twinkleshine"/>
+        <Literal datatypeIRI="#hexColor">#6BF0ED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Twinkleshine"/>
+        <Literal datatypeIRI="#hexColor">#F8AAE5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Twist"/>
+        <Literal datatypeIRI="#hexColor">#FDF2D8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Twist"/>
+        <Literal datatypeIRI="#hexColor">#F7B0ED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Twist"/>
+        <Literal datatypeIRI="#hexColor">#EA2B29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Vapor_Trail"/>
+        <Literal datatypeIRI="#hexColor">#F5FFF0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Vapor_Trail"/>
+        <Literal datatypeIRI="#hexColor">#AEF1E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Vapor_Trail"/>
+        <Literal datatypeIRI="#hexColor">#269AAB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Vinyl_Scratch"/>
+        <Literal datatypeIRI="#hexColor">#FFFFE2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Vinyl_Scratch"/>
+        <Literal datatypeIRI="#hexColor">#BC1D75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Vinyl_Scratch"/>
+        <Literal datatypeIRI="#hexColor">#3167CC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Wind_Sprint"/>
+        <Literal datatypeIRI="#hexColor">#BAB0E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Wind_Sprint"/>
+        <Literal datatypeIRI="#hexColor">#D99AC0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Wind_Sprint"/>
+        <Literal datatypeIRI="#hexColor">#6A95DF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+        <Literal datatypeIRI="#hexColor">#ACDCF6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+        <Literal datatypeIRI="#hexColor">#AE4184</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Windy_Whistles"/>
+        <Literal datatypeIRI="#hexColor">#F48266</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Yona"/>
+        <Literal datatypeIRI="#hexColor">#A06656</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Yona"/>
+        <Literal datatypeIRI="#hexColor">#D1C75E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Yona"/>
+        <Literal datatypeIRI="#hexColor">#864337</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Zecora"/>
+        <Literal datatypeIRI="#hexColor">#E1DCE2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Zecora"/>
+        <Literal datatypeIRI="#hexColor">#1A6C7D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Zecora"/>
+        <Literal datatypeIRI="#hexColor">#FFFFFF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+        <Literal datatypeIRI="#hexColor">#8AD9C7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+        <Literal datatypeIRI="#hexColor">#D672A9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Zephyr_Breeze"/>
+        <Literal datatypeIRI="#hexColor">#FFE9A3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Zipporwhill"/>
+        <Literal datatypeIRI="#hexColor">#FAF9DA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Zipporwhill"/>
+        <Literal datatypeIRI="#hexColor">#78DBA3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Zipporwhill"/>
+        <Literal datatypeIRI="#hexColor">#B29E47</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#child_of"/>
+        <ObjectProperty IRI="#descendant_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#friend_with"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#in_love_with"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#lover_of"/>
+        <ObjectProperty IRI="#in_love_with"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#married_with"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#parent_of"/>
+        <ObjectProperty IRI="#ascendant_of"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ascendant_of"/>
+        <ObjectProperty IRI="#descendant_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#child_of"/>
+        <ObjectProperty IRI="#parent_of"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#lover_of"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#married_with"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#lover_of"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#married_with"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#friend_with"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#lover_of"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#married_with"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#ascendant_of"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#descendant_of"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ascendant_of"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#descendant_of"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#friend_with"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#in_love_with"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ascendant_of"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#descendant_of"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#friend_with"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#in_love_with"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#body_color"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#eye_color"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hair_color"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#body_color"/>
+        <Class IRI="#Creature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eye_color"/>
+        <Class IRI="#Creature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hair_color"/>
+        <Class IRI="#Creature"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#body_color"/>
+        <Datatype IRI="#hexColor"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#eye_color"/>
+        <Datatype IRI="#hexColor"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hair_color"/>
+        <Datatype IRI="#hexColor"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#alias"/>
+        <IRI>#Cadance</IRI>
+        <Literal>Mi Amore Cadenza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#alias"/>
+        <IRI>#Gabby</IRI>
+        <Literal>Gabriela</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#alias"/>
+        <IRI>#Gabby</IRI>
+        <Literal>Gabriella</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sweetie_Drops</IRI>
+        <Literal>ALIAS OF Bonbon
+Specify informations on Bonbon and let those of Sweetie Drops be infered from that of Bonbon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#alias"/>
+        <IRI>#Zipporwhill</IRI>
+        <Literal>Zippoorwhill</Literal>
+    </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype IRI="#hexColor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
