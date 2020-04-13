@@ -10,7 +10,10 @@ __pycache__/
 !/.gitignore
 
 !/README.md
+!/LICENSE
+
 !/app.json
+!/Procfile
 
 !/manage.py
 
