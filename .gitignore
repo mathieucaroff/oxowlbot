@@ -12,7 +12,11 @@ __pycache__/
 !/chatbot/
 # OWL ontology files
 !/owl/
-# 
+# Input processing and output generation
+!/oxbot/
+# Pyright type stubs
+!/typings/
+#
 !/script/
 !/vendor/
 !/static/
@@ -38,6 +42,9 @@ __pycache__/
 !/poetry.lock
 !/pyproject.toml
 !/oxowlbot.egg-info/
+
+# Pyright
+!/pyrightconfig.json
 
 # Convenience scripts
 !/python

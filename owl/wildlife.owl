@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.mydomain.org/african"
+     xml:base="http://www.mydomain.org/african"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="file:wildlife.owl">
+        <owl:VersionInfo>
+			Version du 17 octobre 2002 
+		</owl:VersionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#parsetype -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#parsetype"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Class -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#VersionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#VersionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:wildlife.owl#is-part-of -->
+
+    <owl:ObjectProperty rdf:about="file:wildlife.owl#is-part-of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:wildlife.owl#mange -->
+
+    <owl:ObjectProperty rdf:about="file:wildlife.owl#mange">
+        <owl:inverseOf rdf:resource="file:wildlife.owl#mangé-par"/>
+        <rdfs:domain rdf:resource="file:wildlife.owl#animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:wildlife.owl#mangé-par -->
+
+    <owl:ObjectProperty rdf:about="file:wildlife.owl#mangé-par"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:wildlife.owl#animal -->
+
+    <owl:Class rdf:about="file:wildlife.owl#animal">
+        <owl:disjointWith rdf:resource="file:wildlife.owl#branche"/>
+        <owl:disjointWith rdf:resource="file:wildlife.owl#feuille"/>
+        <owl:disjointWith rdf:resource="file:wildlife.owl#plante"/>
+        <rdfs:comment>
+			Les animaux forment une classe
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#arbre -->
+
+    <owl:Class rdf:about="file:wildlife.owl#arbre">
+        <rdfs:subClassOf rdf:resource="file:wildlife.owl#plante"/>
+        <owl:disjointWith rdf:resource="file:wildlife.owl#branche"/>
+        <owl:disjointWith rdf:resource="file:wildlife.owl#feuille"/>
+        <rdfs:comment>
+			Les arbres sont un type de plantes
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#branche -->
+
+    <owl:Class rdf:about="file:wildlife.owl#branche">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:wildlife.owl#is-part-of"/>
+                <owl:allValuesFrom rdf:resource="file:wildlife.owl#arbre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="file:wildlife.owl#feuille"/>
+        <owl:disjointWith rdf:resource="file:wildlife.owl#plante"/>
+        <rdfs:comment>
+			Les branches sont des parties des arbres 
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#carnivore -->
+
+    <owl:Class rdf:about="file:wildlife.owl#carnivore">
+        <rdfs:subClassOf rdf:resource="file:wildlife.owl#animal"/>
+        <rdfs:comment>
+			Les carnivores sont exactement les animaux qui mangent aussi des animaux
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#feuille -->
+
+    <owl:Class rdf:about="file:wildlife.owl#feuille">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:wildlife.owl#is-part-of"/>
+                <owl:allValuesFrom rdf:resource="file:wildlife.owl#branche"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>
+			Les feuilles sont des parties des branches
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#giraffe -->
+
+    <owl:Class rdf:about="file:wildlife.owl#giraffe">
+        <rdfs:subClassOf rdf:resource="file:wildlife.owl#herbivore"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:wildlife.owl#mange"/>
+                <owl:allValuesFrom rdf:resource="file:wildlife.owl#feuille"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>
+			Les giraffes sont herbivores et ne mangent que des feuilles
+		</rdfs:comment>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#herbivore -->
+
+    <owl:Class rdf:about="file:wildlife.owl#herbivore">
+        <rdfs:subClassOf rdf:resource="file:wildlife.owl#animal"/>
+        <rdfs:comment>
+			Les herbivores sont exactement les animaux qui mangent uniquement des plantes ou des parties de plantes
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#lion -->
+
+    <owl:Class rdf:about="file:wildlife.owl#lion">
+        <rdfs:subClassOf rdf:resource="file:wildlife.owl#carnivore"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:wildlife.owl#mange"/>
+                <owl:allValuesFrom rdf:resource="file:wildlife.owl#herbivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>
+			Les lions sont des animaux qui ne mangent que des animaux herbivores
+		</rdfs:comment>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#plante -->
+
+    <owl:Class rdf:about="file:wildlife.owl#plante">
+        <rdfs:comment>
+			Les plantes forment une classe disjointe des animaux
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:wildlife.owl#plante-comestible -->
+
+    <owl:Class rdf:about="file:wildlife.owl#plante-comestible">
+        <rdfs:subClassOf rdf:resource="file:wildlife.owl#plante"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:wildlife.owl#mangé-par"/>
+                <owl:someValuesFrom rdf:resource="file:wildlife.owl#carnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:wildlife.owl#mangé-par"/>
+                <owl:someValuesFrom rdf:resource="file:wildlife.owl#herbivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>
+			Les plantes comestibles sont des plantes qui sont mangées par des herbivores et par des carnivores
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#allValuesFrom -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#allValuesFrom"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#onProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#onProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#unionOf -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#unionOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:wildlife.owl#Gigi -->
+
+    <owl:NamedIndividual rdf:about="file:wildlife.owl#Gigi">
+        <rdf:type rdf:resource="file:wildlife.owl#giraffe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:wildlife.owl#Giginou -->
+
+    <owl:NamedIndividual rdf:about="file:wildlife.owl#Giginou">
+        <rdf:type rdf:resource="file:wildlife.owl#giraffe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:wildlife.owl#Léo -->
+
+    <owl:NamedIndividual rdf:about="file:wildlife.owl#Léo">
+        <rdf:type rdf:resource="file:wildlife.owl#lion"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#onProperty"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#allValuesFrom"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#unionOf"/>
+        <rdf:parsetype>Collection</rdf:parsetype>
+        <owl:Class></owl:Class>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:wildlife.owl#Gigi"/>
+            <rdf:Description rdf:about="file:wildlife.owl#Giginou"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

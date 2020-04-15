@@ -1,0 +1,12 @@
+{
+    "include": [
+        "oxowlbot",
+        "chatbot"
+    ],
+    "reportTypeshedErrors": true,
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": true,
+    "typingsPath": "typings",
+    "typeshedPath": "vendor/typeshed",
+    "pythonVersion": "3.8"
+}
