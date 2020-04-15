@@ -1,11 +1,17 @@
 {
     "include": [
+        "oxbot",
         "oxowlbot",
         "chatbot"
     ],
-    "reportTypeshedErrors": true,
-    "reportMissingImports": true,
+    "exclude": [
+        "typings",
+        "vendor/typestubs"
+    ],
+    "reportMissingImports": false,
     "reportMissingTypeStubs": true,
+    "reportSelfClsParameterName": false,
+    "reportTypeshedErrors": true,
     "typingsPath": "typings",
     "typeshedPath": "vendor/typeshed",
     "pythonVersion": "3.8"

@@ -1,15 +1,17 @@
+# pyright: strict
+
 import re
 from typing import List
 
 import rdflib.plugins.sparql as sparql
 import stanza
-from owlready2 import default_world, get_ontology
+from owlready2 import World, get_ontology, default_world
 
 from .redirect import redirect_stderr
 
 onto = get_ontology("owl/littlePony.owl").load()
 # default_world.graph.dump()
-graph = default_world.as_rdflib_graph()
+graph: World = default_world.as_rdflib_graph()
 
 
 def build_SPARQL_query(id: int, classe: str):
