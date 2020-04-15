@@ -7,7 +7,7 @@ from typing import Any
 import stanza
 from stanza.pipeline.core import Pipeline
 
-from .answer import Answer
+from .answer import Answer, AnswerEngine
 from .ontology import Ontology
 from .parsing import Parser, ParseResult
 from .util.redirect import redirect_stderr
@@ -34,11 +34,11 @@ class Oxbot:
         self.ontology = Ontology(graph)
 
         # Anser recipe engine
-        self.answer = Answer()
+        self.engine = AnswerEngine()
 
-    async def process(self, message: str) -> str:
+    async def process(self, message: str) -> Answer:
         parse_result: ParseResult = self.parser.parse(message)
 
-        answer = self.answer.obtain(parse_result)
+        answer = self.engine.process(parse_result)
 
         return answer

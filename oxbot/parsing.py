@@ -2,24 +2,25 @@
 Parse the question
 """
 
-from .util.first import first
-
-from typing import Any, List, Literal, TypeVar, Union
 from dataclasses import dataclass
-from stanza.models.common.doc import Word
+from typing import Any, List, Literal, TypeVar, Union
 
+from stanza.models.common.doc import Word
 from stanza.pipeline.core import Pipeline
 
+from .util.cached_property import cached_property
+from .util.first import first
 
-class Failure:
+
+class ParsingFailure:
     success: Literal["failure"] = "failure"
 
 
-class Success:
+class ParsingSuccess:
     success: Literal["success"] = "success"
 
 
-class ParseFailure_single_sentence(Failure):
+class ParseFailure_single_sentence(ParsingFailure):
     pass
 
 
@@ -29,8 +30,18 @@ ParseFailure = Union[
 
 
 @dataclass
-class ParseSuccess_word_list(Success):
+class ParseSuccess_word_list(ParsingSuccess):
     wordList: List[Word]
+
+    @cached_property
+    def normalSentence(self) -> str:
+        normalWordList = []
+        for word in self.wordList:
+            normalWordList.append(self._normalWord(word))
+        return " ".join(normalWordList)
+
+    def _normalWord(self, word: Word) -> str:
+        return f""
 
 
 ParseSuccess = Union[ParseSuccess_word_list]
@@ -52,7 +63,3 @@ class Parser:
         sentence = first(doc.sentences)
 
         return ParseSuccess_word_list(wordList=sentence.words)
-
-        raise Exception("")
-
-    # def _(self): ...

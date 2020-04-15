@@ -20,4 +20,8 @@ class ChatConsumer(AsyncWebsocketConsumer):
 
         answer = await self.bot.process(message)
 
-        await self.send(text_data=json.dumps({"message": f"BOT: {answer}"}))
+        await self.send(
+            text_data=json.dumps(
+                {"message": f"BOT: {answer.text}", "info": answer.info,}
+            )
+        )

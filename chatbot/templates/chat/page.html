@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Oxowlbot</title>
 </head>
+
 <body>
     <textarea id="chat-log" cols="100" rows="20"></textarea><br>
     <input id="chat-message-input" type="text" size="100"><br>
@@ -13,30 +15,53 @@
             `ws://${window.location.host}/ws/chatbot/`
         );
 
-        chatSocket.onmessage = function(e) {
+        chatSocket.onmessage = function (e) {
             const data = JSON.parse(e.data);
             document.querySelector('#chat-log').value += (data.message + '\n');
+            if ('info' in data) {
+                console.info(data.info)
+            }
         };
 
-        chatSocket.onclose = function(e) {
-            console.error('Chat socket closed unexpectedly');
+        chatSocket.onclose = function (e) {
+            let message = 'Chat socket closed unexpectedly'
+            if (location.href.includes('reload')) {
+                setTimeout(reloadPage, 2000)
+                message += ', will reload page in 2s'
+            }
+            console.error(message);
         };
 
         document.querySelector('#chat-message-input').focus();
-        document.querySelector('#chat-message-input').onkeyup = function(e) {
+        document.querySelector('#chat-message-input').onkeyup = function (e) {
             if (e.keyCode === 13) {  // enter, return
                 document.querySelector('#chat-message-submit').click();
             }
         };
 
-        document.querySelector('#chat-message-submit').onclick = function(e) {
+        document.querySelector('#chat-message-submit').onclick = function (e) {
             const messageInputDom = document.querySelector('#chat-message-input');
             const message = messageInputDom.value;
-            chatSocket.send(JSON.stringify({
-                'message': message
-            }));
+            sendMessage(message);
             messageInputDom.value = '';
         };
+
+        function sendMessage(message) {
+            return chatSocket.send(JSON.stringify({
+                'message': message
+            }))
+        }
+
+        `
+        Who is friend with Twilight Sparkle?
+        Who is a kirin?
+        Who is Fluttershy?
+        `.split("\n").map(s => s.trim()).filter(x => x).forEach(sendMessage)
+
+        function reloadPage() {
+            location.reload()
+        }
     </script>
 </body>
+
 </html>
