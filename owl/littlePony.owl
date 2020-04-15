@@ -23,6 +23,9 @@
         <Class IRI="#Creature"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Donkey"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Draconequus"/>
     </Declaration>
     <Declaration>
@@ -84,6 +87,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#in_love_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#loved_by"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#lover_of"/>
@@ -206,6 +212,9 @@
         <NamedIndividual IRI="#Cozy_Glow"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DJ_Pon-3"/>
     </Declaration>
     <Declaration>
@@ -321,6 +330,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Marble_Pie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matilda"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Maud_Pie"/>
@@ -592,6 +604,10 @@
         <Class IRI="#Creature"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Donkey"/>
+        <Class IRI="#Creature"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Draconequus"/>
         <Class IRI="#Creature"/>
     </SubClassOf>
@@ -912,6 +928,14 @@
         <NamedIndividual IRI="#Cozy_Glow"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Donkey"/>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Earth_Pony"/>
         <NamedIndividual IRI="#Daisy"/>
     </ClassAssertion>
@@ -1206,6 +1230,14 @@
     <ClassAssertion>
         <Class IRI="#Female"/>
         <NamedIndividual IRI="#Marble_Pie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Donkey"/>
+        <NamedIndividual IRI="#Matilda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Matilda"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Earth_Pony"/>
@@ -2102,6 +2134,16 @@
         <ObjectProperty IRI="#parent_of"/>
         <NamedIndividual IRI="#Coriander_Cumin"/>
         <NamedIndividual IRI="#Saffron_Masala"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#in_love_with"/>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+        <NamedIndividual IRI="#Matilda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#married_with"/>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+        <NamedIndividual IRI="#Matilda"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#friend_with"/>
@@ -2805,21 +2847,6 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
-        <NamedIndividual IRI="#Autumn_Blaze"/>
-        <Literal datatypeIRI="#hexColor">#FEFADF</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#eye_color"/>
-        <NamedIndividual IRI="#Autumn_Blaze"/>
-        <Literal datatypeIRI="#hexColor">#F8FAFC</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hair_color"/>
-        <NamedIndividual IRI="#Autumn_Blaze"/>
-        <Literal datatypeIRI="#hexColor">#BF5B1F</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Autumn_Afternoon"/>
         <Literal datatypeIRI="#hexColor">#E7D994</Literal>
     </DataPropertyAssertion>
@@ -2832,6 +2859,21 @@
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Autumn_Afternoon"/>
         <Literal datatypeIRI="#hexColor">#C17A02</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#FEFADF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#F8FAFC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Autumn_Blaze"/>
+        <Literal datatypeIRI="#hexColor">#BF5B1F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
@@ -3147,6 +3189,21 @@
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cozy_Glow"/>
         <Literal datatypeIRI="#hexColor">#98DDED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+        <Literal datatypeIRI="#hexColor">#A3916D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+        <Literal datatypeIRI="#hexColor">#746448</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
+        <Literal datatypeIRI="#hexColor">#ACEAF6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
@@ -3702,6 +3759,21 @@
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Marble_Pie"/>
         <Literal datatypeIRI="#hexColor">#607878</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body_color"/>
+        <NamedIndividual IRI="#Matilda"/>
+        <Literal datatypeIRI="#hexColor">#B8A05F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eye_color"/>
+        <NamedIndividual IRI="#Matilda"/>
+        <Literal datatypeIRI="#hexColor">#A8EF6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hair_color"/>
+        <NamedIndividual IRI="#Matilda"/>
+        <Literal datatypeIRI="#hexColor">#534425</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
@@ -4904,6 +4976,10 @@
         <Literal datatypeIRI="#hexColor">#B29E47</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ascendant_of"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#child_of"/>
         <ObjectProperty IRI="#descendant_of"/>
     </SubObjectPropertyOf>
@@ -4920,6 +4996,10 @@
         <ObjectProperty IRI="#in_love_with"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#lover_of"/>
+        <ObjectProperty IRI="#loved_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#married_with"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4934,6 +5014,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#child_of"/>
         <ObjectProperty IRI="#parent_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#in_love_with"/>
+        <ObjectProperty IRI="#loved_by"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#lover_of"/>
@@ -4978,6 +5062,10 @@
         <ObjectProperty IRI="#in_love_with"/>
         <Class IRI="#Creature"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#loved_by"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ascendant_of"/>
         <Class IRI="#Creature"/>
@@ -4992,6 +5080,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#in_love_with"/>
+        <Class IRI="#Creature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#loved_by"/>
         <Class IRI="#Creature"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
