@@ -1,35 +1,44 @@
-from typing import Any
-import stanza
+"""
+oxbot, entry point for the django channel consumer
+"""
 
-from .redirect import redirect_stderr
+from typing import Any
+
+import stanza
+from stanza.pipeline.core import Pipeline
+
+from .answer import Answer
+from .ontology import Ontology
+from .parsing import Parser, ParseResult
+from .util.redirect import redirect_stderr
 
 with redirect_stderr():
     from owlready2 import get_ontology, default_world
 
 # pyright: strict
 
-# /!\ REMEMBER TO COPY owl/littlePony.owl again
-
 
 class Oxbot:
-    graph: Any
-
     def __init__(self):
+        # Parser engine, stanza
+
+        # stanza.Pipeline will produce an output which cannot be suppressed
+        # (it calls a java runtime)
+        pipeline: Pipeline = stanza.Pipeline("en")
+
+        self.parser = Parser(pipeline)
+
+        # Ontology engine
         get_ontology("owl/littlePony.owl").load()
-        self.graph = default_world.as_rdflib_graph()
-        with redirect_stderr():
-            self.nlp = stanza.Pipeline("en")
+        graph: Any = default_world.as_rdflib_graph()
+        self.ontology = Ontology(graph)
 
-    async def process(self, message: str):
-        doc: Any = self.nlp(message)
+        # Anser recipe engine
+        self.answer = Answer()
 
-        if len(doc.sentences) != 1:
-            return "Sorry, I can only process one sentence at a time!"
+    async def process(self, message: str) -> str:
+        parse_result: ParseResult = self.parser.parse(message)
 
-        sentence = next(doc.sentences)
-        answer = ""
+        answer = self.answer.obtain(parse_result)
 
-        for word in sentence.words:
-            answer += f"{word.lemma}\n"
-
-        return f"-{message}-"
+        return answer

@@ -1,3 +1,7 @@
+"""
+A util file for redirecting stdin, stdout and stderr using contexts
+"""
+
 import sys
 from contextlib import contextmanager
 import io

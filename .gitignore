@@ -1,6 +1,9 @@
 # Python
 __pycache__/
 
+# Oxdev
+tra
+
 ## ## Root ## ##
 /*
 
@@ -46,6 +49,10 @@ __pycache__/
 # Pyright
 !/pyrightconfig.json
 
+# Pytest
+!/pytest.ini
+
 # Convenience scripts
 !/python
 !/run
+!/pytest

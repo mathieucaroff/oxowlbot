@@ -100,6 +100,18 @@ poetry install
 
 This will install all the dependencies listed in `pyproject.toml`, respecting the version specified in `poetry.lock`.
 
+### Oxowlbot uses types (with pyright)
+
+It depends on typeshed to provide the types for the standard library:
+
+```bash
+git submodule init
+poetry shell
+pip install -r vendor/typeshed/requirements-tests-py3.txt
+```
+
+Note: the two last lines are only needed to run tests in the project
+
 ### Getting started with Poetry
 
 Poetry is quite similar to yarn and npm:
