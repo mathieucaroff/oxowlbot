@@ -12,7 +12,7 @@
     <input id="chat-message-submit" type="button" value="Send">
     <script>
         const chatSocket = new WebSocket(
-            `ws://${window.location.host}/ws/chatbot/`
+            `wss://${window.location.host}/ws/chatbot/`
         );
 
         chatSocket.onmessage = function (e) {
