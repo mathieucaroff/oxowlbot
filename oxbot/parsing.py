@@ -58,7 +58,20 @@ class ParseSuccess_word_list(ParsingSuccess):
         if word.head == 0:
             diff = 0
         symbol = symbolMap.get(diff)
-        return f":{word.lemma}/{symbol}."
+        number = "x"
+        for piece in word.feats.split("|"):
+            partList = piece.split("=")
+            if len(partList) != 2:
+                continue
+            left, right = partList
+            if left == "Number":
+                if right == "Plur":
+                    number = "2"
+                if right == "Sing":
+                    number = "1"
+
+        w = word
+        return f":{w.id}_L{w.lemma}_u{w.upos}_N{number}_R{w.deprel}_{symbol}."
 
 
 ParseSuccess = Union[ParseSuccess_word_list]

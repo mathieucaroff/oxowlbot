@@ -63,6 +63,8 @@ Additionally, queries for siblings, for sisters and for brothers are detected. T
 #### who-is variant
 
 - Who is a kirin?
+- Who is an alicorn?
+- Who is a dragon?
 
 #### are-there variant
 

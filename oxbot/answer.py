@@ -5,7 +5,6 @@ from oxbot.parsing import (
     ParseFailure_single_sentence,
     ParseSuccess_word_list,
 )
-from stanza.models.common.doc import Word
 
 """
 Produce the answer using the parse result and the ontology query result

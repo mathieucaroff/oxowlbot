@@ -1,19 +1,17 @@
 from dataclasses import dataclass
 
-from stanza.models.common.doc import Word
-
 
 @dataclass
-class PWord(Word):
+class PWord:
     id: int
     text: str
     lemma: str
     upos: str
     xpos: str
-    feats: str
     head: int
     deprel: str
-    misc: str
+    misc: str = ""
+    feats: str = ""
 
     def pretty_print(self):
         features = "id text lemma upos xpos feats head deprel".split()

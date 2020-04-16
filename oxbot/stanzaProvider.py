@@ -5,7 +5,7 @@ from aiohttp import ClientSession
 
 from .datatype.pword import PWord
 
-STANZA_URL = "http://localhost:1088"
+STANZA_URL = "http://devx.oxie.cc:1088"
 
 
 def toPWordListList(doc: List[List[Dict]]) -> List[List[PWord]]:
