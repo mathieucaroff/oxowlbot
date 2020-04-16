@@ -1,9 +1,11 @@
 from dataclasses import dataclass
+from typing import Dict
 from oxbot.parsing import (
     ParseResult,
     ParseFailure_single_sentence,
     ParseSuccess_word_list,
 )
+from stanza.models.common.doc import Word
 
 """
 Produce the answer using the parse result and the ontology query result
@@ -33,9 +35,8 @@ class AnswerEngine:
             return Answer(f"INTERNAL ERROR missing implementation for `{t}`")
 
     def _word_list(self, parser_result: ParseSuccess_word_list) -> Answer:
-        info = "\n"
-        for w in parser_result.wordList:
-            info += w.pretty_print().replace(";", " ") + "\n"
+        info = "\n".join(w.pretty_print() for w in parser_result.wordList)
+        info += "\n" + parser_result.normalSentence
         return Answer("", info)
 
 

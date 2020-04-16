@@ -1,2 +1,7 @@
 #!/bin/bash
-poetry run "$@"
+
+[ -f .env ] && source .env
+
+env | grep STANZA
+
+exec poetry run "$@"

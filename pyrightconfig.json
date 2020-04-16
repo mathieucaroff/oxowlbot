@@ -9,7 +9,7 @@
         "vendor/typestubs"
     ],
     "reportMissingImports": false,
-    "reportMissingTypeStubs": true,
+    "reportMissingTypeStubs": false,
     "reportSelfClsParameterName": false,
     "reportTypeshedErrors": true,
     "typingsPath": "typings",

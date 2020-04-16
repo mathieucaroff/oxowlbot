@@ -3,14 +3,14 @@ oxbot, entry point for the django channel consumer
 """
 
 from typing import Any
-
-import stanza
-from stanza.pipeline.core import Pipeline
+import os
 
 from .answer import Answer, AnswerEngine
 from .ontology import Ontology
 from .parsing import Parser, ParseResult
 from .util.redirect import redirect_stderr
+from oxbot.stanzaProvider import createStanzaLocalPipeline, createStanzaWebPipeline
+import logging
 
 with redirect_stderr():
     from owlready2 import get_ontology, default_world
@@ -24,20 +24,25 @@ class Oxbot:
 
         # stanza.Pipeline will produce an output which cannot be suppressed
         # (it calls a java runtime)
-        pipeline: Pipeline = stanza.Pipeline("en")
+        if os.environ.get("STANZA_PROVIDER", None) == "web":
+            logging.info("Using stanza web provider")
+            createStanzaPipeline = createStanzaWebPipeline
+        else:
+            logging.info("Running stanza locally")
+            createStanzaPipeline = createStanzaLocalPipeline
 
-        self.parser = Parser(pipeline)
+        self.parser = Parser(stanzaPipeline=createStanzaPipeline())
 
         # Ontology engine
         get_ontology("owl/littlePony.owl").load()
         graph: Any = default_world.as_rdflib_graph()
         self.ontology = Ontology(graph)
 
-        # Anser recipe engine
+        # Answer recipe engine
         self.engine = AnswerEngine()
 
     async def process(self, message: str) -> Answer:
-        parse_result: ParseResult = self.parser.parse(message)
+        parse_result: ParseResult = await self.parser.parse(message)
 
         answer = self.engine.process(parse_result)
 

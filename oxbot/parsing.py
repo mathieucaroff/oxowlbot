@@ -3,13 +3,28 @@ Parse the question
 """
 
 from dataclasses import dataclass
-from typing import Any, List, Literal, TypeVar, Union
+from typing import Awaitable, Callable, List, Literal, TypeVar, Union
 
-from stanza.models.common.doc import Word
-from stanza.pipeline.core import Pipeline
+from oxbot.datatype.pword import PWord
 
 from .util.cached_property import cached_property
-from .util.first import first
+
+
+symbolMap = {
+    -6: "<=-",
+    -5: "<-=",
+    -4: "<--",
+    -3: "<=",
+    -2: "<-",
+    -1: "<",
+    0: "==",
+    1: ">",
+    2: "->",
+    3: "=>",
+    4: "-->",
+    5: "=->",
+    6: "-=>",
+}
 
 
 class ParsingFailure:
@@ -24,14 +39,12 @@ class ParseFailure_single_sentence(ParsingFailure):
     pass
 
 
-ParseFailure = Union[
-    ParseFailure_single_sentence,
-]
+ParseFailure = Union[ParseFailure_single_sentence]
 
 
 @dataclass
 class ParseSuccess_word_list(ParsingSuccess):
-    wordList: List[Word]
+    wordList: List[PWord]
 
     @cached_property
     def normalSentence(self) -> str:
@@ -40,8 +53,12 @@ class ParseSuccess_word_list(ParsingSuccess):
             normalWordList.append(self._normalWord(word))
         return " ".join(normalWordList)
 
-    def _normalWord(self, word: Word) -> str:
-        return f""
+    def _normalWord(self, word: PWord) -> str:
+        diff = word.head - int(word.id)
+        if word.head == 0:
+            diff = 0
+        symbol = symbolMap.get(diff)
+        return f":{word.lemma}/{symbol}."
 
 
 ParseSuccess = Union[ParseSuccess_word_list]
@@ -52,14 +69,14 @@ ParseResult = TypeVar("ParseResult", ParseSuccess, ParseFailure)
 
 @dataclass
 class Parser:
-    pipeline: Pipeline
+    stanzaPipeline: Callable[[str], Awaitable[List[List[PWord]]]]
 
-    def parse(self, message: str) -> ParseResult:
-        doc: Any = self.pipeline(message)
+    async def parse(self, message: str) -> ParseResult:
+        sentenceList = await self.stanzaPipeline(message)
 
-        if len(doc.sentences) != 1:
+        if len(sentenceList) != 1:
             return ParseFailure_single_sentence()
 
-        sentence = first(doc.sentences)
+        sentence = sentenceList[0]
 
-        return ParseSuccess_word_list(wordList=sentence.words)
+        return ParseSuccess_word_list(wordList=sentence)

@@ -8,7 +8,7 @@
 
 <body>
     <textarea id="chat-log" cols="100" rows="20"></textarea><br>
-    <input id="chat-message-input" type="text" size="100"><br>
+    <input id="chat-message-input" type="text" size="100" value=""><br>
     <input id="chat-message-submit" type="button" value="Send">
     <script>
         const chatSocket = new WebSocket(
@@ -52,11 +52,16 @@
             }))
         }
 
-        `
-        Who is friend with Twilight Sparkle?
-        Who is a kirin?
-        Who is Fluttershy?
-        `.split("\n").map(s => s.trim()).filter(x => x).forEach(sendMessage)
+        setTimeout(() => {
+            `
+            Who are Fluttershy's friends?
+            Who are Twilight Sparkle's friends?
+            Who are Flurry Heart's parents?
+            Who are Flurry Heart's ascendents?
+            Who are Twilight Velvet's descendents?
+            Who are Twilight Velvet's children?
+            `.split("\n").map(s => s.trim()).filter(x => x).forEach(sendMessage)
+        }, 1000)
 
         function reloadPage() {
             location.reload()

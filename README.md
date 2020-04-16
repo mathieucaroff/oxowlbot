@@ -122,3 +122,4 @@ Poetry is quite similar to yarn and npm:
     - To run `django-admin` use `poetry run django-admin`
     - To run python with the project dependencies available, use `poetry run python ...`. This applies both to running python files, and starting a python shell.
     - To run `manage.py`, use `poetry run python manage.py`
+    - ALTERNATIVELY, you can use `poetry shell` to activate the virtual environment, and then freely run the CLIs installed in it: `django-admin ...`, `python manage.py ...`, etc.
