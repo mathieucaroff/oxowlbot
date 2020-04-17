@@ -1,7 +1,14 @@
 #!/bin/bash
 
-[ -f .env ] && source .env
+
+[ -f .env ] && {
+    set -a
+    source .env
+    set +a
+}
+
 
 env | grep STANZA
+
 
 exec poetry run "$@"

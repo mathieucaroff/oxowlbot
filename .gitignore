@@ -17,6 +17,7 @@ tra
 !/owl/
 # Input processing and output generation
 !/oxbot/
+!/questionbot/
 # Pyright type stubs
 !/typings/
 #

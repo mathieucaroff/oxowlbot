@@ -5,7 +5,7 @@ Parse the question
 from dataclasses import dataclass
 from typing import Awaitable, Callable, List, Literal, TypeVar, Union
 
-from oxbot.datatype.pword import PWord
+from .datatype.pword import PWord
 
 from .util.cached_property import cached_property
 
@@ -71,7 +71,8 @@ class ParseSuccess_word_list(ParsingSuccess):
                     number = "1"
 
         w = word
-        return f":{w.id}_L{w.lemma}_u{w.upos}_N{number}_R{w.deprel}_{symbol}."
+        upos = w.upos.lower()
+        return f":{w.id}_L{w.lemma}_U{upos}_N{number}_R{w.deprel}_F{w.feats}_{symbol}."
 
 
 ParseSuccess = Union[ParseSuccess_word_list]

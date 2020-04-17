@@ -3,7 +3,7 @@ from typing import Dict, List
 
 from aiohttp import ClientSession
 
-from .datatype.pword import PWord
+from .pword import PWord
 
 STANZA_URL = "http://devx.oxie.cc:1088"
 

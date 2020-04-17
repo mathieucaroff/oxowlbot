@@ -7,12 +7,16 @@
 </head>
 
 <body>
-    <textarea id="chat-log" cols="100" rows="20"></textarea><br>
+    <textarea id="chat-log" cols="100" rows="40"></textarea><br>
     <input id="chat-message-input" type="text" size="100" value=""><br>
     <input id="chat-message-submit" type="button" value="Send">
     <script>
+        document.querySelector('#chat-log').value = ""
+
+        const { host } = window.location
+        const protocol = location.protocol.replace('http', 'ws')
         const chatSocket = new WebSocket(
-            `wss://${window.location.host}/ws/chatbot/`
+            `${protocol}${host}/ws/chatbot/`
         );
 
         chatSocket.onmessage = function (e) {
@@ -30,6 +34,7 @@
                 message += ', will reload page in 2s'
             }
             console.error(message);
+            document.documentElement.style.backgroundColor = "#F66"
         };
 
         document.querySelector('#chat-message-input').focus();
@@ -52,14 +57,19 @@
             }))
         }
 
-        setTimeout(() => {
+        chatSocket.onopen = function () {
             `
-            Who are Fluttershy's friends?
-            Who are Twilight Sparkle's friends?
-            Who are Flurry Heart's parents?
-            Who are Flurry Heart's ascendents?
-            Who are Twilight Velvet's descendents?
-            Who are Twilight Velvet's children?
+            // Who is a kirin
+            // Who is kirin
+            // Who are kirin
+            // Who are a kirin
+
+            // Who are Fluttershy's friends?
+            // Who are Twilight Sparkle's friends?
+            // Who are Flurry Heart's parents?
+            // Who are Flurry Heart's ascendents?
+            // Who are Twilight Velvet's descendents?
+            // Who are Twilight Velvet's children?
 
             Who is friend with Twilight Sparkle?
             Who is parent of Flurry Heart?
@@ -67,8 +77,14 @@
             Who is descendent of Twilight Velvet?
             Who is child of Twilight Velvet?
             Who is married with Twilight Velvet?
-            `.split("\n").map(s => s.trim()).filter(x => x).forEach(sendMessage)
-        }, 1000)
+            Who is lover of Cadance?
+            Who is in love with an in love with Cadance?
+            Who is married with a married with Cadance?
+            Who is married with a friend of Cadance?
+            Who is friend of a friend of Twilight Sparkle?
+            Who is child of a child of a child of Twilight Velvet?
+            `.split("\n").map(s => s.trim()).filter(x => x && !x.startsWith('//')).forEach(sendMessage)
+        }
 
         function reloadPage() {
             location.reload()

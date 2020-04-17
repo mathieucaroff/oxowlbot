@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Dict
+
 from oxbot.parsing import (
     ParseResult,
     ParseFailure_single_sentence,
@@ -36,7 +36,7 @@ class AnswerEngine:
     def _word_list(self, parser_result: ParseSuccess_word_list) -> Answer:
         info = "\n".join(w.pretty_print() for w in parser_result.wordList)
         info += "\n" + parser_result.normalSentence
-        return Answer("", info)
+        return Answer(parser_result.normalSentence + "\n", info)
 
 
 """

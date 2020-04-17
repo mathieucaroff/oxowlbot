@@ -1,29 +1,28 @@
-"""
-oxbot, entry point for the django channel consumer
-"""
-
-from typing import Any
+import logging
 import os
+from typing import Any, Callable, List
 
 from .answer import Answer, AnswerEngine
 from .ontology import Ontology
-from .parsing import Parser, ParseResult
+from .parsing.pword import PWord
+from .parsing.stanzaProvider import createStanzaLocalPipeline, createStanzaWebPipeline
+
+# from .parsing import Parser, ParseResult
 from .util.redirect import redirect_stderr
-from .stanzaProvider import createStanzaLocalPipeline, createStanzaWebPipeline
-import logging
+from typing_extensions import Awaitable
 
 with redirect_stderr():
     from owlready2 import get_ontology, default_world
 
-# pyright: strict
 
+class Questionbot:
+    parse: List[Callable[[str], Awaitable[List[List[PWord]]]]]
+    ontology: Ontology
+    engine: AnswerEngine
 
-class Oxbot:
     def __init__(self):
         # Parser engine, stanza
 
-        # stanza.Pipeline will produce an output which cannot be suppressed
-        # (it calls a java runtime)
         if os.environ.get("STANZA_PROVIDER", None) == "web":
             logging.info("Using stanza web provider")
             createStanzaPipeline = createStanzaWebPipeline
@@ -31,7 +30,7 @@ class Oxbot:
             logging.info("Running stanza locally")
             createStanzaPipeline = createStanzaLocalPipeline
 
-        self.parser = Parser(stanzaPipeline=createStanzaPipeline())
+        self.parser = [createStanzaPipeline()]
 
         # Ontology engine
         onto: Any = get_ontology("owl/littlePony.owl")
@@ -43,7 +42,7 @@ class Oxbot:
         self.engine = AnswerEngine()
 
     async def process(self, message: str) -> Answer:
-        parse_result: ParseResult = await self.parser.parse(message)
+        parse_result = await self.parse[0](message)
 
         answer = self.engine.process(parse_result)
 
