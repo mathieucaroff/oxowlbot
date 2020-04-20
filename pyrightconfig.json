@@ -1,9 +1,5 @@
 {
-    "include": [
-        "oxbot",
-        "oxowlbot",
-        "chatbot"
-    ],
+    "include": [],
     "exclude": [
         "typings",
         "vendor/typestubs"

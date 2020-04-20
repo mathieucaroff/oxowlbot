@@ -1,12 +1,12 @@
 import json
 from channels.generic.websocket import AsyncWebsocketConsumer
 
-from oxbot.oxbot import Oxbot
+from questionbot.main import Questionbot
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
-        self.bot = Oxbot()
+        self.bot = Questionbot()
         await self.accept()
 
     async def disconnect(self, close_code):

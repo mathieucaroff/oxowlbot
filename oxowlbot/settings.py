@@ -37,7 +37,6 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     "channels",
-    # "oxbot",
     "chatbot",
     "django.contrib.admin",
     "django.contrib.auth",
