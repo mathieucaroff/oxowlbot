@@ -8,6 +8,9 @@ import types
 from dataclasses import dataclass
 from typing import Any, List, Literal, Tuple
 
+from .util.flatten import flatten
+from .util.tuple import tuple2
+
 
 @dataclass
 class AllIndividualInfo:
@@ -34,29 +37,39 @@ class Ontology:
     onto: Any
     graph: Any
 
-    def _get(self, entityName: str):
-        return getattr(self.onto, entityName)
+    def get(self, entityName: str):
+        return self.onto[entityName]
 
-    def _runQuery(self, query: str):
-        return list(self.graph.query(query))
+    def _runQuery(self, query: str) -> List[List[str]]:
+        result = []
+        for row in self.graph.query(query):
+            result.append([self._namePart(elem) for elem in row])
+        return result
 
-    def _formatAndRunQuery(self, select: str, where: List[str]):
+    def _namePart(self, elem: Any) -> str:
+        assert "#" in elem
+        _, name = elem.split("#")
+        return name
+
+    def formatAndRunQuery(self, select: str, where: List[str]):
         return self._runQuery(format_sparql_query(select, where))
 
     def declareIndividual(self, individualName: str, classList: List[str]):
         firstClassName = classList[0]
-        FirstClass = self._get(firstClassName)
+        FirstClass = self.get(firstClassName)
         instance = FirstClass(individualName)
         for className in classList[1:]:
-            Class = self._get(className)
+            Class = self.get(className)
             instance.is_a.append(Class)
 
     def declareClass(self, className: str, superClassList: List[str]):
-        types.new_class("NewClassName", superClassList, kwds={"namespace": self.onto})
+        types.new_class(
+            "NewClassName", superClassList, kwds={"namespace": self.onto}
+        )
 
     def declareRelation(self, subject: str, obj: str, relation: str):
-        s = self._get(subject)
-        objectList = getattr(s, relation)
+        s = self.get(subject)
+        objectList = s[relation]
 
         assert hasattr(objectList, "append"), "Implementation surprise"
 
@@ -66,7 +79,7 @@ class Ontology:
         query = format_sparql_query(
             select="?b",
             where=[
-                f"?x rdfs:subClassOf* me:{className}",
+                f"?x rdfs:subClassOf me:{className}",
                 "?b rdf:type ?x",
                 "?b rdf:type owl:NamedIndividual",
             ],
@@ -113,13 +126,22 @@ class Ontology:
 
     def allIndividualInfoQuery(self, individualName: str) -> AllIndividualInfo:
         return AllIndividualInfo(
-            classList=self._formatAndRunQuery(
-                select="?class", where=[f"me:{individualName} rdf:type ?class"],
+            classList=flatten(
+                self.formatAndRunQuery(
+                    select="?class",
+                    where=[f"me:{individualName} rdf:type ?class"],
+                )
             ),
-            leftRelationList=self._formatAndRunQuery(
-                select="?rel ?obj", where=[f"me:{individualName} ?rel ?obj"],
+            leftRelationList=tuple2(
+                self.formatAndRunQuery(
+                    select="?rel ?obj",
+                    where=[f"me:{individualName} ?rel ?obj"],
+                )
             ),
-            rightRelationList=self._formatAndRunQuery(
-                select="?rel ?obj", where=[f"?obj ?rel me:{individualName}"],
+            rightRelationList=tuple2(
+                self.formatAndRunQuery(
+                    select="?rel ?obj",
+                    where=[f"?obj ?rel me:{individualName}"],
+                )
             ),
         )

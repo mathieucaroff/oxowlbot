@@ -1,11 +1,16 @@
 from functools import wraps
+from typing import Callable, TypeVar, cast
 
 
-def cached_property(f):
+R = TypeVar('R')
+S = TypeVar('S')
+
+
+def cached_property(f: Callable[[S], R]):
     """a @property decorator which caches results"""
 
     @wraps(f)
-    def get(self):
+    def get(self: S) -> R:
         try:
             return self._property_cache[f]
         except AttributeError:
@@ -16,4 +21,4 @@ def cached_property(f):
             x = self._property_cache[f] = f(self)
             return x
 
-    return property(get)
+    return cast(R, property(cast(Callable[[S], R], get)))

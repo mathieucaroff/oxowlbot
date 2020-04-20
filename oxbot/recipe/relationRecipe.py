@@ -11,7 +11,7 @@ class RelationRecipe(BaseRecipe):
         whoIs = r"<Lwh(?:o|ich),Upron>~<Lbe,Uaux>"
         # whoIs: who is
         # whoIs: which were
-        relation = r"((?:~<(?:Unoun|F[^._]*VerbForm=Part[^._]*)> +<Uadp_Rcase>)+)"
+        relation = r"((?:~<(?:Unoun|Hpast)> +<Uadp_Rcase>)+)"
         # relation: friend of
         # relation: married with
         individual = r"((?:~<Upropn,(?:Rcompound|Rnmod)>)+)"

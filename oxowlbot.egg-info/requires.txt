@@ -1,5 +1,7 @@
+aiohttp<4.0.0,>=3.6.2
 channels<3.0.0,>=2.4.0
 channels_redis<3.0.0,>=2.4.2
 daphne<3.0.0,>=2.4.1
 django<4.0.0,>=3.0.5
-stanza<2.0.0,>=1.0.0
+owlready2<0.24,>=0.23
+rdflib<5.0.0,>=4.2.2

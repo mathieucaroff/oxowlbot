@@ -11,8 +11,7 @@
     "reportMissingImports": false,
     "reportMissingTypeStubs": false,
     "reportSelfClsParameterName": false,
-    "reportTypeshedErrors": true,
+    "reportTypeshedErrors": false,
     "typingsPath": "typings",
-    "typeshedPath": "vendor/typeshed",
     "pythonVersion": "3.8"
 }

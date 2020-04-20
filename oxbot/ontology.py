@@ -35,7 +35,7 @@ class Ontology:
     graph: Any
 
     def _get(self, entityName: str):
-        return getattr(self.onto, entityName)
+        return self.onto[entityName]
 
     def _runQuery(self, query: str):
         return list(self.graph.query(query))
@@ -56,7 +56,7 @@ class Ontology:
 
     def declareRelation(self, subject: str, obj: str, relation: str):
         s = self._get(subject)
-        objectList = getattr(s, relation)
+        objectList = s[relation]
 
         assert hasattr(objectList, "append"), "Implementation surprise"
 

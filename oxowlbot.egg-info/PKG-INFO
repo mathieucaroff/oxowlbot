@@ -1,11 +1,11 @@
 Metadata-Version: 1.2
 Name: oxowlbot
 Version: 0.1.0
-Summary: An ontology NL chatbot
-Home-page: https://github.com/mathieucaroff/oxowlbot
-Author: Mathieu CAROFF
-Author-email: mathieu.caroff@free.fr
-License: CC0-1.0
-Description: An ontology chatbot which answers questions and learns from its interlocutor.
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Your Name
+Author-email: you@example.com
+License: UNKNOWN
+Description: UNKNOWN
 Platform: UNKNOWN
-Requires-Python: >=3.8,<4.0
+Requires-Python: ==3.8.2

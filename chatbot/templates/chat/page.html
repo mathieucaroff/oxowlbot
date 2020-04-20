@@ -11,7 +11,9 @@
     <input id="chat-message-input" type="text" size="100" value=""><br>
     <input id="chat-message-submit" type="button" value="Send">
     <script>
-        document.querySelector('#chat-log').value = ""
+        if (!location.href.includes("?remember")){
+            document.querySelector('#chat-log').value = ""
+        }
 
         const { host } = window.location
         const protocol = location.protocol.replace('http', 'ws')

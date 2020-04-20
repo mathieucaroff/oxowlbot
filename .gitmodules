@@ -1,3 +1,0 @@
-[submodule "vendor/typeshed"]
-	path = vendor/typeshed
-	url = https://github.com/python/typeshed/

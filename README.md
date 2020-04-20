@@ -88,13 +88,13 @@ Oxowlbot uses Python 3.8.2. It can be installed using brew (`brew install python
 
 ### Oxowlbot uses Poetry
 
-1) Install the python package manager [Poetry](https://github.com/python-poetry/poetry) (also see [the full instructions in the doc](https://python-poetry.org/docs/#installation)). On Linux and OSX, use:
+1. Install the python package manager [Poetry](https://github.com/python-poetry/poetry) (also see [the full instructions in the doc](https://python-poetry.org/docs/#installation)). On Linux and OSX, use:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 ```
 
-2) Install the dependencies. Make sure you're at the root of this repository and run the following command:
+2. Install the dependencies. Make sure you're at the root of this repository and run the following command:
 
 ```bash
 poetry install
@@ -104,15 +104,7 @@ This will install all the dependencies listed in `pyproject.toml`, respecting th
 
 ### Oxowlbot uses types (with pyright)
 
-It depends on typeshed to provide the types for the standard library:
-
-```bash
-git submodule init
-poetry shell
-pip install -r vendor/typeshed/requirements-tests-py3.txt
-```
-
-Note: the two last lines are only needed to run tests in the project
+If you use VSCode, you can install pyright's extension.
 
 ### Getting started with Poetry
 
@@ -121,7 +113,7 @@ Poetry is quite similar to yarn and npm:
 - To add a package to the project use `poetry add ...`
 - Use `poetry add --dev ...` for a developer dependency (example: `selenium`)
 - To run any CLI installed in the project use `poetry run ...`
-    - To run `django-admin` use `poetry run django-admin`
-    - To run python with the project dependencies available, use `poetry run python ...`. This applies both to running python files, and starting a python shell.
-    - To run `manage.py`, use `poetry run python manage.py`
-    - ALTERNATIVELY, you can use `poetry shell` to activate the virtual environment, and then freely run the CLIs installed in it: `django-admin ...`, `python manage.py ...`, etc.
+  - To run `django-admin` use `poetry run django-admin`
+  - To run python with the project dependencies available, use `poetry run python ...`. This applies both to running python files, and starting a python shell.
+  - To run `manage.py`, use `poetry run python manage.py`
+  - ALTERNATIVELY, you can use `poetry shell` to activate the virtual environment, and then freely run the CLIs installed in it: `django-admin ...`, `python manage.py ...`, etc.

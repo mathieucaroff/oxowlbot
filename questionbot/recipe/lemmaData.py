@@ -1,0 +1,2 @@
+class LemmaData(list):
+    pass
