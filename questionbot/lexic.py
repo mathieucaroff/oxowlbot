@@ -8,7 +8,8 @@ from . import ontology as o
 
 
 def normalize(name: str) -> str:
-    return name.lower().replace(' ', '_')
+    return name.lower().replace(" ", "_")
+
 
 def listDesignation(individualNameList: List[str]):
     return [
@@ -24,7 +25,7 @@ def listDesignationForOneName(individualName: str) -> List[Tuple[bool, str]]:
     The list of results also contains a boolean, to indicate when a designation
     is exact, and thus should receive special treatment.
     """
-    nameList = normalize(individualName).split('_')
+    nameList = normalize(individualName).split("_")
 
     designationList: List[Tuple[bool, str]] = []
 
@@ -67,20 +68,25 @@ class Lexic:
     def _fill(self):
 
         # Individual
-        individualList = flatten(self.ontology.formatAndRunQuery(
-            select="?individual", where=["?individual rdf:type owl:NamedIndividual"],
-        ))
+        individualList = flatten(
+            self.ontology.formatAndRunQuery(
+                select="?individual",
+                where=["?individual rdf:type owl:NamedIndividual"],
+            )
+        )
         for individualName in individualList:
             individual = self.ontology.get(individualName)
             if individual is None:
-                logging.error('broken assertion: missing individual -- ignored')
+                logging.error(
+                    f"broken assertion with {individualName}: ignored"
+                )
                 continue
 
-            designationList = []
+            designationPairListList = []
             for name in [individual.name] + individual.alias:
-                designationList += listDesignationForOneName(name)
+                designationPairListList.append(listDesignationForOneName(name))
 
-            for priority, designation in designationList:
+            for priority, designation in flatten(designationPairListList):
                 entry = self.individualTable.setdefault(designation, [])
                 if priority:
                     entry.insert(0, designation)
@@ -88,19 +94,22 @@ class Lexic:
                     entry.append(designation)
 
         # Class
-        classList = flatten(self.ontology.formatAndRunQuery(
-            select="?class", where=["?class rdf:type owl:Class"],
-        ))
+        classList = flatten(
+            self.ontology.formatAndRunQuery(
+                select="?class", where=["?class rdf:type owl:Class"],
+            )
+        )
         for className in classList:
             classDesignation = normalize(className)
             self.classTable[classDesignation] = className
 
         # Relation
-        relationList = flatten(self.ontology.formatAndRunQuery(
-            select="?relation",
-            where=["?relation rdf:type owl:ObjectProperty"],
-        ))
+        relationList = flatten(
+            self.ontology.formatAndRunQuery(
+                select="?relation",
+                where=["?relation rdf:type owl:ObjectProperty"],
+            )
+        )
         for relationName in relationList:
             relationDesignation = normalize(relationName.split("_")[0])
             self.relationTable[relationDesignation] = relationName
-

@@ -1,18 +1,19 @@
+import logging
 from typing import Any
 
 from . import answer as a
 from . import lexic as lx
 from . import ontology as o
-from .matchableSentence import matchableSentence
 from .context import Context
+from .matchableSentence import matchableSentence
 from .recipe.recipeGetter import RecipeGetter
 from .recipeRunner import RecipeRunner
 from .stanza.stanzaProvider import StanzaPipeline, createStanzaPipeline
 from .util.redirect import redirect_stderr
-from owlready2.reasoning import sync_reasoner, sync_reasoner_pellet
 
 with redirect_stderr():
-    from owlready2 import get_ontology, default_world
+    from owlready2 import get_ontology
+    from owlready2.reasoning import sync_reasoner
 
 
 class Questionbot:
@@ -25,14 +26,17 @@ class Questionbot:
         self.parser = createStanzaPipeline()
 
         # Ontology engine
-        onto: Any = get_ontology("owl/littlePony.owl")
-        onto.load()
-        graph: Any = default_world.as_rdflib_graph()
+        onto: Any = get_ontology("owl/littlePony.owl").load()
+        if onto.Rarity is None:
+            logging.warn(
+                f"RARITY CHECK FAILED"
+            )
+
         with onto:
             with redirect_stderr():
                 sync_reasoner()
 
-        self.ontology = o.Ontology(onto, graph)
+        self.ontology = o.Ontology(onto)
 
         # Ontology lexic checker
         self.lexic = lx.Lexic(self.ontology)

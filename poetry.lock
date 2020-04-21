@@ -739,18 +739,6 @@ version = "2019.3"
 
 [[package]]
 category = "main"
-description = "RDFExtras provide tools, extra stores and such for RDFLib."
-name = "rdfextras"
-optional = false
-python-versions = "*"
-version = "0.4"
-
-[package.dependencies]
-pyparsing = "*"
-rdflib = ">=3.2.1"
-
-[[package]]
-category = "main"
 description = "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information."
 name = "rdflib"
 optional = false
@@ -997,7 +985,7 @@ test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [metadata]
-content-hash = "ee3273a2c439993d4575b03c2f33307c8edeb6a16c526e798ae833843a6a1f70"
+content-hash = "da8ec9cca16cc1d7f69bb4b9278bd9a254b6d847823953dd3744618fded881e5"
 python-versions = "3.8.2"
 
 [metadata.files]
@@ -1410,9 +1398,6 @@ pytest-xdist = [
 pytz = [
     {file = "pytz-2019.3-py2.py3-none-any.whl", hash = "sha256:1c557d7d0e871de1f5ccd5833f60fb2550652da6be2693c1e02300743d21500d"},
     {file = "pytz-2019.3.tar.gz", hash = "sha256:b02c06db6cf09c12dd25137e563b31700d3b80fcc4ad23abb7a315f2789819be"},
-]
-rdfextras = [
-    {file = "rdfextras-0.4.tar.gz", hash = "sha256:179beabe6d04fa63ec56d399de0e14e906c8ccbc882ca9e44f0bb97036f7c562"},
 ]
 rdflib = [
     {file = "rdflib-4.2.2-py3-none-any.whl", hash = "sha256:58d5994610105a457cff7fdfe3d683d87786c5028a45ae032982498a7e913d6f"},

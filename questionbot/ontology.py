@@ -4,50 +4,49 @@ Produce the query to the ontology
 
 # pyright: strict
 
-import types
 import dataclasses as dc
+import types
 from typing import Any, List, Literal, Tuple
-
-import rdflib.plugins.sparql as sparql
 
 from .util.flatten import flatten
 from .util.tuple import tuple2
 
+x = [0]
 
-@dc.dataclass
-class AllIndividualInfo:
-    classList: List[str]
-    leftRelationList: List[Tuple[str, str]]
-    rightRelationList: List[Tuple[str, str]]
-    def asdict(self):
-        return dc.asdict(self)
-
-
-def format_sparql_query(select: str, where: List[str]) -> str:
-    joinline = "\n".join
-
-    return f"""
+QUERY_TEMPLATE = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX me: <file:littlePony.owl#>
-SELECT {select} WHERE {'{'}
-{joinline(f"{line}." for line in where)}
-{'}'}"""
+PREFIX me: <{me}>
+SELECT {select} WHERE {{
+{whereBloc}
+}}"""
+
+
+@dc.dataclass
+class IndividualInfo:
+    classList: List[str]
+    leftRelationList: List[Tuple[str, str]]
+    rightRelationList: List[Tuple[str, str]]
+
+    def asdict(self):
+        return dc.asdict(self)
 
 
 @dc.dataclass
 class Ontology:
     onto: Any
-    graph: Any
 
     def get(self, entityName: str):
+        if x[0] == 0:
+            x[0] += 1
+            breakpoint()
         return self.onto[entityName]
 
     def _runQuery(self, query: str) -> List[List[str]]:
         result = []
-        prepared_query: str = sparql.prepareQuery(query)
-        for row in self.graph.query(prepared_query):
+        graph = self.onto.world.as_rdflib_graph()
+        for row in graph.query(query):
             result.append([self._namePart(elem) for elem in row])
         return result
 
@@ -56,8 +55,15 @@ class Ontology:
         _, name = elem.split("#")
         return name
 
+    def _formatSparqlQuery(self, select: str, where: List[str]) -> str:
+        whereBloc = "\n".join(f"{line}." for line in where)
+
+        return QUERY_TEMPLATE.format(
+            me=self.onto.base_iri, select=select, whereBloc=whereBloc,
+        )
+
     def formatAndRunQuery(self, select: str, where: List[str]):
-        return self._runQuery(format_sparql_query(select, where))
+        return self._runQuery(self._formatSparqlQuery(select, where))
 
     def declareIndividual(self, individualName: str, classList: List[str]):
         firstClassName = classList[0]
@@ -79,14 +85,14 @@ class Ontology:
         assert hasattr(objectList, "append"), "Implementation surprise"
 
         objectList.append(obj)
+    
+    def allIndividual(self):
+        return self.onto.individuals()
 
     def classIndividualQuery(self, className: str):
-        query = format_sparql_query(
+        query = self._formatSparqlQuery(
             select="?b",
-            where=[
-                f"?x rdfs:subClassOf me:{className}",
-                "?b rdf:type ?x",
-            ],
+            where=[f"?x rdfs:subClassOf me:{className}", "?b rdf:type ?x",],
         )
 
         res = flatten(self._runQuery(query))
@@ -126,12 +132,12 @@ class Ontology:
 
         where = [f"{a} {r} {b}" for a, r, b in zip(left, relationList, right)]
 
-        query = format_sparql_query(select=select, where=where)
+        query = self._formatSparqlQuery(select=select, where=where)
 
         return self._runQuery(query)
 
-    def allIndividualInfoQuery(self, individualName: str) -> AllIndividualInfo:
-        return AllIndividualInfo(
+    def individualInfoQuery(self, individualName: str) -> IndividualInfo:
+        return IndividualInfo(
             classList=flatten(
                 self.formatAndRunQuery(
                     select="?class",

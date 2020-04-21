@@ -1,3 +1,4 @@
+from functools import lru_cache
 from .. import reaction as rt
 from .. import recipe as rc
 from ... import answer as a
@@ -9,16 +10,32 @@ from ..rule import rule as ru
 
 
 template = """
-{}
+{name}
+{classBlock}
+{lRelationBlock}
+{rRelationBlock}
 """
+
+
+def formatList(li):
+    return "\n".join(f"- {entry}" for entry in li)
 
 
 class KnowledgeReaction(rt.Reaction):
     def react(self, context: Context, lemmaData: LemmaData, answer: a.Answer):
         individualName = lemmaData[0]
-        allInfo = context.ontology.allIndividualInfoQuery(individualName)
+        info = context.ontology.individualInfoQuery(individualName)
 
-        answer.text += template.format(**allInfo.asdict())
+        classBlock = formatList(info.classList)
+        lRelationBlock = formatList(info.leftRelationList)
+        rRelationBlock = formatList(info.rightRelationList)
+
+        answer.text += template.format(
+            name=individualName,
+            classBlock=classBlock,
+            lRelationBlock=lRelationBlock,
+            rRelationBlock=rRelationBlock,
+        )
 
 
 class KnowledgeRecipeGroup:
