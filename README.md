@@ -2,6 +2,8 @@
 
 An ontology chatbot which answers questions and learns from its interlocutor.
 
+## [Try it now!](https://oxowlbot.herokuapp.com)
+
 ## What does it do?
 
 It can answer the three following questions:
