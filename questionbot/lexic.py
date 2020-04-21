@@ -88,9 +88,9 @@ class Lexic:
             for priority, designation in flatten(designationPairListList):
                 entry = self.individualTable.setdefault(designation, [])
                 if priority:
-                    entry.insert(0, designation)
+                    entry.insert(0, individualName)
                 else:
-                    entry.append(designation)
+                    entry.append(individualName)
 
         # Class
         classList = flatten(

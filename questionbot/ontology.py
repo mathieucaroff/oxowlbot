@@ -5,6 +5,7 @@ Produce the query to the ontology
 # pyright: strict
 
 import dataclasses as dc
+from .queryLogger import QueryLogger
 import types
 from typing import Any, List, Literal, Tuple
 
@@ -36,6 +37,7 @@ class IndividualInfo:
 @dc.dataclass
 class Ontology:
     onto: Any
+    queryLogger: QueryLogger
 
     def get(self, entityName: str):
         return self.onto[entityName]
@@ -55,12 +57,26 @@ class Ontology:
     def _formatSparqlQuery(self, select: str, where: List[str]) -> str:
         whereBloc = "\n".join(f"{line}." for line in where)
 
-        return QUERY_TEMPLATE.format(
+        result = QUERY_TEMPLATE.format(
             me=self.onto.base_iri, select=select, whereBloc=whereBloc,
         )
 
-    def formatAndRunQuery(self, select: str, where: List[str]):
-        return self._runQuery(self._formatSparqlQuery(select, where))
+        return result
+
+    def formatAndRunQuery(
+        self,
+        select: str,
+        where: List[str],
+        debug: bool = False,
+        log: bool = True,
+    ):
+        fullQuery = self._formatSparqlQuery(select, where)
+        if debug:
+            breakpoint()
+        result = self._runQuery(fullQuery)
+        if log:
+            self.queryLogger.write(select, where, fullQuery, result)
+        return result
 
     def declareIndividual(self, individualName: str, classList: List[str]):
         firstClassName = classList[0]
@@ -87,12 +103,11 @@ class Ontology:
         return self.onto.individuals()
 
     def classIndividualQuery(self, className: str):
-        query = self._formatSparqlQuery(
-            select="?b",
-            where=[f"?b rdf:type me:{className}",],
+        res = flatten(
+            self.formatAndRunQuery(
+                select="?b", where=[f"?b rdf:type me:{className}",],
+            )
         )
-
-        res = flatten(self._runQuery(query))
 
         return res
 
@@ -129,12 +144,10 @@ class Ontology:
 
         where = [f"{a} {r} {b}" for a, r, b in zip(left, relationList, right)]
 
-        query = self._formatSparqlQuery(select=select, where=where)
-
-        return self._runQuery(query)
+        return self.formatAndRunQuery(select=select, where=where)
 
     def individualInfoQuery(self, individualName: str) -> IndividualInfo:
-        return IndividualInfo(
+        info = IndividualInfo(
             classList=flatten(
                 self.formatAndRunQuery(
                     select="?class",
@@ -154,3 +167,4 @@ class Ontology:
                 )
             ),
         )
+        return info

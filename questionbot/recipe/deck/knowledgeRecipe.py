@@ -10,10 +10,10 @@ from ..rule import rule as ru
 
 
 template = """
-{name}
-{classBlock}
-{lRelationBlock}
-{rRelationBlock}
+n {name}
+c {classBlock}
+lrb {lRelationBlock}
+rrb {rRelationBlock}
 """
 
 

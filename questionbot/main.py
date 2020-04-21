@@ -6,6 +6,7 @@ from . import lexic as lx
 from . import ontology as o
 from .context import Context
 from .matchableSentence import matchableSentence
+from .queryLogger import QueryLogger
 from .recipe.recipeGetter import RecipeGetter
 from .recipeRunner import RecipeRunner
 from .stanza.stanzaProvider import StanzaPipeline, createStanzaPipeline
@@ -36,7 +37,8 @@ class Questionbot:
             with redirect_stderr():
                 sync_reasoner()
 
-        self.ontology = o.Ontology(onto)
+        queryLogger = QueryLogger()
+        self.ontology = o.Ontology(onto, queryLogger)
 
         # Ontology lexic checker
         self.lexic = lx.Lexic(self.ontology)
@@ -45,12 +47,17 @@ class Questionbot:
         """
         Process the given message
 
-        >>> from asyncio import run
-        >>> run(Questionbot().process("Who is a kirin?"))
-
-        # >>> run(Questionbot().process("Who is Rainbow Dash?"))
-        # >>> run(Questionbot().process("Who is a cat?"))
-        # >>> run(Questionbot().process("Who is friend with Twilight Sparkle?"))
+        >>> from asyncio import run; q = Questionbot()
+        >>> run(q.process("Who is a kirin?")).status
+        'ok'
+        >>> run(q.process("Who is an alicorn?")).status
+        'ok'
+        >>> run(q.process("Who is Pinkie Pie?")).status
+        'ok'
+        >>> run(q.process("Who is a cat?")).status
+        'failure'
+        >>> run(q.process("Who is friend with Twilight Sparkle?")).status
+        'ok'
         """
         sentenceList = await self.parser.parse(message)
 

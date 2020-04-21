@@ -1,14 +1,12 @@
+import logging
 from dataclasses import dataclass
 from typing import List
-
-from questionbot import recipe
 
 from . import answer as a
 from .context import Context
 from .recipe import recipe as rc
 from .recipe import runningRecipe as rr
 from .util.eprint import eprint
-
 
 EXCLUSION_MESSAGE = "Recipe {name} is non-conform, yielding {recipeOutput} when {targetOutput} was expected. It was excluded."
 
@@ -128,4 +126,4 @@ def runRecipeList(
                         targetOutput=targetOutput,
                     )
                 )
-    print("RRL", targetOutput, "DONE", len(recipeList))
+    logging.debug("RRL", targetOutput, "DONE", len(recipeList))
