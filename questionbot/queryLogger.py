@@ -7,7 +7,7 @@ from typing import List
 class QueryLogger:
     def __init__(
         self,
-        enabled=True,
+        enabled=False,
         startIndex=0,
         deleteDirectory="sparql.tmp",
         template="sparql.tmp/{qr}{index}{query}.{ext}",
@@ -15,7 +15,7 @@ class QueryLogger:
         resultTemplate=None,
     ):
         if deleteDirectory is not None:
-            shutil.rmtree(deleteDirectory)
+            shutil.rmtree(deleteDirectory, ignore_errors=True)
 
         if queryTemplate is None:
             queryTemplate = self._expand(template, "query", "sparql")
