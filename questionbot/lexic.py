@@ -66,7 +66,6 @@ class Lexic:
         return self.classTable[normalize(name)]
 
     def _fill(self):
-
         # Individual
         individualList = flatten(
             self.ontology.formatAndRunQuery(

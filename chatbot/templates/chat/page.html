@@ -11,7 +11,7 @@
     <input id="chat-message-input" type="text" size="100" value=""><br>
     <input id="chat-message-submit" type="button" value="Send">
     <script>
-        if (!location.href.includes("?remember")){
+        if (!location.href.includes("?remember")) {
             document.querySelector('#chat-log').value = ""
         }
 
@@ -23,10 +23,27 @@
 
         chatSocket.onmessage = function (e) {
             const data = JSON.parse(e.data);
-            document.querySelector('#chat-log').value += (data.message + '\n');
-            if ('info' in data) {
-                console.info(data.info)
+            const chat = document.querySelector('#chat-log')
+            console.log({data})
+            let text = data.text
+            let prefix = 'ME : '
+            if (data.author === "bot") {
+                prefix = 'BOT: '
+
+                if (data.info) {
+                    console.info(data.info)
+                }
+                if (data.status != "ok") {
+                    text = ': ' + text.replace(/\n/g, '\n: ')
+                }
+                if (data.warning) {
+                    text = '! ' + data.warning.replace(/\n/g, '\n! ') + '\n' + text
+                }
             }
+
+            text = prefix + text.replace(/\n/g, '\n     ')
+
+            chat.value += `${text}\n`
         };
 
         chatSocket.onclose = function (e) {
@@ -60,12 +77,16 @@
         }
 
         if (!location.href.includes('?no-auto'))
-        chatSocket.onopen = function () {
-            `
-            // Who is a kirin
-            // Who is kirin
-            // Who are kirin
-            // Who are a kirin
+            chatSocket.onopen = function () {
+                `
+            Who is a alicorn
+            Who is alicorn
+            Who are alicorn
+            Who are the alicorns
+            Who is an alicorn
+            Who is an Alicorn?
+            Who is a pony?
+            Who is a kirin?
 
             // Who are Fluttershy's friends?
             // Who are Twilight Sparkle's friends?
@@ -74,20 +95,20 @@
             // Who are Twilight Velvet's descendents?
             // Who are Twilight Velvet's children?
 
-            Who is friend with Twilight Sparkle?
-            Who is parent of Flurry Heart?
-            Who is ascendent of Flurry Heart?
-            Who is descendent of Twilight Velvet?
-            Who is child of Twilight Velvet?
-            Who is married with Twilight Velvet?
-            Who is lover of Cadance?
-            Who is in love with an in love with Cadance?
-            Who is married with a married with Cadance?
-            Who is married with a friend of Cadance?
-            Who is friend of a friend of Twilight Sparkle?
-            Who is child of a child of a child of Twilight Velvet?
+            // Who is friend with Twilight Sparkle?
+            // Who is parent of Flurry Heart?
+            // Who is ascendent of Flurry Heart?
+            // Who is descendent of Twilight Velvet?
+            // Who is child of Twilight Velvet?
+            // Who is married with Twilight Velvet?
+            // Who is lover of Cadance?
+            // Who is in love with an in love with Cadance?
+            // Who is married with a married with Cadance?
+            // Who is married with a friend of Cadance?
+            // Who is friend of a friend of Twilight Sparkle?
+            // Who is child of a child of a child of Twilight Velvet?
             `.split("\n").map(s => s.trim()).filter(x => x && !x.startsWith('//')).forEach(sendMessage)
-        }
+            }
 
         function reloadPage() {
             location.reload()

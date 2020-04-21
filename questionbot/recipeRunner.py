@@ -42,7 +42,7 @@ class RecipeRunner:
         if len(validSyntaxList) == 0:
             text = (
                 "I tried to understand your sentence using {} different patterns, but none of them worked. "
-                'Say "Help" if you want me to give you some examples of sentences I understand.'
+                'Say "Help" if you want me to give you some examples of sentences I understand.\n'
             ).format(len(self.recipeList))
 
             return a.Answer("failure", text)
@@ -62,7 +62,7 @@ class RecipeRunner:
             text = (
                 "Your sentence matches {count} of the patterns I know:\n"
                 "- {patternShapeList}\n"
-                'but the word you chose "{word}" is unknown to me in these contexts.'
+                'but the word you chose "{word}" is unknown to me in these contexts.\n'
             ).format(
                 count=len(validSyntaxList),
                 patternShapeList="\n- ".join(

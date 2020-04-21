@@ -1,3 +1,4 @@
+import logging
 from typing import List
 
 from .stanza.pword import PWord
@@ -50,9 +51,12 @@ def matchableWord(word: PWord) -> str:
 
     w = word
     upos = w.upos.lower()
-    feats = w.feats.replace('|', '_F').replace(':', '+')
-    result = f":{w.id}_L{w.lemma}_U{upos}_N{number}_R{w.deprel}{hintString}_F{feats}_{symbol}."
+    feats = w.feats.replace("|", "_F").replace(":", "+")
+    deprel = w.deprel.replace(':', '+')
+    result = f":{w.id}_L{w.lemma}_U{upos}_N{number}_R{deprel}{hintString}_F{feats}_{symbol}."
 
-    assert "." not in result[1: -1] and ":" not in result[1:-1]
+    if "." in result[1:-1] or ":" in result[1:-1]:
+        logging.error(f"bad (:.) matchableWord: {result}")
+        result = ":" + result.replace(":", "").replace(".", "") + "."
 
     return result

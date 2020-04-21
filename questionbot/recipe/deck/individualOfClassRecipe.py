@@ -18,7 +18,7 @@ from ..util.digitToWord import digitToWord
 
 
 template0 = """
-I know what a {className} is but I don't know any of them.
+I know what a {className} is but I don't know any.
 """.strip()
 
 template1 = """
@@ -30,7 +30,7 @@ I know just two {className}s: {nameList[0]} and {nameList[1]}.
 """.strip()
 
 templateUpTo10 = """
-I know {countWord} {className}s: {nameEnumerationWithoutLast} and {nameList[-1]}.
+I know {countWord} {className}s: {nameEnumerationWithoutLast} and {last}.
 """.strip()
 
 templateMore = """
@@ -80,6 +80,7 @@ class IndividualOfClassReaction(rt.Reaction):
             nameEnumeration=nameEnumeration,
             nameEnumerationWithoutLast=nameEnumerationWithoutLast,
             nameList=nameList,
+            last="".join(nameList[-1:])
         )
 
 

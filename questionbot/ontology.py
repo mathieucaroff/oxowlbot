@@ -38,9 +38,6 @@ class Ontology:
     onto: Any
 
     def get(self, entityName: str):
-        if x[0] == 0:
-            x[0] += 1
-            breakpoint()
         return self.onto[entityName]
 
     def _runQuery(self, query: str) -> List[List[str]]:
@@ -85,14 +82,14 @@ class Ontology:
         assert hasattr(objectList, "append"), "Implementation surprise"
 
         objectList.append(obj)
-    
+
     def allIndividual(self):
         return self.onto.individuals()
 
     def classIndividualQuery(self, className: str):
         query = self._formatSparqlQuery(
             select="?b",
-            where=[f"?x rdfs:subClassOf me:{className}", "?b rdf:type ?x",],
+            where=[f"?b rdf:type me:{className}",],
         )
 
         res = flatten(self._runQuery(query))
