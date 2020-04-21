@@ -30,7 +30,7 @@ def listDesignationForOneName(individualName: str) -> List[Tuple[bool, str]]:
 
     for kl in range(0, len(nameList)):
         for kr in range(kl + 1, len(nameList) + 1):
-            designation = " ".join(nameList[kl:kr])
+            designation = normalize("_".join(nameList[kl:kr]))
             designationList.append((False, designation))
 
     designationList.sort(key=lambda pair: len(pair[1]))
@@ -67,31 +67,31 @@ class Lexic:
     def _fill(self):
 
         # Individual
-        individualList = self.ontology.formatAndRunQuery(
+        individualList = flatten(self.ontology.formatAndRunQuery(
             select="?individual", where=["?individual rdf:type owl:NamedIndividual"],
-        )
-        for (individualName,) in individualList:
+        ))
+        for individualName in individualList:
             individual = self.ontology.get(individualName)
             if individual is None:
                 logging.error('broken assertion: missing individual -- ignored')
                 continue
 
-            if individual.alias is not None:
-                pass
-            for priority, individualDesignation in listDesignationForOneName(
-                individualName
-            ):
-                entry = self.individualTable.setdefault(individualDesignation, [])
+            designationList = []
+            for name in [individual.name] + individual.alias:
+                designationList += listDesignationForOneName(name)
+
+            for priority, designation in designationList:
+                entry = self.individualTable.setdefault(designation, [])
                 if priority:
-                    entry.insert(0, individualName)
+                    entry.insert(0, designation)
                 else:
-                    entry.append(individualName)
+                    entry.append(designation)
 
         # Class
-        classList = self.ontology.formatAndRunQuery(
-            select="?class", where=["?class rdf:type rdfs:Class"],
-        )
-        for (className,) in classList:
+        classList = flatten(self.ontology.formatAndRunQuery(
+            select="?class", where=["?class rdf:type owl:Class"],
+        ))
+        for className in classList:
             classDesignation = normalize(className)
             self.classTable[classDesignation] = className
 

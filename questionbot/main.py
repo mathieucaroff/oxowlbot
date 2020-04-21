@@ -1,20 +1,15 @@
-import logging
-import os
 from typing import Any
 
 from . import answer as a
 from . import lexic as lx
 from . import ontology as o
-from .normal.normal import Normal
+from .matchableSentence import matchableSentence
+from .context import Context
 from .recipe.recipeGetter import RecipeGetter
 from .recipeRunner import RecipeRunner
-from .stanza.stanzaProvider import (
-    StanzaPipeline,
-    createStanzaLocalPipeline,
-    createStanzaWebPipeline,
-)
-from .util.log import log
+from .stanza.stanzaProvider import StanzaPipeline, createStanzaPipeline
 from .util.redirect import redirect_stderr
+from owlready2.reasoning import sync_reasoner, sync_reasoner_pellet
 
 with redirect_stderr():
     from owlready2 import get_ontology, default_world
@@ -27,31 +22,31 @@ class Questionbot:
 
     def __init__(self):
         # Parser engine, stanza
-        createStanzaPipeline: Any
-
-        if os.environ.get("STANZA_PROVIDER", None) == "web":
-            logging.info("Using stanza web provider")
-            createStanzaPipeline = createStanzaWebPipeline
-        else:
-            logging.info("Running stanza locally")
-            createStanzaPipeline = createStanzaLocalPipeline
-
         self.parser = createStanzaPipeline()
 
         # Ontology engine
         onto: Any = get_ontology("owl/littlePony.owl")
         onto.load()
         graph: Any = default_world.as_rdflib_graph()
+        with onto:
+            with redirect_stderr():
+                sync_reasoner()
+
         self.ontology = o.Ontology(onto, graph)
+
+        # Ontology lexic checker
         self.lexic = lx.Lexic(self.ontology)
 
     async def process(self, message: str) -> a.Answer:
         """
         Process the given message
 
-        >>> import os, asyncio; os.environ["STANZA_PROVIDER"] = "web"
+        >>> from asyncio import run
+        >>> run(Questionbot().process("Who is a kirin?"))
 
-        >>> task = asyncio.get_event_loop().create_task(Questionbot().process("Who is Rainbow Dash?"))
+        # >>> run(Questionbot().process("Who is Rainbow Dash?"))
+        # >>> run(Questionbot().process("Who is a cat?"))
+        # >>> run(Questionbot().process("Who is friend with Twilight Sparkle?"))
         """
         sentenceList = await self.parser.parse(message)
 
@@ -61,18 +56,23 @@ class Questionbot:
             )
         wordList = sentenceList[0]
 
-        normal = Normal(
-            lexic=self.lexic, wordList=wordList, ontology=self.ontology,
+        context = Context(
+            lexic=self.lexic,
+            ontology=self.ontology,
+            sentence=matchableSentence(wordList),
+            wordList=wordList,
         )
 
         recipeList = RecipeGetter().get()
-        answer = RecipeRunner(normal, recipeList).run()
+        answer = RecipeRunner(context, recipeList).run()
 
-        answer.info += normal.fullInfo()
+        answer.info += context.sentence + "\n"
+        answer.info += context.fullInfo()
 
         return answer
 
 
 if __name__ == "__main__":
-    import doctest; doctest.testmod()
+    import doctest
 
+    doctest.testmod()

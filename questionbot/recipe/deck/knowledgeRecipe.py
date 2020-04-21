@@ -1,19 +1,24 @@
+from .. import reaction as rt
+from .. import recipe as rc
 from ... import answer as a
-from ...recipe import reaction as rt
-from ...recipe import recipe as rc
 from ... import lexicalFragment as lxf
-from ...normal.normal import Normal
+from ...context import Context
+from ..lemmaData import LemmaData
 from ..rule import fragmentDeck as deck
-from ..rule import sentencePattern as sp
-from ..rule.rule import Rule
+from ..rule import rule as ru
 
 
-# pattern = Pattern(r"^<Lwh(?:o|ich),Upron>~<Lbe,Rcop>(~<!!Rnsubj>~<!!Rnsubj>)$")
-pattern = sp.SentencePattern([deck.whoIs, deck.nominal])
+template = """
+{}
+"""
 
 
 class KnowledgeReaction(rt.Reaction):
-    def react(self, normal: Normal) -> a.Answer: ...
+    def react(self, context: Context, lemmaData: LemmaData, answer: a.Answer):
+        individualName = lemmaData[0]
+        allInfo = context.ontology.allIndividualInfoQuery(individualName)
+
+        answer.text += template.format(**allInfo.asdict())
 
 
 class KnowledgeRecipeGroup:
@@ -21,7 +26,7 @@ class KnowledgeRecipeGroup:
         knowledgeReaction = KnowledgeReaction()
 
         return [
-            rc.Recipe(Rule(
+            rc.Recipe(knowledgeReaction, ru.Rule(
                 name="Knowledge A",
                 shape="Who is <I>?",
                 fragmentList=[
@@ -31,45 +36,6 @@ class KnowledgeRecipeGroup:
                         fragment=deck.nominal
                     ),
                 ],
-            ), knowledgeReaction),
+            )),
         ]
 
-
-# def knowledgeRecipeOld(
-#     wordList: List[PWord],
-#     normalSentence: str,
-#     lexic: Lexic,
-#     answer: Answer,
-# ):
-    # yield "Syntax Analysis"
-
-    # match = pattern.match(normalSentence)
-
-    # if match == None:
-    #     yield False
-    # yield True
-
-    # id = int(match[1])
-    # individualDesignation = wordList[id - 1]
-
-    # yield "Shape"
-
-    # shape = "Who is <I>?"
-    # yield shape
-
-    # yield "Lexical Analysis"
-
-    # ok = True
-    # individualList: List[str] = []
-    # try:
-    #     individualList = lexic.getIndividualList(individualDesignation)
-    # except KeyError:
-    #     ok = False
-    # yield ok
-
-    # yield from self.rule.run(
-    #     wordList,
-    #     normalSentence,
-    #     lexic,
-    #     answer,
-    # )

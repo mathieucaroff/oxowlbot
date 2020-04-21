@@ -1,14 +1,52 @@
 from dataclasses import dataclass
+from typing import Generator, Literal
+
 from ..answer import Answer
-from typing import Generator
-from questionbot.recipe import recipe as rc
+from ..context import Context
+from ..recipe.reaction import Reaction
+from ..recipe.recipe import Recipe
+from ..recipe.rule.rule import Rule
 
 
 @dataclass
 class RunningRecipe:
-    origin: 'rc.Recipe'
-    generator: Generator
     answer: Answer
+    context: Context
+    generator: Generator
+    reaction: Reaction
+    rule: Rule
+    mode: Literal["rule", "reaction"] = "rule"
 
     def next(self):
-        return self.generator.send(None)
+        try:
+            return self.generator.send(None)
+        except StopIteration:
+            if self.mode == "rule":
+                self.generator = self.startReaction()
+                self.mode = "reaction"
+                return self.next()
+            else:
+                raise
+
+    @staticmethod
+    def start(recipe: Recipe, context: Context):
+        answer = Answer("ok", "")
+
+        return RunningRecipe(
+            answer=answer,
+            context=context,
+            generator=recipe.rule.run(context, answer),
+            reaction=recipe.reaction,
+            rule=recipe.rule,
+        )
+
+    def startReaction(self):
+        yield "Answer"
+        self.reaction.react(
+            context=self.context,
+            lemmaData=self.rule.getLemmaData(),
+            answer=self.answer,
+        )
+        yield self.answer
+
+        return

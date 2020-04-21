@@ -19,7 +19,7 @@ class SentencePattern:
     def match(self, target: str):
         return self.concatenatedPattern.match(target)
 
-    def extract(self, target: str) -> Union[List[List[str]], None]:
+    def extractEachActiveFragment(self, target: str) -> Union[List[List[str]], None]:
         """
         Extract the all the matches of each fragment
         """
@@ -30,10 +30,12 @@ class SentencePattern:
 
         assert len(m.groups()) == len(activeFragmentList)
 
-        result: List[List[str]] = []
+        activeResultList: List[List[str]] = []
         for text, fragment in zip(m.groups(), activeFragmentList):
-            groupList = fragment.extract(text)
-            assert len(groupList) > 0
-            result.append(groupList)
+            activeResult = fragment.extract(text)
 
-        return result
+            assert len(activeResult) > 0
+
+            activeResultList.append(activeResult)
+
+        return activeResultList

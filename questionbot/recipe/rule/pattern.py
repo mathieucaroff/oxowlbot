@@ -7,7 +7,7 @@ class Pattern:
     def __init__(self, pat):
         self.pat = (
             (pat)
-            .replace("~", r" +:.*?\. +")
+            .replace("~", r" +(?::.*?\. +)??")
             .replace("__", r":[^\.]*\. ")
             .replace("<!!", r":(\d+),")
             .replace("<", r":[^\.]*?")

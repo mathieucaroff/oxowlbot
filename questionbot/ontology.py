@@ -5,18 +5,22 @@ Produce the query to the ontology
 # pyright: strict
 
 import types
-from dataclasses import dataclass
+import dataclasses as dc
 from typing import Any, List, Literal, Tuple
+
+import rdflib.plugins.sparql as sparql
 
 from .util.flatten import flatten
 from .util.tuple import tuple2
 
 
-@dataclass
+@dc.dataclass
 class AllIndividualInfo:
     classList: List[str]
     leftRelationList: List[Tuple[str, str]]
     rightRelationList: List[Tuple[str, str]]
+    def asdict(self):
+        return dc.asdict(self)
 
 
 def format_sparql_query(select: str, where: List[str]) -> str:
@@ -32,7 +36,7 @@ SELECT {select} WHERE {'{'}
 {'}'}"""
 
 
-@dataclass
+@dc.dataclass
 class Ontology:
     onto: Any
     graph: Any
@@ -42,7 +46,8 @@ class Ontology:
 
     def _runQuery(self, query: str) -> List[List[str]]:
         result = []
-        for row in self.graph.query(query):
+        prepared_query: str = sparql.prepareQuery(query)
+        for row in self.graph.query(prepared_query):
             result.append([self._namePart(elem) for elem in row])
         return result
 
@@ -81,11 +86,12 @@ class Ontology:
             where=[
                 f"?x rdfs:subClassOf me:{className}",
                 "?b rdf:type ?x",
-                "?b rdf:type owl:NamedIndividual",
             ],
         )
 
-        return self._runQuery(query)
+        res = flatten(self._runQuery(query))
+
+        return res
 
     def relationIndividualQuery(
         self,

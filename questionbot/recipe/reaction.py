@@ -1,9 +1,13 @@
 import abc
 
 from .. import answer as a
-from ..normal.normal import Normal
+from ..context import Context
 from .lemmaData import LemmaData
+
 
 class Reaction:
     @abc.abstractmethod
-    def react(self, normal: Normal, lemmaData: LemmaData, answer: a.Answer) -> None: ...
+    def react(
+        self, context: Context, lemmaData: LemmaData, answer: a.Answer
+    ) -> None:
+        ...

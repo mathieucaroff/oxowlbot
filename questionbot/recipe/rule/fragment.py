@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 import re
 
+from ...recipe.rule.pattern import Pattern
+
 
 @dataclass
 class BaseFragment:
@@ -10,13 +12,15 @@ class BaseFragment:
 class ConstantFragment(BaseFragment):
     pass
 
-@dataclass
 class ActiveFragment(BaseFragment):
     detail: str
+
+    def __init__(self, overview, detail):
+        self.overview = overview.format(detail=detail.replace('!', ''))
+        self.detail = detail
 
     def extract(self, target_part: str):
         """
         Return the list of the first group in each match of the .detail regex
         """
-        if self.detail is None: raise ValueError()
-        return [m.group(1) for m in re.finditer(self.detail, target_part)]
+        return [m.group(1) for m in re.finditer(Pattern(self.detail).pat, target_part)]

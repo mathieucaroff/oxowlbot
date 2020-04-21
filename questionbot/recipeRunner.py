@@ -1,36 +1,39 @@
 from dataclasses import dataclass
-from questionbot.recipe.runningRecipe import RunningRecipe
-
 from typing import List
 
-from . import answer as a
-from .normal.normal import Normal
-from .util.eprint import eprint
-from .recipe import recipe as rc
+from questionbot import recipe
 
-EXCLUSION_MESSAGE = "Recipe {name} is non-conform, yielding {output} when {target} was expected. It was excluded."
+from . import answer as a
+from .context import Context
+from .recipe import recipe as rc
+from .recipe import runningRecipe as rr
+from .util.eprint import eprint
+
+
+EXCLUSION_MESSAGE = "Recipe {name} is non-conform, yielding {recipeOutput} when {targetOutput} was expected. It was excluded."
 
 
 @dataclass
 class RecipeRunner:
-    normal: Normal
+    """
+    Allow to run a list of runningRecipes in the context of a context.
+    """
+
+    context: Context
     recipeList: List[rc.Recipe]
 
     def run(self) -> a.Answer:
-        finalText: str = ""
-
         runningRecipeList = [
-            recipe.start(normal=self.normal) for recipe in self.recipeList
+            rr.RunningRecipe.start(recipe=recipe, context=self.context)
+            for recipe in self.recipeList
         ]
 
         #
         SA = "Syntax Analysis"
         #
-        runRecipeList(
-            recipeList=runningRecipeList,
-            targetOutput=SA,
-            message=EXCLUSION_MESSAGE,
-        )
+        # ECA - Syntax Failure
+        #
+        runRecipeList(runningRecipeList, SA, EXCLUSION_MESSAGE)
 
         runRecipeList(runningRecipeList, targetOutput=True)
 
@@ -38,7 +41,7 @@ class RecipeRunner:
 
         if len(validSyntaxList) == 0:
             text = (
-                "I tried to understand your sentence using {} different patterns, but I couldn't do it. "
+                "I tried to understand your sentence using {} different patterns, but none of them worked. "
                 'Say "Help" if you want me to give you some examples of sentences I understand.'
             ).format(len(self.recipeList))
 
@@ -46,6 +49,8 @@ class RecipeRunner:
 
         #
         LA = "Lexical Analysis"
+        #
+        # ECB - Lexical Failure
         #
         runRecipeList(runningRecipeList, LA, EXCLUSION_MESSAGE)
 
@@ -57,11 +62,11 @@ class RecipeRunner:
             text = (
                 "Your sentence matches {count} of the patterns I know:\n"
                 "- {patternShapeList}\n"
-                'but the work you chose "{word}" is unknown to me in these contexts.'
+                'but the word you chose "{word}" is unknown to me in these contexts.'
             ).format(
                 count=len(validSyntaxList),
                 patternShapeList="\n- ".join(
-                    recipe.origin.rule.shape for recipe in validSyntaxList
+                    recipe.rule.shape for recipe in validSyntaxList
                 ),
                 word=validSyntaxList[0].next(),
             )
@@ -69,7 +74,7 @@ class RecipeRunner:
             return a.Answer("failure", text)
 
         #
-        # Form ambiguity
+        # ECC - Form ambiguity
         #
         chosenRecipe = validLexicList[0]
 
@@ -77,11 +82,13 @@ class RecipeRunner:
             text = (
                 "Your sentence completly matches {count} of the forms:\n"
                 "- {formShapeList}\n"
-                'I selected the first of them "{}" and worked from there\n\n'
+                'I selected the first of them "{select}" and worked from there\n\n'
             ).format(
                 count=len(validLexicList),
-                formShapeList="\n- ".join(recipe.origin.rule.shape for recipe in validLexicList),
-                word=validLexicList[0].origin.rule.shape,
+                formShapeList="\n- ".join(
+                    recipe.rule.shape for recipe in validLexicList
+                ),
+                select=validLexicList[0].rule.shape,
             )
 
             chosenRecipe.answer.warning += text
@@ -89,17 +96,17 @@ class RecipeRunner:
         #
         AN = "Answer"
         #
-        assert chosenRecipe.next() == AN, f"Buggy Recipy '{AN}'"
+        out = chosenRecipe.next()
+        assert out == AN, f"Buggy Recipy '{AN=} {out=}'"
 
-        return chosenRecipe.next()
-
-
-# - [word A]
-# - [word B]
-# I selected the first of them "[word A]" and worked from there."""
+        answer = chosenRecipe.next()
+        assert isinstance(answer, a.Answer), f"answer is {answer}"
+        return answer
 
 
-def runRecipeList(recipeList: List[RunningRecipe], targetOutput, message: str = None):
+def runRecipeList(
+    recipeList: List["rr.RunningRecipe"], targetOutput, message: str = None
+):
     """
     Calls .next() on each generator of the list, and expect each of them to return {targetOutput}. The ones that do not are removed from the generator list. If a {message} is provided, it'll be printed on stderr for each generator removed.
 
@@ -108,15 +115,17 @@ def runRecipeList(recipeList: List[RunningRecipe], targetOutput, message: str = 
     - output - The value outputed by the generator
     - target - The value of "targetOutput"
     """
-    for recipe in recipeList:
-        output = recipe.next()
-        if output != targetOutput:
+    for recipe in [*recipeList]:
+        recipeOutput = recipe.next()
+
+        if recipeOutput != targetOutput:
             recipeList.remove(recipe)
-        elif message is not None:
-            eprint(
-                message.format(
-                    name=recipe.__qualname__,
-                    output=output,
-                    target=targetOutput,
+            if message is not None:
+                eprint(
+                    message.format(
+                        name=recipe.rule.name,
+                        recipeOutput=recipeOutput,
+                        targetOutput=targetOutput,
+                    )
                 )
-            )
+    print("RRL", targetOutput, "DONE", len(recipeList))

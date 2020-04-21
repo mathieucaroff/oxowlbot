@@ -13,9 +13,9 @@ class LexicalFragment(ActiveFragment):
         super().__init__(fragment.overview, fragment.detail)
         self.kind = kind
 
-    def obtainLexicalTerm(self, extract: List[str], lexic: 'lx.Lexic', answer: a.Answer):
+    def obtainLexicalChunk(self, activeExtract: List[str], lexic: 'lx.Lexic', answer: a.Answer):
         if self.kind == 'individual':
-            name = " ".join(extract)
+            name = " ".join(activeExtract)
 
             ambiguityList = lexic.getIndividualList(name)
 
@@ -35,8 +35,10 @@ class LexicalFragment(ActiveFragment):
                 answer.warning += notice
             return individual
         if self.kind == 'class':
-            name = " ".join(extract)
+            name = " ".join(activeExtract)
             return lexic.getClass(name)
         if self.kind == 'relation':
-            relationNameList = extract
-            return [lexic.getIndividualList(name) for name in relationNameList]
+            relationNameList = activeExtract
+            return [*map(lexic.getRelation, relationNameList)]
+
+        raise RuntimeError()

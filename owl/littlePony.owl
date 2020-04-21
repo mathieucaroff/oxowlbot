@@ -593,7 +593,7 @@
         <AnnotationProperty IRI="#alias"/>
     </Declaration>
     <Declaration>
-        <Datatype IRI="#hexColor"/>
+        <Datatype IRI="xsd:string"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Alicorn"/>
@@ -2698,2282 +2698,2282 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#A.K._Yearling"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D9BF61</Literal>
+        <Literal>#D9BF61</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#A.K._Yearling"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BC1D75</Literal>
+        <Literal>#BC1D75</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#A.K._Yearling"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#262626</Literal>
+        <Literal>#262626</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Adagio_Dazzle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F3F89C</Literal>
+        <Literal>#F3F89C</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Adagio_Dazzle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9B1358</Literal>
+        <Literal>#9B1358</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Adagio_Dazzle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E48C04</Literal>
+        <Literal>#E48C04</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Aloe_Vera"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFB2D6</Literal>
+        <Literal>#FFB2D6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Aloe_Vera"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3877B8</Literal>
+        <Literal>#3877B8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Aloe_Vera"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7CD6FF</Literal>
+        <Literal>#7CD6FF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Amethyst_Star"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F3A3F2</Literal>
+        <Literal>#F3A3F2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Amethyst_Star"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A656D9</Literal>
+        <Literal>#A656D9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Amethyst_Star"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B572E0</Literal>
+        <Literal>#B572E0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Angel_Wings"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F0E3DB</Literal>
+        <Literal>#F0E3DB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Angel_Wings"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8DF2ED</Literal>
+        <Literal>#8DF2ED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Angel_Wings"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CFACA1</Literal>
+        <Literal>#CFACA1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Apple_Bloom"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F3F49B</Literal>
+        <Literal>#F3F49B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Apple_Bloom"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBA93F</Literal>
+        <Literal>#FBA93F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Apple_Bloom"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F5415F</Literal>
+        <Literal>#F5415F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Applejack"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FABA62</Literal>
+        <Literal>#FABA62</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Applejack"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#61BA4E</Literal>
+        <Literal>#61BA4E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Applejack"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EC3F41</Literal>
+        <Literal>#EC3F41</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Aria_Blaze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F5BDE0</Literal>
+        <Literal>#F5BDE0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Aria_Blaze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#642187</Literal>
+        <Literal>#642187</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Aria_Blaze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7B16A5</Literal>
+        <Literal>#7B16A5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Aunt_Holiday"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFE1A1</Literal>
+        <Literal>#FFE1A1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Aunt_Holiday"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFAC7A</Literal>
+        <Literal>#FFAC7A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Aunt_Holiday"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F07053</Literal>
+        <Literal>#F07053</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Auntie_Lofty"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8F8BB</Literal>
+        <Literal>#F8F8BB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Auntie_Lofty"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A2F9F9</Literal>
+        <Literal>#A2F9F9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Auntie_Lofty"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#0995B5</Literal>
+        <Literal>#0995B5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Autumn_Afternoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E7D994</Literal>
+        <Literal>#E7D994</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Autumn_Afternoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#25CED3</Literal>
+        <Literal>#25CED3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Autumn_Afternoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C17A02</Literal>
+        <Literal>#C17A02</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Autumn_Blaze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FEFADF</Literal>
+        <Literal>#FEFADF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Autumn_Blaze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8FAFC</Literal>
+        <Literal>#F8FAFC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Autumn_Blaze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BF5B1F</Literal>
+        <Literal>#BF5B1F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Babs_Seed"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DC9E41</Literal>
+        <Literal>#DC9E41</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Babs_Seed"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DCF79B</Literal>
+        <Literal>#DCF79B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Babs_Seed"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F7415F</Literal>
+        <Literal>#F7415F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Basil"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AA322A</Literal>
+        <Literal>#AA322A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Basil"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FAD333</Literal>
+        <Literal>#FAD333</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Basil"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E29291</Literal>
+        <Literal>#E29291</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Berryshine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E497F8</Literal>
+        <Literal>#E497F8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Berryshine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BD1C76</Literal>
+        <Literal>#BD1C76</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Berryshine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BA3588</Literal>
+        <Literal>#BA3588</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Big_McIntosh"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E64A57</Literal>
+        <Literal>#E64A57</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Big_McIntosh"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#5FBB4B</Literal>
+        <Literal>#5FBB4B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Big_McIntosh"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBBA62</Literal>
+        <Literal>#FBBA62</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Bon_Bon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F7FBCF</Literal>
+        <Literal>#F7FBCF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Bon_Bon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#2BB1B9</Literal>
+        <Literal>#2BB1B9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Bon_Bon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#365A93</Literal>
+        <Literal>#365A93</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Bow_Hothoof"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#ABB4FF</Literal>
+        <Literal>#ABB4FF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Bow_Hothoof"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F6E340</Literal>
+        <Literal>#F6E340</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Bow_Hothoof"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#1B98D1</Literal>
+        <Literal>#1B98D1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Braeburn"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EDE58E</Literal>
+        <Literal>#EDE58E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Braeburn"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8BE64E</Literal>
+        <Literal>#8BE64E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Braeburn"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DB9E44</Literal>
+        <Literal>#DB9E44</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Bright_Mac"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F3F399</Literal>
+        <Literal>#F3F399</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Bright_Mac"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#5FBB4B</Literal>
+        <Literal>#5FBB4B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Bright_Mac"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F54144</Literal>
+        <Literal>#F54144</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cadance"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFCBE4</Literal>
+        <Literal>#FFCBE4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cadance"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C181DA</Literal>
+        <Literal>#C181DA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cadance"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#732DA2</Literal>
+        <Literal>#732DA2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Carrot_Top"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFF99</Literal>
+        <Literal>#FFFF99</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Carrot_Top"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#68CC3E</Literal>
+        <Literal>#68CC3E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Carrot_Top"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFB13D</Literal>
+        <Literal>#FFB13D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Celestia"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FEF7FB</Literal>
+        <Literal>#FEF7FB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Celestia"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E68CE3</Literal>
+        <Literal>#E68CE3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Celestia"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#44B1CE</Literal>
+        <Literal>#44B1CE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cheerilee"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C05B92</Literal>
+        <Literal>#C05B92</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cheerilee"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#ABD79D</Literal>
+        <Literal>#ABD79D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cheerilee"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F5B5CF</Literal>
+        <Literal>#F5B5CF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cinder_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8FAFC</Literal>
+        <Literal>#F8FAFC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cinder_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFB629</Literal>
+        <Literal>#FFB629</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cinder_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#85BF72</Literal>
+        <Literal>#85BF72</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Clear_Sky"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFABCA</Literal>
+        <Literal>#FFABCA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Clear_Sky"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9FEFD6</Literal>
+        <Literal>#9FEFD6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Clear_Sky"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFE3EC</Literal>
+        <Literal>#FFE3EC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cloud_Chaser"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C0B6F3</Literal>
+        <Literal>#C0B6F3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cloud_Chaser"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DE9FBF</Literal>
+        <Literal>#DE9FBF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cloud_Chaser"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BBEAFF</Literal>
+        <Literal>#BBEAFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cloudy_Quartz"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D8DDEA</Literal>
+        <Literal>#D8DDEA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cloudy_Quartz"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#91CFE1</Literal>
+        <Literal>#91CFE1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cloudy_Quartz"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#508383</Literal>
+        <Literal>#508383</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Coco_Pommel"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBF4DF</Literal>
+        <Literal>#FBF4DF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Coco_Pommel"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D7FFFA</Literal>
+        <Literal>#D7FFFA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Coco_Pommel"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#96E5EF</Literal>
+        <Literal>#96E5EF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Coloratura"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DCF3E9</Literal>
+        <Literal>#DCF3E9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Coloratura"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#46B6BA</Literal>
+        <Literal>#46B6BA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Coloratura"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3E3860</Literal>
+        <Literal>#3E3860</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cookie_Crumbles"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FAB6E5</Literal>
+        <Literal>#FAB6E5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cookie_Crumbles"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#89DAEC</Literal>
+        <Literal>#89DAEC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cookie_Crumbles"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#5D4E9F</Literal>
+        <Literal>#5D4E9F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Coriander_Cumin"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E0B44E</Literal>
+        <Literal>#E0B44E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Coriander_Cumin"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A74BA3</Literal>
+        <Literal>#A74BA3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Coriander_Cumin"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#562A36</Literal>
+        <Literal>#562A36</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cozy_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBD7D2</Literal>
+        <Literal>#FBD7D2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cozy_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FADAD0</Literal>
+        <Literal>#FADAD0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cozy_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#98DDED</Literal>
+        <Literal>#98DDED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A3916D</Literal>
+        <Literal>#A3916D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#746448</Literal>
+        <Literal>#ACEAF6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#eye_color"/>
+        <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Cranky_Doodle_Donkey"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#ACEAF6</Literal>
+        <Literal>#746448</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Daisy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFA9F8</Literal>
+        <Literal>#FFA9F8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Daisy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#33B668</Literal>
+        <Literal>#33B668</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Daisy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C7F184</Literal>
+        <Literal>#C7F184</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Dear_Darling"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C0E5C6</Literal>
+        <Literal>#C0E5C6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Dear_Darling"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7BD0F3</Literal>
+        <Literal>#7BD0F3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Dear_Darling"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8F3A7</Literal>
+        <Literal>#F8F3A7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Derpy_Hooves"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C2C5D5</Literal>
+        <Literal>#C2C5D5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Derpy_Hooves"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EBFC82</Literal>
+        <Literal>#EBFC82</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Derpy_Hooves"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFAAD</Literal>
+        <Literal>#FFFAAD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Diamond_Tiara"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FDC3FC</Literal>
+        <Literal>#FDC3FC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Diamond_Tiara"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A4EEF2</Literal>
+        <Literal>#A4EEF2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Diamond_Tiara"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BB99DC</Literal>
+        <Literal>#BB99DC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Dinky_Hooves"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CDB8E6</Literal>
+        <Literal>#CDB8E6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Dinky_Hooves"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FCF89A</Literal>
+        <Literal>#FCF89A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Dinky_Hooves"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F7F0A6</Literal>
+        <Literal>#F7F0A6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Discord"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#68413D</Literal>
+        <Literal>#68413D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Discord"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EAE13D</Literal>
+        <Literal>#EAE13D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Discord"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AA4747</Literal>
+        <Literal>#AA4747</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Doctor_Fauna"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EFE36F</Literal>
+        <Literal>#EFE36F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Doctor_Fauna"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C4A854</Literal>
+        <Literal>#C4A854</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Doctor_Fauna"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Ember"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#4BC9DC</Literal>
+        <Literal>#4BC9DC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Ember"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8834F</Literal>
+        <Literal>#F8834F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Ember"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#30478F</Literal>
+        <Literal>#30478F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Feather_Bangs"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EBD989</Literal>
+        <Literal>#EBD989</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Feather_Bangs"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#5EBC4A</Literal>
+        <Literal>#5EBC4A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Feather_Bangs"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C48441</Literal>
+        <Literal>#C48441</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Fern_Flare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BC9D67</Literal>
+        <Literal>#BC9D67</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Fern_Flare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CF1650</Literal>
+        <Literal>#CF1650</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Fern_Flare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B57A2A</Literal>
+        <Literal>#B57A2A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Filthy_Rich"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BCA979</Literal>
+        <Literal>#BCA979</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Filthy_Rich"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A9E6FB</Literal>
+        <Literal>#A9E6FB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Filthy_Rich"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#323232</Literal>
+        <Literal>#323232</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Firelight"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AF7ECE</Literal>
+        <Literal>#AF7ECE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Firelight"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#754600</Literal>
+        <Literal>#754600</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Firelight"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3ABC9A</Literal>
+        <Literal>#3ABC9A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#57234F</Literal>
+        <Literal>#57234F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#24CCC8</Literal>
+        <Literal>#24CCC8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Fizzlepop_Berrytwist"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B31B56</Literal>
+        <Literal>#B31B56</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Flash_Magnus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F0C150</Literal>
+        <Literal>#F0C150</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Flash_Magnus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#73D6DC</Literal>
+        <Literal>#73D6DC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Flash_Magnus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AE1A1A</Literal>
+        <Literal>#AE1A1A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Flash_Sentry"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFC861</Literal>
+        <Literal>#FFC861</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Flash_Sentry"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AFEAFF</Literal>
+        <Literal>#AFEAFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Flash_Sentry"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#2B4FA2</Literal>
+        <Literal>#2B4FA2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Fleetfoot"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8BD8DF</Literal>
+        <Literal>#8BD8DF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Fleetfoot"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BC1D75</Literal>
+        <Literal>#BC1D75</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Fleetfoot"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Flitter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CCC3F3</Literal>
+        <Literal>#CCC3F3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Flitter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DD9EBD</Literal>
+        <Literal>#DD9EBD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Flitter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C4F3EB</Literal>
+        <Literal>#C4F3EB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Flurry_Heart"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFF2FB</Literal>
+        <Literal>#FFF2FB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Flurry_Heart"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8AE9E9</Literal>
+        <Literal>#8AE9E9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Flurry_Heart"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F592C9</Literal>
+        <Literal>#F592C9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Fluttershy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FAF5AB</Literal>
+        <Literal>#FAF5AB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Fluttershy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#02ACA4</Literal>
+        <Literal>#02ACA4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Fluttershy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F3B5CF</Literal>
+        <Literal>#F3B5CF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Fond_Feather"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B898E1</Literal>
+        <Literal>#B898E1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Fond_Feather"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7DD0F2</Literal>
+        <Literal>#7DD0F2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Fond_Feather"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C8E6F1</Literal>
+        <Literal>#C8E6F1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Forest_Fall"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9DC675</Literal>
+        <Literal>#9DC675</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Forest_Fall"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3FBEC6</Literal>
+        <Literal>#3FBEC6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Forest_Fall"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D1CF8C</Literal>
+        <Literal>#D1CF8C</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Gabby"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#4C5760</Literal>
+        <Literal>#4C5760</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Gabby"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#005652</Literal>
+        <Literal>#005652</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Gabby"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#85A6A9</Literal>
+        <Literal>#85A6A9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Gallus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#32ABD9</Literal>
+        <Literal>#32ABD9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Gallus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#69BAFF</Literal>
+        <Literal>#69BAFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Gallus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#327898</Literal>
+        <Literal>#327898</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Gentle_Breeze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9ACCAF</Literal>
+        <Literal>#9ACCAF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Gentle_Breeze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#63A59C</Literal>
+        <Literal>#63A59C</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Gentle_Breeze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E5DEDB</Literal>
+        <Literal>#E5DEDB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Gilda"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BC993C</Literal>
+        <Literal>#BC993C</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Gilda"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFF842</Literal>
+        <Literal>#FFF842</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Gilda"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E5E7E2</Literal>
+        <Literal>#E5E7E2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Hondo_Flanks"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EEECEA</Literal>
+        <Literal>#EEECEA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Hondo_Flanks"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7CD7E2</Literal>
+        <Literal>#7CD7E2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Hondo_Flanks"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#665340</Literal>
+        <Literal>#665340</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Igneous_Rock_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C39D4D</Literal>
+        <Literal>#C39D4D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Igneous_Rock_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FAE695</Literal>
+        <Literal>#FAE695</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Igneous_Rock_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#989898</Literal>
+        <Literal>#989898</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Lemon_Hearts"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBFC63</Literal>
+        <Literal>#FBFC63</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Lemon_Hearts"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BC1D75</Literal>
+        <Literal>#BC1D75</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Lemon_Hearts"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#68B5CF</Literal>
+        <Literal>#68B5CF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Lily_Valley"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F296BB</Literal>
+        <Literal>#F296BB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Lily_Valley"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFF3A7</Literal>
+        <Literal>#FFF3A7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Lily_Valley"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBECB2</Literal>
+        <Literal>#FBECB2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Limestone_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9495B9</Literal>
+        <Literal>#9495B9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Limestone_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DDE261</Literal>
+        <Literal>#DDE261</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Limestone_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C7CECF</Literal>
+        <Literal>#C7CECF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Lotus_Blossom"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7CD6FF</Literal>
+        <Literal>#7CD6FF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Lotus_Blossom"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3877B8</Literal>
+        <Literal>#3877B8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Lotus_Blossom"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFB2D6</Literal>
+        <Literal>#FFB2D6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Luna"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#363E7A</Literal>
+        <Literal>#363E7A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Luna"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#00B6A3</Literal>
+        <Literal>#00B6A3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Luna"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#4B37CA</Literal>
+        <Literal>#4B37CA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Luster_Dawn"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FF96CD</Literal>
+        <Literal>#FF96CD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Luster_Dawn"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F4CE45</Literal>
+        <Literal>#F4CE45</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Luster_Dawn"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FF8B5E</Literal>
+        <Literal>#FF8B5E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Lyra_Heartstrings"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8CFFDB</Literal>
+        <Literal>#8CFFDB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Lyra_Heartstrings"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FAD542</Literal>
+        <Literal>#FAD542</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Lyra_Heartstrings"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Mane_Allgood"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F7AD7F</Literal>
+        <Literal>#F7AD7F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Mane_Allgood"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B08BBD</Literal>
+        <Literal>#B08BBD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Mane_Allgood"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBEEAB</Literal>
+        <Literal>#FBEEAB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Maple_Brown"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#81774F</Literal>
+        <Literal>#81774F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Maple_Brown"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D28C32</Literal>
+        <Literal>#D28C32</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Maple_Brown"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AC4749</Literal>
+        <Literal>#AC4749</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Marble_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C2CDCD</Literal>
+        <Literal>#C2CDCD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Marble_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B792DD</Literal>
+        <Literal>#B792DD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Marble_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#607878</Literal>
+        <Literal>#607878</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Matilda"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B8A05F</Literal>
+        <Literal>#B8A05F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Matilda"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A8EF6</Literal>
+        <Literal>#A8EF6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Matilda"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#534425</Literal>
+        <Literal>#534425</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Maud_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B8B7BE</Literal>
+        <Literal>#B8B7BE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Maud_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#99EAD7</Literal>
+        <Literal>#99EAD7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Maud_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9885B7</Literal>
+        <Literal>#9885B7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Mayor_Mare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DECB9B</Literal>
+        <Literal>#DECB9B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Mayor_Mare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A5D6E8</Literal>
+        <Literal>#A5D6E8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Mayor_Mare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E2E7E3</Literal>
+        <Literal>#E2E7E3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Meadowbrook"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6BBFE0</Literal>
+        <Literal>#6BBFE0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Meadowbrook"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#84EFD9</Literal>
+        <Literal>#84EFD9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Meadowbrook"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E67365</Literal>
+        <Literal>#E67365</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Minuette"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#83C6ED</Literal>
+        <Literal>#83C6ED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Minuette"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#506ACF</Literal>
+        <Literal>#506ACF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Minuette"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#393CB1</Literal>
+        <Literal>#393CB1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Mistmane"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D4C1DF</Literal>
+        <Literal>#D4C1DF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Mistmane"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#89C6DC</Literal>
+        <Literal>#89C6DC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Mistmane"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#009093</Literal>
+        <Literal>#009093</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Moon_Dancer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F9F8D3</Literal>
+        <Literal>#F9F8D3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Moon_Dancer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#622E87</Literal>
+        <Literal>#622E87</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Moon_Dancer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FCA1CB</Literal>
+        <Literal>#FCA1CB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Mudbriar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C4C3B6</Literal>
+        <Literal>#C4C3B6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Mudbriar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#75EC83</Literal>
+        <Literal>#75EC83</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Mudbriar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8E7045</Literal>
+        <Literal>#8E7045</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Night_Light"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6398C9</Literal>
+        <Literal>#6398C9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Night_Light"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8E38C</Literal>
+        <Literal>#F8E38C</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Night_Light"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#243871</Literal>
+        <Literal>#243871</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Noi"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F3F0B1</Literal>
+        <Literal>#F3F0B1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Noi"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D4A7D7</Literal>
+        <Literal>#D4A7D7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Noi"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F0D284</Literal>
+        <Literal>#F0D284</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Novo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFBFF</Literal>
+        <Literal>#FFFBFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Novo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B000AE</Literal>
+        <Literal>#B000AE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Novo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CC0086</Literal>
+        <Literal>#CC0086</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Nurse_Redheart"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Nurse_Redheart"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B7D9F9</Literal>
+        <Literal>#B7D9F9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Nurse_Redheart"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F6D3D7</Literal>
+        <Literal>#F6D3D7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Ocellus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AFDAE2</Literal>
+        <Literal>#AFDAE2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Ocellus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#319098</Literal>
+        <Literal>#319098</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Ocellus"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FA9696</Literal>
+        <Literal>#FA9696</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Octavia_Melody"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BAB8AF</Literal>
+        <Literal>#BAB8AF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Octavia_Melody"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B465CB</Literal>
+        <Literal>#B465CB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Octavia_Melody"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#343434</Literal>
+        <Literal>#343434</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Pear_Butter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFE7BE</Literal>
+        <Literal>#FFE7BE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Pear_Butter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#39DAC8</Literal>
+        <Literal>#39DAC8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Pear_Butter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFAE40</Literal>
+        <Literal>#FFAE40</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Petunia_Paleo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A5E6E7</Literal>
+        <Literal>#A5E6E7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Petunia_Paleo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#939DF0</Literal>
+        <Literal>#939DF0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Petunia_Paleo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#608DBE</Literal>
+        <Literal>#608DBE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Pharynx"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#292929</Literal>
+        <Literal>#292929</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Pharynx"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B398D7</Literal>
+        <Literal>#B398D7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Pharynx"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#750017</Literal>
+        <Literal>#750017</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Photo_Finish"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BAEBFF</Literal>
+        <Literal>#BAEBFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Photo_Finish"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#652F8A</Literal>
+        <Literal>#652F8A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Photo_Finish"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EDEDED</Literal>
+        <Literal>#EDEDED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Pinkie_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F5B7D0</Literal>
+        <Literal>#F5B7D0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Pinkie_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7DD0F1</Literal>
+        <Literal>#7DD0F1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Pinkie_Pie"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EB458B</Literal>
+        <Literal>#EB458B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Pipsqueak"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Pipsqueak"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#451D17</Literal>
+        <Literal>#451D17</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Pipsqueak"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6E4122</Literal>
+        <Literal>#6E4122</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Posey_Shy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FCECB0</Literal>
+        <Literal>#FCECB0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Posey_Shy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C1067F</Literal>
+        <Literal>#C1067F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Posey_Shy"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C63D74</Literal>
+        <Literal>#C63D74</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Pumpkin_Smoke"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C38721</Literal>
+        <Literal>#C38721</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Pumpkin_Smoke"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#31C9D2</Literal>
+        <Literal>#31C9D2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Pumpkin_Smoke"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3E2E2E</Literal>
+        <Literal>#3E2E2E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Quibble_Pants"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DDA351</Literal>
+        <Literal>#DDA351</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Quibble_Pants"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#ABE5FF</Literal>
+        <Literal>#ABE5FF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Quibble_Pants"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#252525</Literal>
+        <Literal>#252525</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Rain_Shine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CFC7A5</Literal>
+        <Literal>#CFC7A5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Rain_Shine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DE4020</Literal>
+        <Literal>#DE4020</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Rain_Shine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#5EB3A3</Literal>
+        <Literal>#5EB3A3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Rainbow_Dash"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9BDBF5</Literal>
+        <Literal>#9BDBF5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Rainbow_Dash"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BC1D75</Literal>
+        <Literal>#BC1D75</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Rainbow_Dash"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#1B98D1</Literal>
+        <Literal>#1B98D1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Rarity"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EAEEF0</Literal>
+        <Literal>#EAEEF0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Rarity"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3977B8</Literal>
+        <Literal>#3977B8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Rarity"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#4A1767</Literal>
+        <Literal>#4A1767</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#River_Song"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C8B8A1</Literal>
+        <Literal>#C8B8A1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#River_Song"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#844A8E</Literal>
+        <Literal>#844A8E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#River_Song"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#397C79</Literal>
+        <Literal>#397C79</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Rockhoof"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#98D0D3</Literal>
+        <Literal>#98D0D3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Rockhoof"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9DA2FF</Literal>
+        <Literal>#9DA2FF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Rockhoof"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CE7E00</Literal>
+        <Literal>#CE7E00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Rolling_Thunder"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#655A9D</Literal>
+        <Literal>#655A9D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Rolling_Thunder"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#84EBF8</Literal>
+        <Literal>#84EBF8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Rolling_Thunder"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CEE9FF</Literal>
+        <Literal>#CEE9FF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Roseluck"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFBD3</Literal>
+        <Literal>#FFFBD3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Roseluck"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B8E78C</Literal>
+        <Literal>#B8E78C</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Roseluck"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B82C57</Literal>
+        <Literal>#B82C57</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Ruby_Pinch"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E8A3C5</Literal>
+        <Literal>#E8A3C5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Ruby_Pinch"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D3EAAB</Literal>
+        <Literal>#D3EAAB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Ruby_Pinch"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C24D87</Literal>
+        <Literal>#C24D87</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Saffron_Masala"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F2A259</Literal>
+        <Literal>#F2A259</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Saffron_Masala"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8D4D8C</Literal>
+        <Literal>#8D4D8C</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Saffron_Masala"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FF6532</Literal>
+        <Literal>#FF6532</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sandbar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E5F4B6</Literal>
+        <Literal>#E5F4B6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sandbar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#82D7A9</Literal>
+        <Literal>#82D7A9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sandbar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#09A099</Literal>
+        <Literal>#09A099</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Scootaloo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F9B764</Literal>
+        <Literal>#F9B764</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Scootaloo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B28EC0</Literal>
+        <Literal>#B28EC0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Scootaloo"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BF5D93</Literal>
+        <Literal>#BF5D93</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sea_Swirl"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EFC6FB</Literal>
+        <Literal>#EFC6FB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sea_Swirl"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BD1C77</Literal>
+        <Literal>#BD1C77</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sea_Swirl"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9598FF</Literal>
+        <Literal>#9598FF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Shining_Armor"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Shining_Armor"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#63D1E9</Literal>
+        <Literal>#63D1E9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Shining_Armor"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#325394</Literal>
+        <Literal>#325394</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Silver_Spoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#ABB8C1</Literal>
+        <Literal>#ABB8C1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Silver_Spoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A684D2</Literal>
+        <Literal>#A684D2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Silver_Spoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D9E4EA</Literal>
+        <Literal>#D9E4EA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Silverstream"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FBDCFB</Literal>
+        <Literal>#FBDCFB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Silverstream"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D09CF1</Literal>
+        <Literal>#D09CF1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Silverstream"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D2E9F6</Literal>
+        <Literal>#D2E9F6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sky_Stinger"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#0E81A8</Literal>
+        <Literal>#0E81A8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sky_Stinger"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7BEEAC</Literal>
+        <Literal>#7BEEAC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sky_Stinger"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8AECBC</Literal>
+        <Literal>#8AECBC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Skystar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DCE0AD</Literal>
+        <Literal>#DCE0AD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Skystar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6BB7C2</Literal>
+        <Literal>#6BB7C2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Skystar"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#91E0E4</Literal>
+        <Literal>#91E0E4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Smolder"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EA9A24</Literal>
+        <Literal>#EA9A24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Smolder"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#14C4E3</Literal>
+        <Literal>#14C4E3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Smolder"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C64DB0</Literal>
+        <Literal>#C64DB0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Snap_Shutter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B59965</Literal>
+        <Literal>#B59965</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Snap_Shutter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E56E92</Literal>
+        <Literal>#E56E92</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Snap_Shutter"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#783359</Literal>
+        <Literal>#783359</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Soarin"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D8E6F5</Literal>
+        <Literal>#D8E6F5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Soarin"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#52E25F</Literal>
+        <Literal>#52E25F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Soarin"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#2D3263</Literal>
+        <Literal>#2D3263</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sombra"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#838383</Literal>
+        <Literal>#838383</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sombra"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EB9359</Literal>
+        <Literal>#EB9359</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sombra"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#050505</Literal>
+        <Literal>#050505</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Somnambula"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F29D83</Literal>
+        <Literal>#F29D83</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Somnambula"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9483C5</Literal>
+        <Literal>#9483C5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Somnambula"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#1A657D</Literal>
+        <Literal>#1A657D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sonata_Dusk"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CCEEEE</Literal>
+        <Literal>#CCEEEE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sonata_Dusk"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C34A93</Literal>
+        <Literal>#C34A93</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sonata_Dusk"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#44AACC</Literal>
+        <Literal>#44AACC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sparkling_Brook"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#739DA7</Literal>
+        <Literal>#739DA7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sparkling_Brook"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#2BC4CA</Literal>
+        <Literal>#2BC4CA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sparkling_Brook"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C2B595</Literal>
+        <Literal>#C2B595</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sphinx_Sphinx"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#730B49</Literal>
+        <Literal>#730B49</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sphinx_Sphinx"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E59E1B</Literal>
+        <Literal>#E59E1B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sphinx_Sphinx"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6D50A6</Literal>
+        <Literal>#6D50A6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Spike"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C290C6</Literal>
+        <Literal>#C290C6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Spike"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#5EBA4A</Literal>
+        <Literal>#5EBA4A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Spike"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#51BE55</Literal>
+        <Literal>#51BE55</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Spitfire"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8EA62</Literal>
+        <Literal>#F8EA62</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Spitfire"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CF6E00</Literal>
+        <Literal>#CF6E00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Spitfire"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#ED7B00</Literal>
+        <Literal>#ED7B00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Spoiled_Rich"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FAACAE</Literal>
+        <Literal>#FAACAE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Spoiled_Rich"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#00B1A6</Literal>
+        <Literal>#00B1A6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Spoiled_Rich"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9F4CA4</Literal>
+        <Literal>#9F4CA4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Spring_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F1CCCB</Literal>
+        <Literal>#F1CCCB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Spring_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F6D6CD</Literal>
+        <Literal>#F6D6CD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Spring_Glow"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C9F0F8</Literal>
+        <Literal>#C9F0F8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Spur"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9C6534</Literal>
+        <Literal>#9C6534</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Spur"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3CDBC6</Literal>
+        <Literal>#3CDBC6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Spur"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#84EBDD</Literal>
+        <Literal>#84EBDD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C1C1C1</Literal>
+        <Literal>#C1C1C1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#489FC0</Literal>
+        <Literal>#489FC0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Star_Swirl_the_Bearded"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Starlight_Glimmer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F2C7F8</Literal>
+        <Literal>#F2C7F8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Starlight_Glimmer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#98A2EF</Literal>
+        <Literal>#98A2EF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Starlight_Glimmer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#08BAB7</Literal>
+        <Literal>#08BAB7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Stellar_Flare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EA9039</Literal>
+        <Literal>#EA9039</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Stellar_Flare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C3E275</Literal>
+        <Literal>#C3E275</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Stellar_Flare"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BB3612</Literal>
+        <Literal>#BB3612</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Steven_Magnet"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#5D4081</Literal>
+        <Literal>#5D4081</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Steven_Magnet"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#02061B</Literal>
+        <Literal>#02061B</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Steven_Magnet"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B17130</Literal>
+        <Literal>#B17130</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Stygian"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B7B7B7</Literal>
+        <Literal>#B7B7B7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Stygian"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3296FA</Literal>
+        <Literal>#3296FA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Stygian"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#07364F</Literal>
+        <Literal>#07364F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sugar_Belle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFBCDD</Literal>
+        <Literal>#FFBCDD</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sugar_Belle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BE1D76</Literal>
+        <Literal>#BE1D76</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sugar_Belle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#00CBCA</Literal>
+        <Literal>#00CBCA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Summer_Chills"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6F4745</Literal>
+        <Literal>#6F4745</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Summer_Chills"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C83547</Literal>
+        <Literal>#C83547</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Summer_Chills"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#4CA19A</Literal>
+        <Literal>#4CA19A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sunburst"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FEBC40</Literal>
+        <Literal>#FEBC40</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sunburst"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#2ECCCF</Literal>
+        <Literal>#2ECCCF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sunburst"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EB5926</Literal>
+        <Literal>#EB5926</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sunset_Shimmer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFCA54</Literal>
+        <Literal>#FFCA54</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sunset_Shimmer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7FF3CF</Literal>
+        <Literal>#7FF3CF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sunset_Shimmer"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E1464A</Literal>
+        <Literal>#E1464A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Sweetie_Belle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EFEDED</Literal>
+        <Literal>#EFEDED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Sweetie_Belle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AED79E</Literal>
+        <Literal>#AED79E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Sweetie_Belle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B28DC1</Literal>
+        <Literal>#B28DC1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Swoon_Song"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FF8F71</Literal>
+        <Literal>#FF8F71</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Swoon_Song"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9785C6</Literal>
+        <Literal>#9785C6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Swoon_Song"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#883F35</Literal>
+        <Literal>#883F35</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Thorax"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#2A2A2A</Literal>
+        <Literal>#2A2A2A</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Thorax"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#00CBCB</Literal>
+        <Literal>#00CBCB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Thorax"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3F3F3F</Literal>
+        <Literal>#3F3F3F</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Thunderlane"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#555555</Literal>
+        <Literal>#555555</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Thunderlane"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F9E485</Literal>
+        <Literal>#F9E485</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Thunderlane"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A9D5D4</Literal>
+        <Literal>#A9D5D4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Tootsie_Flute"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DBEFEA</Literal>
+        <Literal>#DBEFEA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Tootsie_Flute"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E7C7EF</Literal>
+        <Literal>#E7C7EF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Tootsie_Flute"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CAA2DF</Literal>
+        <Literal>#CAA2DF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Tree_Hugger"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B9DF80</Literal>
+        <Literal>#B9DF80</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Tree_Hugger"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#C9A5E0</Literal>
+        <Literal>#C9A5E0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Tree_Hugger"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EE7676</Literal>
+        <Literal>#EE7676</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Trixie_Lulamoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6CB2EA</Literal>
+        <Literal>#6CB2EA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Trixie_Lulamoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E0A0D3</Literal>
+        <Literal>#E0A0D3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Trixie_Lulamoon"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B8E0F9</Literal>
+        <Literal>#B8E0F9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Twilight_Sparkle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#CC9CDF</Literal>
+        <Literal>#CC9CDF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Twilight_Sparkle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#662F89</Literal>
+        <Literal>#662F89</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Twilight_Sparkle"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#243870</Literal>
+        <Literal>#243870</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Twilight_Velvet"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#DCDCDC</Literal>
+        <Literal>#DCDCDC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Twilight_Velvet"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#7CD8E9</Literal>
+        <Literal>#7CD8E9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Twilight_Velvet"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#9567B6</Literal>
+        <Literal>#9567B6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Twinkleshine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F9FAED</Literal>
+        <Literal>#F9FAED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Twinkleshine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6BF0ED</Literal>
+        <Literal>#6BF0ED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Twinkleshine"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F8AAE5</Literal>
+        <Literal>#F8AAE5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Twist"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FDF2D8</Literal>
+        <Literal>#FDF2D8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Twist"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F7B0ED</Literal>
+        <Literal>#F7B0ED</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Twist"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#EA2B29</Literal>
+        <Literal>#EA2B29</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Vapor_Trail"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F5FFF0</Literal>
+        <Literal>#F5FFF0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Vapor_Trail"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AEF1E8</Literal>
+        <Literal>#AEF1E8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Vapor_Trail"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#269AAB</Literal>
+        <Literal>#269AAB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Vinyl_Scratch"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFE2</Literal>
+        <Literal>#FFFFE2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Vinyl_Scratch"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BC1D75</Literal>
+        <Literal>#BC1D75</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Vinyl_Scratch"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#3167CC</Literal>
+        <Literal>#3167CC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Wind_Sprint"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#BAB0E7</Literal>
+        <Literal>#BAB0E7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Wind_Sprint"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D99AC0</Literal>
+        <Literal>#D99AC0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Wind_Sprint"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#6A95DF</Literal>
+        <Literal>#6A95DF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Windy_Whistles"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#ACDCF6</Literal>
+        <Literal>#ACDCF6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Windy_Whistles"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#AE4184</Literal>
+        <Literal>#AE4184</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Windy_Whistles"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#F48266</Literal>
+        <Literal>#F48266</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Yona"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#A06656</Literal>
+        <Literal>#A06656</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Yona"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D1C75E</Literal>
+        <Literal>#D1C75E</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Yona"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#864337</Literal>
+        <Literal>#864337</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Zecora"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#E1DCE2</Literal>
+        <Literal>#E1DCE2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Zecora"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#1A6C7D</Literal>
+        <Literal>#1A6C7D</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Zecora"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFFFFF</Literal>
+        <Literal>#FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Zephyr_Breeze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#8AD9C7</Literal>
+        <Literal>#8AD9C7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Zephyr_Breeze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#D672A9</Literal>
+        <Literal>#D672A9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Zephyr_Breeze"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FFE9A3</Literal>
+        <Literal>#FFE9A3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#body_color"/>
         <NamedIndividual IRI="#Zipporwhill"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#FAF9DA</Literal>
+        <Literal>#FAF9DA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#eye_color"/>
         <NamedIndividual IRI="#Zipporwhill"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#78DBA3</Literal>
+        <Literal>#78DBA3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hair_color"/>
         <NamedIndividual IRI="#Zipporwhill"/>
-        <Literal datatypeIRI="http://oxie.cc/theLittlePonyOntology#hexColor">#B29E47</Literal>
+        <Literal>#B29E47</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#ascendant_of"/>
@@ -5109,15 +5109,15 @@
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#body_color"/>
-        <Datatype IRI="#hexColor"/>
+        <Datatype IRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#eye_color"/>
-        <Datatype IRI="#hexColor"/>
+        <Datatype IRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hair_color"/>
-        <Datatype IRI="#hexColor"/>
+        <Datatype IRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#alias"/>
@@ -5145,10 +5145,6 @@ Specify informations on Bonbon and let those of Sweetie Drops be infered from th
         <IRI>#Zipporwhill</IRI>
         <Literal>Zippoorwhill</Literal>
     </AnnotationAssertion>
-    <DatatypeDefinition>
-        <Datatype IRI="#hexColor"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DatatypeDefinition>
 </Ontology>
 
 

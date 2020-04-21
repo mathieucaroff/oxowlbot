@@ -1,3 +1,0 @@
-questionbot
-web_server
-chatbot

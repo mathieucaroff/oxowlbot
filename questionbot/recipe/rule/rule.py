@@ -2,13 +2,13 @@
 Rule is defined by a list of LexicalFragments
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from questionbot.recipe.lemmaData import LemmaData
 from typing import Any, Generator, List, Union, cast
 
 from ... import answer as a
-from ... import lexic as lx
 from ... import lexicalFragment as lxf
-from ...normal.normal import Normal
+from ...context import Context
 from ...util.cached_property import cached_property
 from ...util.neverError import NeverError
 from .fragment import ConstantFragment
@@ -20,6 +20,7 @@ class Rule:
     name: str
     shape: str
     fragmentList: List[Union[lxf.LexicalFragment, ConstantFragment]]
+    _lemmaData: LemmaData = field(default_factory=LemmaData)
 
     @cached_property
     def lexicalFragmentList(self):
@@ -27,9 +28,9 @@ class Rule:
             f for f in self.fragmentList if isinstance(f, lxf.LexicalFragment)
         ]
 
-    def run(self, normal: Normal,) -> Generator:
-        wordList = normal.wordList
-        normalSentence = normal.sentence
+    def run(self, context: Context, answer: a.Answer) -> Generator:
+        wordList = context.wordList
+        normalSentence = context.sentence
 
         yield "Syntax Analysis"
 
@@ -37,24 +38,37 @@ class Rule:
             fragmentList=cast(Any, self.fragmentList)
         )
 
-        extractOrNone = sentencePattern.extract(normalSentence)
-        if extractOrNone is not None:
-            extract = extractOrNone
+        result = sentencePattern.extractEachActiveFragment(normalSentence)
+        if result is not None:
+            activeExtractList = result
         else:
             yield False
             raise NeverError()
         yield True
 
-        # yield "Shape"
-
         yield "Lexical Analysis"
-        assert len(extract) == len(self.lexicalFragmentList)
+        assert len(activeExtractList) == len(self.lexicalFragmentList)
 
-        for wordIdStrList, fragment in zip(extract, self.lexicalFragmentList):
-            extract = [wordList[int(idStr) - 1].text for idStr in wordIdStrList]
+        activeExtract = ["<I actually can't tell which word it is>"]
+        try:
+            for wordIdStrList, fragment in zip(
+                activeExtractList, self.lexicalFragmentList
+            ):
+                activeExtract = [
+                    wordList[int(idStr) - 1].text for idStr in wordIdStrList
+                ]
 
-            lexicalAnswer = a.Answer("ok", "")
+                lexicalChunk = fragment.obtainLexicalChunk(
+                    activeExtract=activeExtract, lexic=context.lexic, answer=answer
+                )
 
-            fragment.obtainLexicalTerm(
-                extract=extract, lexic=normal.lexic, answer=lexicalAnswer
-            )
+                self._lemmaData.append(lexicalChunk)
+        except KeyError:
+            yield False
+            yield " ".join(activeExtract)
+        yield True
+
+    def getLemmaData(self):
+        assert len(self._lemmaData) == len(self.lexicalFragmentList)
+
+        return self._lemmaData

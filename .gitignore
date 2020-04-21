@@ -44,7 +44,6 @@ tra
 !/.python-version
 !/poetry.lock
 !/pyproject.toml
-!/web_server.egg-info/
 
 # Pyright
 !/pyrightconfig.json

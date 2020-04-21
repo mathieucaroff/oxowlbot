@@ -1,6 +1,6 @@
 from typing import List
 
-from ..stanza.pword import PWord
+from .stanza.pword import PWord
 
 symbolMap = {
     -6: "<=-",
@@ -19,14 +19,14 @@ symbolMap = {
 }
 
 
-def normalSentence(wordList: List[PWord]) -> str:
-    normalWordList = []
+def matchableSentence(wordList: List[PWord]) -> str:
+    matchableWordList = []
     for word in wordList:
-        normalWordList.append(normalWord(word))
-    return " ".join(normalWordList)
+        matchableWordList.append(matchableWord(word))
+    return " ".join(matchableWordList)
 
 
-def normalWord(word: PWord) -> str:
+def matchableWord(word: PWord) -> str:
     diff = word.head - int(word.id)
     if word.head == 0:
         diff = 0
