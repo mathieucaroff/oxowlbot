@@ -14,7 +14,6 @@ from .util.redirect import redirect_stderr
 
 with redirect_stderr():
     from owlready2 import get_ontology
-    from owlready2.reasoning import sync_reasoner
 
 
 class Questionbot:
@@ -32,10 +31,6 @@ class Questionbot:
             logging.warn(
                 f"RARITY CHECK FAILED"
             )
-
-        with onto:
-            with redirect_stderr():
-                sync_reasoner()
 
         queryLogger = QueryLogger()
         self.ontology = o.Ontology(onto, queryLogger)
