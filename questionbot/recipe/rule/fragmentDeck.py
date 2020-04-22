@@ -31,3 +31,6 @@ nominal = ActiveFragment(
 # nominal: individual: Twilight Sparkle
 # nominal: class: Kirin
 # nominal: class: Earth Pony
+
+
+help = ConstantFragment(overview=r"<Lhelp,Rroot>")

@@ -1,11 +1,11 @@
-import logging
 from itertools import chain, cycle
+import logging
 
+from .. import reaction as rt
+from .. import recipe as rc
 from ... import answer as a
 from ... import lexicalFragment as lxf
 from ...context import Context
-from .. import reaction as rt
-from .. import recipe as rc
 from ..color.colorObj import ColorObj
 from ..color.hexColor import HexColor
 from ..lemmaData import LemmaData

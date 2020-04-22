@@ -1,5 +1,5 @@
-from questionbot.recipe.util.formatEnumeration import formatEnumeration
 from typing import List
+
 from ... import answer as a
 from ... import lexicalFragment as lxf
 from ...context import Context
@@ -10,6 +10,8 @@ from ..rule import fragmentDeck as deck
 from ..rule import rule as ru
 from ..rule import sentencePattern as sp
 from ..util.digitToWord import digitToWord
+from ..util.formatEnumeration import formatEnumeration
+from ..util.formatListing import formatListing
 
 # Who is a Kirin?
 # :1_Lwho_Upron_Nx_Rroot_FPronType=Int_==.
@@ -64,7 +66,7 @@ class IndividualOfClassReaction(rt.Reaction):
             name.replace("_", " ")
             for name in context.ontology.classIndividualQuery(classList)
         ]
-        nameBlock = "\n".join("- " + w for w in nameList)
+        nameBlock = formatListing(nameList)
 
         count = len(nameList)
 
@@ -82,11 +84,11 @@ class IndividualOfClassReaction(rt.Reaction):
 
 class IndividualOfClassRecipeGroup:
     def createRecipeList(self):
-        knowledgeReaction = IndividualOfClassReaction()
+        classReaction = IndividualOfClassReaction()
 
         return [
             rc.Recipe(
-                knowledgeReaction,
+                classReaction,
                 ru.Rule(
                     name="IndividualOfClass A",
                     shape="Who are the <C>s?",

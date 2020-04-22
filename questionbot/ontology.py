@@ -138,9 +138,9 @@ class Ontology:
             left = letterList
             right = letterList[1 : len(relationList)] + [f"me:{individualName}"]
 
-        where = [f"{a} {r} {b}" for a, r, b in zip(left, relationList, right)]
+        where = [f"{a} me:{r} {b}" for a, r, b in zip(left, relationList, right)]
 
-        return self.formatAndRunQuery(select=select, where=where)
+        return flatten(self.formatAndRunQuery(select=select, where=where))
 
     def individualInfoQuery(self, individualName: str) -> IndividualInfo:
         rawRelationList = tuple2(

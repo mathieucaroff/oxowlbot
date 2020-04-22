@@ -46,18 +46,16 @@ class Questionbot:
         >>> from asyncio import run; q = Questionbot()
         >>> run(q.process("Who is Pinkie Pie?")).status
         'ok'
-
-        >>> run(q.process("Who is child of Cadance?")).status
+        >>> run(q.process("Who is child of Pear Butter?")).status
         'ok'
-
-        # >>> run(q.process("Who is a kirin?")).status
-        # 'ok'
-        # >>> run(q.process("Who is an alicorn?")).status
-        # 'ok'
-        # >>> run(q.process("Who is a cat?")).status
-        # 'failure'
-        # >>> run(q.process("Who is friend with Twilight Sparkle?")).status
-        # 'ok'
+        >>> run(q.process("Who is a kirin?")).status
+        'ok'
+        >>> run(q.process("Who is an alicorn?")).status
+        'ok'
+        >>> run(q.process("Who is a cat?")).status
+        'failure'
+        >>> run(q.process("Who is friend with Twilight Sparkle?")).status
+        'ok'
         """
         sentenceList = await self.parser.parse(message)
 
