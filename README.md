@@ -2,7 +2,7 @@
 
 An ontology chatbot which answers questions and learns from its interlocutor.
 
-## [Try it now!](https://oxowlbot.herokuapp.com)
+## [Try it now](http://oxowlbot.herokuapp.com/)
 
 ## What does it do?
 
@@ -81,8 +81,6 @@ Additionally, queries for siblings, for sisters and for brothers are detected. T
 #### who-is-x variant
 
 - Who is Fluttershy?
-
-## [Try it now](http://oxowlbot.oxie.cc/)
 
 ## Contributing
 
