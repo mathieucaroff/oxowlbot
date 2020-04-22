@@ -41,3 +41,5 @@ creator = ConstantFragment(overview=r"<Lcreator>")
 create = ConstantFragment(overview=r"<Lcreate>")
 
 areThere = ConstantFragment(overview=r"<Lbe,Uaux> +<Lthere,Upron>")
+
+whatAbout = ConstantFragment(overview=r"<Lwhat>~<Labout>")

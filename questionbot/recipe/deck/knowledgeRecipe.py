@@ -17,7 +17,9 @@ from ..util.pronoun import Pronoun
 
 
 class KnowledgeReaction(rt.Reaction):
-    async def react(self, context: 'c.Context', lemmaData: LemmaData, answer: a.Answer):
+    async def react(
+        self, context: "c.Context", lemmaData: LemmaData, answer: a.Answer
+    ):
         individualName = lemmaData[0]
         info = context.ontology.individualInfoQuery(individualName)
 
@@ -37,7 +39,7 @@ class KnowledgeReaction(rt.Reaction):
             elif relation == "friend_with":
                 friendList.append(target)
             elif "color" in relation:
-                if target == '':
+                if target == "":
                     logging.warn(f"empty {individualName} {relation} value")
                     continue
                 setattr(colorObj, relation, HexColor(target))
@@ -82,12 +84,16 @@ class KnowledgeReaction(rt.Reaction):
 
         text = re.sub(r"(?<!\s)\s+$", "\n", text)
 
-        answer.text += text.replace('_', ' ')
+        answer.text += text.replace("_", " ")
 
 
 class KnowledgeRecipeGroup:
     def createRecipeList(self):
         knowledgeReaction = KnowledgeReaction()
+
+        individualFragment = lxf.LexicalFragment(
+            kind="individual", fragment=deck.nominal
+        )
 
         return [
             rc.Recipe(
@@ -95,12 +101,15 @@ class KnowledgeRecipeGroup:
                 ru.Rule(
                     name="Knowledge A",
                     shape="Who is <I>?",
-                    fragmentList=[
-                        deck.whoIs,
-                        lxf.LexicalFragment(
-                            kind="individual", fragment=deck.nominal
-                        ),
-                    ],
+                    fragmentList=[deck.whoIs, individualFragment],
+                ),
+            ),
+            rc.Recipe(
+                knowledgeReaction,
+                ru.Rule(
+                    name="Knowledge B",
+                    shape="What do you know about <I>?",
+                    fragmentList=[deck.whatAbout, individualFragment],
                 ),
             ),
         ]

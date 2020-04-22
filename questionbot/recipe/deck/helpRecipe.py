@@ -12,7 +12,7 @@ questionTemplateList = [
     "Who is {I}?",
     "Who is a {C}?",
     "Who is child of Pear Butter?",
-    "Who is friend with Spike?",
+    "Who is a friend of Spike?",
     "Who is a child of a child of Twilight Velvet?",
 ]
 
@@ -42,7 +42,7 @@ class HelpReaction(rt.Reaction):
                 testAnswer = a.Answer("failure", "")
 
             if testAnswer.status == "ok":
-                questionList.append(question)
+                questionList.append(question.replace('_', ' '))
 
         answer.text += text + "\n".join(questionList) + "\n"
 

@@ -12,17 +12,7 @@ It can answer the three following questions:
 - Who is a kirin?
 - Who is Fluttershy?
 
-## What does it do? (advanced features)
-
 ### Relationship query
-
-#### are-indiv-rel variant
-
-- Who are Twilight Sparkle's friends?
-- Who are Flurry Heart's parents?
-- Who are Flurry Heart's ascendents?
-- Who are Twilight Velvet's descendents?
-- Who are Twilight Velvet's children?
 
 #### is-rel-with-indiv variant
 
@@ -33,52 +23,44 @@ It can answer the three following questions:
 - Who is child of Twilight Velvet?
 - Who is married with Twilight Velvet?
 
-### Relationship multi-level queries
-
-#### is-(rel-of)+- variant
-
-- Who is friend of a friend of Twilight Sparkle?
-- Who is child of a child of a child of Twilight Velvet?
-
-Additionally, queries for siblings, for sisters and for brothers are detected. The following equivalences apply:
-
-- Who is sibling of Twilight Sparkle? -> Who is child of a parent of Twilight Sparkle?
-- Who is brother with Twilight Sparkel? -> Who is male child of a parent of Twilight Sparkle?
-- Who is sister with Twilight Sparkel? -> Who is female child of a parent of Twilight Sparkle?
-- Who is son of Twilight Velvet? -> Who is male child of Twilight Velvet?
-- Who is daugther of Twilight Velvet? -> Who is female child of Twilight Velvet?
-- Who is grand-child of Twilight Velvet? -> Who is child of a child of Twilight Velvet?
-
-####
-
-### All available relationships
-
-- ascendant_of <> descendant_of
-- parent_of <> child_of
-- friend_with <> ~
-- lover_of <> ~
-- married_with <> ~
-- in_love_with <> loved_by
-
 ### Class query
-
-#### who-is variant
 
 - Who is a kirin?
 - Who is an alicorn?
 - Who is a dragon?
 
-#### are-there variant
+### All classes
 
-- Are there kirins?
+Gender:
+
+- Female
+- Male
+
+Specy:
+
+- Alicorn
+- Changeling
+- Donkey
+- Draconequus
+- Dragon
+- Earth Pony
+- Griffon
+- Hippogriff
+- Kirin
+- Pegasus
+- Sea Serpent
+- Siren
+- Sphix Specy
+- Unicorn
+- Yak
+- Zebra
+
+The following two are parent classes. They are currently not correctly handeled:
+
+- Pony
+- Creature
 
 ### Individual
-
-#### what-do-you-know-about-x variant
-
-- What do you know about Fluttershy?
-
-#### who-is-x variant
 
 - Who is Fluttershy?
 
