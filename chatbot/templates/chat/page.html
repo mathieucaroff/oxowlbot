@@ -1,92 +1,119 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Oxowlbot</title>
-</head>
+    <title>Oxowlbot, the pony chatbot</title>
+  </head>
 
-<body>
-    <textarea id="chat-log" cols="100" rows="40"></textarea><br>
-    <input id="chat-message-input" type="text" size="100" value=""><br>
-    <input id="chat-message-submit" type="button" value="Send">
+  <body>
+    <h1 id="title"></h1>
+    <textarea id="chat-log" readonly="true"></textarea><br />
+    <input id="chat-message-input" type="text" size="100" value="" /><br />
+    <input id="chat-message-submit" type="button" value="Send" />
+    <style>
+      html,
+      #chat-log {
+        font-family: "Open Sans";
+        font-size: 14px;
+      }
+    </style>
     <script>
-        if (!location.href.includes("?remember")) {
-            document.querySelector('#chat-log').value = ""
+      document.querySelector("title").textContent = document.title
+
+      const chatLog = document.querySelector("#chat-log");
+      console.log({ chatLog });
+
+      chatLog.style.width = `${window.innerWidth - 100}px`;
+      chatLog.style.height = `${window.innerHeight - 160}px`;
+
+      if (!location.href.match(/\?remember\b/)) {
+        chatLog.value = "";
+      }
+
+      function prefixLine(text, prefix) {
+        return prefix + text.replace(/\n(?!$)/g, `\n${prefix}`);
+      }
+
+      const { host } = window.location;
+      const protocol = location.protocol.replace("http", "ws");
+      const chatSocket = new WebSocket(`${protocol}${host}/ws/chatbot/`);
+
+      chatSocket.onmessage = function(e) {
+        const data = JSON.parse(e.data);
+        let { text } = data;
+
+        let prefix = "ME  : ";
+        if (data.author === "bot") {
+          prefix = "BOT: ";
+
+          if (data.info) {
+            console[data.status == "ok" ? "info" : "warn"](data.info);
+          }
+          if (data.status != "ok") {
+            text = prefixLine(text, "~ ")
+          }
+          if (data.warning) {
+            text = prefixLine(data.warning, "! ")
+          }
         }
 
-        const { host } = window.location
-        const protocol = location.protocol.replace('http', 'ws')
-        const chatSocket = new WebSocket(
-            `${protocol}${host}/ws/chatbot/`
+        text = prefix + text.replace(/\n(?!$)/g, "\n          ");
+
+        chatLog.value += `${text}\n`;
+      };
+
+      chatSocket.onclose = function(e) {
+        let message = "Chat socket closed unexpectedly";
+        if (location.href.match(/\?reload\b/)) {
+          setTimeout(reloadPage, 1000);
+          message += ", will reload page in 2s";
+        }
+        console.error(message);
+        document.documentElement.style.backgroundColor = "#F66";
+      };
+
+      document.querySelector("#chat-message-input").focus();
+      document.querySelector("#chat-message-input").onkeyup = function(e) {
+        if (e.keyCode === 13) {
+          // enter, return
+          document.querySelector("#chat-message-submit").click();
+        }
+      };
+
+      document.querySelector("#chat-message-submit").onclick = function(e) {
+        const messageInputDom = document.querySelector("#chat-message-input");
+        const message = messageInputDom.value;
+        sendMessage(message);
+        messageInputDom.value = "";
+      };
+
+      function sendMessage(message) {
+        return chatSocket.send(
+          JSON.stringify({
+            message: message
+          })
         );
+      }
 
-        chatSocket.onmessage = function (e) {
-            const data = JSON.parse(e.data);
-            const chat = document.querySelector('#chat-log')
-            console.log({data})
-            let text = data.text
-            let prefix = 'ME : '
-            if (data.author === "bot") {
-                prefix = 'BOT: '
-
-                if (data.info) {
-                    console.info(data.info)
-                }
-                if (data.status != "ok") {
-                    text = ': ' + text.replace(/\n/g, '\n: ')
-                }
-                if (data.warning) {
-                    text = '! ' + data.warning.replace(/\n/g, '\n! ') + '\n' + text
-                }
-            }
-
-            text = prefix + text.replace(/\n/g, '\n     ')
-
-            chat.value += `${text}\n`
-        };
-
-        chatSocket.onclose = function (e) {
-            let message = 'Chat socket closed unexpectedly'
-            if (location.href.includes('reload')) {
-                setTimeout(reloadPage, 2000)
-                message += ', will reload page in 2s'
-            }
-            console.error(message);
-            document.documentElement.style.backgroundColor = "#F66"
-        };
-
-        document.querySelector('#chat-message-input').focus();
-        document.querySelector('#chat-message-input').onkeyup = function (e) {
-            if (e.keyCode === 13) {  // enter, return
-                document.querySelector('#chat-message-submit').click();
-            }
-        };
-
-        document.querySelector('#chat-message-submit').onclick = function (e) {
-            const messageInputDom = document.querySelector('#chat-message-input');
-            const message = messageInputDom.value;
-            sendMessage(message);
-            messageInputDom.value = '';
-        };
-
-        function sendMessage(message) {
-            return chatSocket.send(JSON.stringify({
-                'message': message
-            }))
-        }
-
-        if (!location.href.includes('?no-auto'))
-            chatSocket.onopen = function () {
-                `
-            Who is a alicorn
-            Who is alicorn
-            Who are alicorn
-            Who are the alicorns
-            Who is an alicorn
-            Who is an Alicorn?
+      if (!location.href.match(/\?no-auto\b/))
+        chatSocket.onopen = function() {
+          `
+            Who are the alicorns?
             Who is a pony?
+            Who is a cat?
             Who is a kirin?
+
+            Who is Spike?
+
+            Who likes apples?
+
+            Who is friend with Twilight Sparkle?
+
+            // Who is a alicorn
+            // Who is alicorn
+            // Who is an alicorn
+            // Who is an Alicorn?
+            // Who are alicorn
 
             // Who are Fluttershy's friends?
             // Who are Twilight Sparkle's friends?
@@ -94,8 +121,6 @@
             // Who are Flurry Heart's ascendents?
             // Who are Twilight Velvet's descendents?
             // Who are Twilight Velvet's children?
-
-            // Who is friend with Twilight Sparkle?
             // Who is parent of Flurry Heart?
             // Who is ascendent of Flurry Heart?
             // Who is descendent of Twilight Velvet?
@@ -107,13 +132,16 @@
             // Who is married with a friend of Cadance?
             // Who is friend of a friend of Twilight Sparkle?
             // Who is child of a child of a child of Twilight Velvet?
-            `.split("\n").map(s => s.trim()).filter(x => x && !x.startsWith('//')).forEach(sendMessage)
-            }
+            `
+            .split("\n")
+            .map(s => s.trim())
+            .filter(x => x && !x.startsWith("//"))
+            .forEach(sendMessage);
+        };
 
-        function reloadPage() {
-            location.reload()
-        }
+      function reloadPage() {
+        location.reload();
+      }
     </script>
-</body>
-
+  </body>
 </html>
