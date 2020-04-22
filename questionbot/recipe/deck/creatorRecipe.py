@@ -32,10 +32,17 @@ class CreatorRecipeGroup:
             rc.Recipe(
                 creatorReaction,
                 ru.Rule(
-                    name="Creator A", shape="Who is your creator!", fragmentList=[
-                        deck.whoIs,
-                        deck.creator,
-                    ],
+                    name="Creator A",
+                    shape="Who is your creator?",
+                    fragmentList=[deck.whoIs, deck.creator],
+                ),
+            ),
+            rc.Recipe(
+                creatorReaction,
+                ru.Rule(
+                    name="Creator B",
+                    shape="Who created you?",
+                    fragmentList=[deck.who, deck.create],
                 ),
             ),
         ]

@@ -59,7 +59,9 @@ def selectTemplate(count: int):
 
 
 class IndividualOfClassReaction(rt.Reaction):
-    async def react(self, context: 'c.Context', lemmaData: LemmaData, answer: a.Answer):
+    async def react(
+        self, context: "c.Context", lemmaData: LemmaData, answer: a.Answer
+    ):
         classList: List[str] = lemmaData
 
         nameList = [
@@ -86,18 +88,23 @@ class IndividualOfClassRecipeGroup:
     def createRecipeList(self):
         classReaction = IndividualOfClassReaction()
 
+        classFragment = lxf.LexicalFragment(kind="class", fragment=deck.nominal)
+
         return [
             rc.Recipe(
-                classReaction,
-                ru.Rule(
+                reaction=classReaction,
+                rule=ru.Rule(
                     name="IndividualOfClass A",
                     shape="Who are the <C>s?",
-                    fragmentList=[
-                        deck.whoIs,
-                        lxf.LexicalFragment(
-                            kind="class", fragment=deck.nominal
-                        ),
-                    ],
+                    fragmentList=[deck.whoIs, classFragment,],
+                ),
+            ),
+            rc.Recipe(
+                reaction=classReaction,
+                rule=ru.Rule(
+                    name="IndividualOfClass B",
+                    shape="Are there <C>s?",
+                    fragmentList=[deck.areThere, classFragment,],
                 ),
             ),
         ]

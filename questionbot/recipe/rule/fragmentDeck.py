@@ -39,3 +39,5 @@ who = ConstantFragment(overview=r"<Lwho,Upron>")
 
 creator = ConstantFragment(overview=r"<Lcreator>")
 create = ConstantFragment(overview=r"<Lcreate>")
+
+areThere = ConstantFragment(overview=r"<Lbe,Uaux> +<Lthere,Upron>")

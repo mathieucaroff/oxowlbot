@@ -7,6 +7,7 @@
 
   <body>
     <h1 id="title"></h1>
+    <p><a id="gh-link" href="https://github.com/mathieucaroff/oxowlbot">Github link🔗</a></p>
     <textarea id="chat-log" readonly="true"></textarea><br />
     <input id="chat-message-input" type="text" size="100" value="" /><br />
     <input id="chat-message-submit" type="button" value="Send" />
@@ -15,16 +16,17 @@
       #chat-log {
         font-family: "Open Sans";
         font-size: 14px;
+        cursor: default;
       }
     </style>
     <script>
-      document.querySelector("title").textContent = document.title
+      document.querySelector("#title").textContent = document.title
 
       const chatLog = document.querySelector("#chat-log");
       console.log({ chatLog });
 
       chatLog.style.width = `${window.innerWidth - 100}px`;
-      chatLog.style.height = `${window.innerHeight - 160}px`;
+      chatLog.style.height = `${window.innerHeight - 260}px`;
 
       if (!location.href.match(/\?remember\b/)) {
         chatLog.value = "";
