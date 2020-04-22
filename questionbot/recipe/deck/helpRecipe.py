@@ -1,4 +1,5 @@
 import random
+
 from ... import answer as a
 from ... import context as c
 from .. import reaction as rt
@@ -6,7 +7,6 @@ from .. import recipe as rc
 from ..lemmaData import LemmaData
 from ..rule import fragmentDeck as deck
 from ..rule import rule as ru
-
 
 questionTemplateList = [
     "Who is {I}?",
@@ -31,19 +31,20 @@ class HelpReaction(rt.Reaction):
                 className = random.choice([*context.lexic.classTable.values()])
                 question = question.format(C=className)
             if "{I}" in question:
-                name = random.choice([*context.lexic.individualTable.values()])
+                name, *_ = random.choice(
+                    [*context.lexic.individualTable.values()]
+                )
                 question = question.format(I=name)
 
             try:
-                answer = await context.questionbot.process(question)
+                testAnswer = await context.questionbot.process(question)
             except Exception:
-                answer = a.Answer("failure", "")
+                testAnswer = a.Answer("failure", "")
 
-            if answer.status == "ok":
+            if testAnswer.status == "ok":
                 questionList.append(question)
 
         answer.text += text + "\n".join(questionList) + "\n"
-
 
 
 class HelpRecipeGroup:

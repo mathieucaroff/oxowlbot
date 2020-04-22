@@ -29,9 +29,7 @@ class Questionbot:
         # Ontology engine
         onto: Any = get_ontology("owl/littlePony.owl").load()
         if onto.Rarity is None:
-            logging.warn(
-                f"RARITY CHECK FAILED"
-            )
+            logging.warn("RARITY CHECK FAILED")
 
         queryLogger = QueryLogger()
         self.ontology = o.Ontology(onto, queryLogger)
@@ -44,7 +42,11 @@ class Questionbot:
         Process the given message
 
         >>> from asyncio import run; q = Questionbot()
-        >>> run(q.process("Who is friend with Twilight Sparkle?")).status
+        >>> run(q.process("Help!")).status
+        'ok'
+        >>> run(q.process("Who is parent of Twilight Sparkle?")).status
+        'ok'
+        >>> run(q.process("Who is friend with Spike?")).status
         'ok'
         >>> run(q.process("Who is Pinkie Pie?")).status
         'ok'
@@ -56,8 +58,6 @@ class Questionbot:
         'ok'
         >>> run(q.process("Who is a cat?")).status
         'failure'
-        >>> run(q.process("Who is friend with Twilight Sparkle?")).status
-        'ok'
         >>> run(q.process("Who is Rainbow Dash?")).status
         'ok'
         """
@@ -82,7 +82,7 @@ class Questionbot:
 
         answer.text = re.sub(r"(?<!\n)\n*$", "\n", answer.text)
 
-        answer.info += context.sentence.replace(' ', '\n')
+        answer.info += context.sentence.replace(" ", "\n")
         answer.stanzaInfo += context.stanzaInfo()
 
         return answer

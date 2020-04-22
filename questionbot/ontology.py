@@ -5,6 +5,7 @@ Produce the query to the ontology
 # pyright: strict
 
 import dataclasses as dc
+import logging
 import types
 from typing import Any, List, Literal, Tuple
 
@@ -48,7 +49,10 @@ class Ontology:
         return result
 
     def _namePart(self, elem: Any) -> str:
-        assert "#" in elem
+        if '#' not in elem:
+            logging.error(elem)
+            breakpoint()
+            return ''
         _, name = elem.split("#")
         return name
 
