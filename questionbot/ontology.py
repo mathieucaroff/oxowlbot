@@ -5,10 +5,10 @@ Produce the query to the ontology
 # pyright: strict
 
 import dataclasses as dc
-from .queryLogger import QueryLogger
 import types
 from typing import Any, List, Literal, Tuple
 
+from .queryLogger import QueryLogger
 from .util.flatten import flatten
 from .util.tuple import tuple2
 
@@ -26,9 +26,7 @@ SELECT {select} WHERE {{
 
 @dc.dataclass
 class IndividualInfo:
-    classList: List[str]
-    leftRelationList: List[Tuple[str, str]]
-    rightRelationList: List[Tuple[str, str]]
+    relationList: List[Tuple[str, str]]
 
     def asdict(self):
         return dc.asdict(self)
@@ -67,11 +65,11 @@ class Ontology:
         self,
         select: str,
         where: List[str],
-        debug: bool = False,
+        set_breakpoint: bool = False,
         log: bool = True,
     ):
         fullQuery = self._formatSparqlQuery(select, where)
-        if debug:
+        if set_breakpoint:
             breakpoint()
         result = self._runQuery(fullQuery)
         if log:
@@ -102,14 +100,12 @@ class Ontology:
     def allIndividual(self):
         return self.onto.individuals()
 
-    def classIndividualQuery(self, className: str):
-        res = flatten(
-            self.formatAndRunQuery(
-                select="?b", where=[f"?b rdf:type me:{className}",],
-            )
-        )
+    def classIndividualQuery(self, classList: List[str]):
+        where = [f"?b rdf:type me:{className}" for className in classList]
 
-        return res
+        result = flatten(self.formatAndRunQuery(select="?b", where=where))
+
+        return result
 
     def relationIndividualQuery(
         self,
@@ -147,24 +143,17 @@ class Ontology:
         return self.formatAndRunQuery(select=select, where=where)
 
     def individualInfoQuery(self, individualName: str) -> IndividualInfo:
-        info = IndividualInfo(
-            classList=flatten(
-                self.formatAndRunQuery(
-                    select="?class",
-                    where=[f"me:{individualName} rdf:type ?class"],
-                )
-            ),
-            leftRelationList=tuple2(
-                self.formatAndRunQuery(
-                    select="?rel ?obj",
-                    where=[f"me:{individualName} ?rel ?obj"],
-                )
-            ),
-            rightRelationList=tuple2(
-                self.formatAndRunQuery(
-                    select="?rel ?obj",
-                    where=[f"?obj ?rel me:{individualName}"],
-                )
-            ),
+        rawRelationList = tuple2(
+            self.formatAndRunQuery(
+                select="?rel ?obj", where=[f"me:{individualName} ?rel ?obj"],
+            )
         )
+
+        relationList = [
+            (rel, target)
+            for rel, target in rawRelationList
+            if target != "NamedIndividual"
+        ]
+
+        info = IndividualInfo(relationList=relationList,)
         return info

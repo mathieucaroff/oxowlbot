@@ -8,6 +8,7 @@ from .recipe import recipe as rc
 from .recipe import runningRecipe as rr
 from .util.eprint import eprint
 
+
 EXCLUSION_MESSAGE = "Recipe {name} is non-conform, yielding {recipeOutput} when {targetOutput} was expected. It was excluded."
 
 

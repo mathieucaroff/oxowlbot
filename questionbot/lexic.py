@@ -63,7 +63,11 @@ class Lexic:
         return self.relationTable[normalize(name)]
 
     def getClass(self, name: str) -> str:
-        return self.classTable[normalize(name)]
+        normalized = normalize(name)
+        if normalized.endswith('s'):
+            sless = normalized[:-1]
+            if sless in self.classTable: return self.classTable[sless]
+        return self.classTable[normalized]
 
     def _fill(self):
         # Individual

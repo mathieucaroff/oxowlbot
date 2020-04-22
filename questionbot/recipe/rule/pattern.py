@@ -8,7 +8,7 @@ class Pattern:
         self.pat = (
             (pat)
             .replace("~", r" +(?::.*?\. +)??")
-            .replace("__", r":[^\.]*\. ")
+            .replace("__", r":[^\.]*\.")
             .replace("<!!", r":(\d+),")
             .replace("<", r":[^\.]*?")
             .replace(",", r"_[^\.]*?")

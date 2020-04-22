@@ -1,4 +1,5 @@
 import logging
+import re
 from typing import Any
 
 from . import answer as a
@@ -43,22 +44,26 @@ class Questionbot:
         Process the given message
 
         >>> from asyncio import run; q = Questionbot()
-        >>> run(q.process("Who is a kirin?")).status
-        'ok'
-        >>> run(q.process("Who is an alicorn?")).status
-        'ok'
         >>> run(q.process("Who is Pinkie Pie?")).status
         'ok'
-        >>> run(q.process("Who is a cat?")).status
-        'failure'
-        >>> run(q.process("Who is friend with Twilight Sparkle?")).status
+
+        >>> run(q.process("Who is child of Cadance?")).status
         'ok'
+
+        # >>> run(q.process("Who is a kirin?")).status
+        # 'ok'
+        # >>> run(q.process("Who is an alicorn?")).status
+        # 'ok'
+        # >>> run(q.process("Who is a cat?")).status
+        # 'failure'
+        # >>> run(q.process("Who is friend with Twilight Sparkle?")).status
+        # 'ok'
         """
         sentenceList = await self.parser.parse(message)
 
         if len(sentenceList) != 1:
             return a.Answer(
-                "failure", "Sorry, I can only process one sentence at a time!",
+                "failure", "Sorry, I can only process one sentence at a time",
             )
         wordList = sentenceList[0]
 
@@ -72,8 +77,10 @@ class Questionbot:
         recipeList = RecipeGetter().get()
         answer = RecipeRunner(context, recipeList).run()
 
-        answer.info += context.sentence + "\n"
-        answer.info += context.fullInfo()
+        answer.text = re.sub(r"(?<!\n)\n*$", "\n", answer.text)
+
+        answer.info += context.sentence.replace(' ', '\n')
+        answer.stanzaInfo += context.stanzaInfo()
 
         return answer
 

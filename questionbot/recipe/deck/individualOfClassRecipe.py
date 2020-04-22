@@ -1,3 +1,5 @@
+from questionbot.recipe.util.formatEnumeration import formatEnumeration
+from typing import List
 from ... import answer as a
 from ... import lexicalFragment as lxf
 from ...context import Context
@@ -19,24 +21,24 @@ from ..util.digitToWord import digitToWord
 
 template0 = """
 I know what a {className} is but I don't know any.
-""".strip()
+""".lstrip()
 
 template1 = """
 I know only one {className}: {nameList[0]}.
-""".strip()
+""".lstrip()
 
 template2 = """
-I know just two {className}s: {nameList[0]} and {nameList[1]}.
-""".strip()
+I know just two {className}s: {nameEnumeration}.
+""".lstrip()
 
 templateUpTo10 = """
-I know {countWord} {className}s: {nameEnumerationWithoutLast} and {last}.
-""".strip()
+I know {countWord} {className}s: {nameEnumeration}.
+""".lstrip()
 
 templateMore = """
 I know {countWord} {className}s. They are:
 {nameBlock}
-""".strip()
+""".lstrip()
 
 templateCountList = [
     template0,
@@ -56,31 +58,25 @@ def selectTemplate(count: int):
 
 class IndividualOfClassReaction(rt.Reaction):
     def react(self, context: Context, lemmaData: LemmaData, answer: a.Answer):
-        className: str = lemmaData[0]
+        classList: List[str] = lemmaData
 
         nameList = [
             name.replace("_", " ")
-            for name in context.ontology.classIndividualQuery(className)
+            for name in context.ontology.classIndividualQuery(classList)
         ]
         nameBlock = "\n".join("- " + w for w in nameList)
-
-        nameEnumeration = ", ".join(nameList)
 
         count = len(nameList)
 
         template = selectTemplate(count)
 
-        nameEnumerationWithoutLast = ", ".join(nameList[:-1])
-
         answer.text += template.format(
-            className=className.replace("_", " "),
+            className=" ".join(classList).replace("_", " ").lower(),
             count=count,
             countWord=digitToWord(count),
             nameBlock=nameBlock,
-            nameEnumeration=nameEnumeration,
-            nameEnumerationWithoutLast=nameEnumerationWithoutLast,
+            nameEnumeration=formatEnumeration(nameList),
             nameList=nameList,
-            last="".join(nameList[-1:])
         )
 
 

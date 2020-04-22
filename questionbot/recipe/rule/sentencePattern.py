@@ -1,7 +1,7 @@
 from dataclasses import dataclass
+from functools import cached_property
 from typing import List, Union
 
-from ...util.cached_property import cached_property
 from .fragment import ActiveFragment, BaseFragment
 from .pattern import Pattern
 
@@ -12,21 +12,25 @@ class SentencePattern:
 
     @cached_property
     def concatenatedPattern(self):
-        return Pattern(
-            "".join(fragment.overview for fragment in self.fragmentList)
-        )
+        concat = "".join(fragment.overview for fragment in self.fragmentList)
+        return Pattern(concat)
 
     def match(self, target: str):
-        return self.concatenatedPattern.match(target)
+        concat = self.concatenatedPattern
+        return concat.match(target)
 
-    def extractEachActiveFragment(self, target: str) -> Union[List[List[str]], None]:
+    def extractEachActiveFragment(
+        self, target: str
+    ) -> Union[List[List[str]], None]:
         """
         Extract the all the matches of each fragment
         """
         m = self.match(target)
         if m is None:
             return None
-        activeFragmentList = [f for f in self.fragmentList if isinstance(f, ActiveFragment)]
+        activeFragmentList = [
+            f for f in self.fragmentList if isinstance(f, ActiveFragment)
+        ]
 
         assert len(m.groups()) == len(activeFragmentList)
 

@@ -13,6 +13,7 @@ class Answer:
     text: str
     warning: str = ""
     info: str = ""
-    
+    stanzaInfo: str = ""
+
     def asdict(self):
         return dc.asdict(self)

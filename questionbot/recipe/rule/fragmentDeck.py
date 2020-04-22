@@ -16,7 +16,7 @@ whoIs = ConstantFragment(overview=r"<Lwh(?:o|ich),Upron>~<Lbe,Uaux>")
 
 
 relation = ActiveFragment(
-    overview=r"((?:~{detail} +<Uadp_Rcase>)+)",
+    overview=r" +(?:__ +)*((?:{detail} +<Uadp,Rcase>)+)",
     detail=r"<!!(?:Unoun|Hpast)>",
 )
 # relation: friend of

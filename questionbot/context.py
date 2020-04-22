@@ -18,5 +18,5 @@ class Context:
     sentence: str
     wordList: List["PWord"]
 
-    def fullInfo(self):
+    def stanzaInfo(self):
         return "\n".join(w.pretty_print() for w in self.wordList)

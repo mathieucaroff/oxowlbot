@@ -12,7 +12,7 @@ from ..rule import rule as ru
 class RelationReaction(rt.Reaction):
     def react(
         self, context: Context, lemmaData: LemmaData, answer: a.Answer
-    ) -> a.Answer:
+    ):
         raise NotImplemented()
 
 
@@ -29,8 +29,11 @@ class RelationRecipeGroup:
                     fragmentList=[
                         deck.whoIs,
                         lxf.LexicalFragment(
-                            kind="relation", fragment=deck.relation
+                            kind="relation", fragment=deck.relation,
                         ),
+                        lxf.LexicalFragment(
+                            kind='individual', fragment=deck.nominal,
+                        )
                     ],
                 ),
             ),
