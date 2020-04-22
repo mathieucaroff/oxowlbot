@@ -1,8 +1,9 @@
+from questionbot.recipe.util.capitalize import capitalize
 from .. import reaction as rt
 from .. import recipe as rc
 from ... import answer as a
 from ... import lexicalFragment as lxf
-from ...context import Context
+from ... import context as c
 from ..lemmaData import LemmaData
 from ..rule import fragmentDeck as deck
 from ..rule import rule as ru
@@ -12,27 +13,30 @@ from ..util.formatListing import formatListing
 
 
 class RelationReaction(rt.Reaction):
-    def react(self, context: Context, lemmaData: LemmaData, answer: a.Answer):
+    async def react(self, context: 'c.Context', lemmaData: LemmaData, answer: a.Answer):
         relationList, individualName = lemmaData
 
         individualList = context.ontology.relationIndividualQuery(
             individualName=individualName, relationList=relationList, mode="inward"
         )
 
-        rText = " ".join(relationList).replace('_', ' ')
-        descriptin = f"{rText} {individualName}"
+        rText = " ".join(relationList)
+        description = f"{rText} {individualName}"
 
         count = len(individualList)
         countWord = digitToWord(count)
+        CountWord = capitalize(countWord)
 
         if count == 0:
-            answer.text += f"There are no {descriptin}.\n"
+            text = f"No creature is {description}.\n"
         elif count == 1:
-            answer.text += f"There's only one {descriptin}.\n"
+            text = f"Only one creature is {description}.\n"
         elif count <= 10:
-            answer.text += f"There are {countWord} {descriptin}: {formatEnumeration(individualList)}.\n"
+            text = f"{CountWord} creatures are {description}: {formatEnumeration(individualList)}.\n"
         else:
-            answer.text += f"There are {countWord} {descriptin}. They are {formatListing(individualList)}"
+            text = f"{CountWord} creatures are {description}. They are:\n{formatListing(individualList)}\n"
+
+        answer.text += text.replace('_', ' ')
 
 
 class RelationRecipeGroup:

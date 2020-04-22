@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from typing import List
 
 from . import answer as a
-from .context import Context
+from . import context as c
 from .recipe import recipe as rc
 from .recipe import runningRecipe as rr
 from .util.eprint import eprint
@@ -18,10 +18,10 @@ class RecipeRunner:
     Allow to run a list of runningRecipes in the context of a context.
     """
 
-    context: Context
+    context: 'c.Context'
     recipeList: List[rc.Recipe]
 
-    def run(self) -> a.Answer:
+    async def run(self) -> a.Answer:
         runningRecipeList = [
             rr.RunningRecipe.start(recipe=recipe, context=self.context)
             for recipe in self.recipeList
@@ -81,7 +81,7 @@ class RecipeRunner:
             text = (
                 "Your sentence completly matches {count} of the forms:\n"
                 "- {formShapeList}\n"
-                'I selected the first of them "{select}" and worked from there\n\n'
+                'I selected the first of them "{select}" and worked from there.\n\n'
             ).format(
                 count=len(validLexicList),
                 formShapeList="\n- ".join(
@@ -97,6 +97,9 @@ class RecipeRunner:
         #
         out = chosenRecipe.next()
         assert out == AN, f"Buggy Recipy '{AN=} {out=}'"
+
+        awaitable = chosenRecipe.next()
+        await awaitable
 
         answer = chosenRecipe.next()
         assert isinstance(answer, a.Answer), f"answer is {answer}"

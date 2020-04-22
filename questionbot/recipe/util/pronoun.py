@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from functools import cached_property
+from ..util.capitalize import capitalize
 
 
 @dataclass
@@ -7,6 +8,11 @@ class Pronoun:
     they: str
     their: str
     be: str
+    have: str
+
+    @cached_property
+    def They(self):
+        return capitalize(self.they)
 
     @cached_property
     def they_be(self):
@@ -14,8 +20,16 @@ class Pronoun:
 
     @cached_property
     def They_be(self):
-        return self.they_be[:1].upper() + self.they_be[1:]
+        return f"{self.They} {self.be}"
+
+    @cached_property
+    def they_have(self):
+        return f"{self.they} {self.have}"
+
+    @cached_property
+    def They_have(self):
+        return f"{self.They} {self.have}"
 
     @cached_property
     def Their(self):
-        return self.their[:1].upper() + self.their[1:]
+        return capitalize(self.their)

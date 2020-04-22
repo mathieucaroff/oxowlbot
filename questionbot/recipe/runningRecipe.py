@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Generator, Literal
 
 from ..answer import Answer
-from ..context import Context
+from .. import context as c
 from ..recipe.reaction import Reaction
 from ..recipe.recipe import Recipe
 from ..recipe.rule.rule import Rule
@@ -11,7 +11,7 @@ from ..recipe.rule.rule import Rule
 @dataclass
 class RunningRecipe:
     answer: Answer
-    context: Context
+    context: 'c.Context'
     generator: Generator
     reaction: Reaction
     rule: Rule
@@ -29,7 +29,7 @@ class RunningRecipe:
                 raise
 
     @staticmethod
-    def start(recipe: Recipe, context: Context):
+    def start(recipe: Recipe, context: 'c.Context'):
         answer = Answer("ok", "")
 
         return RunningRecipe(
@@ -42,7 +42,7 @@ class RunningRecipe:
 
     def startReaction(self):
         yield "Answer"
-        self.reaction.react(
+        yield self.reaction.react(
             context=self.context,
             lemmaData=self.rule.getLemmaData(),
             answer=self.answer,

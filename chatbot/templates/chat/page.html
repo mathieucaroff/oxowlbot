@@ -31,7 +31,7 @@
       }
 
       function prefixLine(text, prefix) {
-        return prefix + text.replace(/\n(?!$)/g, `\n${prefix}`);
+        return prefix + text.replace(/\n(?!\s*$)/g, `\n${prefix}`);
       }
 
       const { host } = window.location;
@@ -108,6 +108,15 @@
             Who likes apples?
 
             Who is friend with Twilight Sparkle?
+
+            Who is Twilight Sparkle?
+            Who is Rarity?
+            Who is Fluttershy?
+            Who is Rainbow Dash?
+            Who is Pinkie Pie?
+            Who is Applejack?
+            Who is Celestia?
+            Who is Luna?
 
             // Who is a alicorn
             // Who is alicorn

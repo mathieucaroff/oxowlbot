@@ -2,7 +2,7 @@ from typing import List
 
 from ... import answer as a
 from ... import lexicalFragment as lxf
-from ...context import Context
+from ... import context as c
 from .. import reaction as rt
 from .. import recipe as rc
 from ..lemmaData import LemmaData
@@ -59,7 +59,7 @@ def selectTemplate(count: int):
 
 
 class IndividualOfClassReaction(rt.Reaction):
-    def react(self, context: Context, lemmaData: LemmaData, answer: a.Answer):
+    async def react(self, context: 'c.Context', lemmaData: LemmaData, answer: a.Answer):
         classList: List[str] = lemmaData
 
         nameList = [

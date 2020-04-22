@@ -8,7 +8,7 @@ from typing import Any, Generator, List, Union, cast
 
 from ... import answer as a
 from ... import lexicalFragment as lxf
-from ...context import Context
+from ... import context as c
 from ...recipe.lemmaData import LemmaData
 from ...util.neverError import NeverError
 from .fragment import ConstantFragment
@@ -28,7 +28,7 @@ class Rule:
             f for f in self.fragmentList if isinstance(f, lxf.LexicalFragment)
         ]
 
-    def run(self, context: Context, answer: a.Answer) -> Generator:
+    def run(self, context: 'c.Context', answer: a.Answer) -> Generator:
         wordList = context.wordList
         normalSentence = context.sentence
 

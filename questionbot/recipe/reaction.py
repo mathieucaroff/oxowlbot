@@ -1,13 +1,13 @@
 import abc
 
 from .. import answer as a
-from ..context import Context
+from .. import context as c
 from .lemmaData import LemmaData
 
 
 class Reaction:
     @abc.abstractmethod
-    def react(
-        self, context: Context, lemmaData: LemmaData, answer: a.Answer
+    async def react(
+        self, context: 'c.Context', lemmaData: LemmaData, answer: a.Answer
     ) -> None:
         ...

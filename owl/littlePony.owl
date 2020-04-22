@@ -2797,7 +2797,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="file:littlePony.owl#hair_color"/>
         <NamedIndividual IRI="file:littlePony.owl#Applejack"/>
-        <Literal>#EC3F41</Literal>
+        <Literal>#FBF7AF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="file:littlePony.owl#body_color"/>

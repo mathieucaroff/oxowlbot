@@ -1,7 +1,19 @@
 from typing import List
 
-from . import RECIPE_GROUP_LIST
+from .deck.helpRecipe import HelpRecipeGroup
+from .deck.individualOfClassRecipe import IndividualOfClassRecipeGroup
+from .deck.knowledgeRecipe import KnowledgeRecipeGroup
+from .deck.relationRecipe import RelationRecipeGroup
 from .recipe import Recipe
+
+
+RECIPE_GROUP_LIST = [
+    RelationRecipeGroup,
+    IndividualOfClassRecipeGroup,
+    KnowledgeRecipeGroup,
+    HelpRecipeGroup,
+]
+
 
 class RecipeGetter:
     def get(self) -> List[Recipe]:

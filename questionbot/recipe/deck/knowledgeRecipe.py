@@ -1,11 +1,12 @@
-from itertools import chain, cycle
 import logging
+import re
+from itertools import chain, cycle
 
+from ... import answer as a
+from ... import context as c
+from ... import lexicalFragment as lxf
 from .. import reaction as rt
 from .. import recipe as rc
-from ... import answer as a
-from ... import lexicalFragment as lxf
-from ...context import Context
 from ..color.colorObj import ColorObj
 from ..color.hexColor import HexColor
 from ..lemmaData import LemmaData
@@ -16,7 +17,7 @@ from ..util.pronoun import Pronoun
 
 
 class KnowledgeReaction(rt.Reaction):
-    def react(self, context: Context, lemmaData: LemmaData, answer: a.Answer):
+    async def react(self, context: 'c.Context', lemmaData: LemmaData, answer: a.Answer):
         individualName = lemmaData[0]
         info = context.ontology.individualInfoQuery(individualName)
 
@@ -46,8 +47,8 @@ class KnowledgeReaction(rt.Reaction):
         gender = genderList[0] if len(genderList) == 1 else "other"
 
         p = Pronoun(
-            *dict(male="he his is", female="she her is")
-            .get(gender, "they their are")
+            *dict(male="he his is has", female="she her is has")
+            .get(gender, "they their are have")
             .split()
         )
 
@@ -55,30 +56,33 @@ class KnowledgeReaction(rt.Reaction):
             [f"{individualName} is"], cycle([p.They_be, f"{p.They_be} also"])
         )
 
+        text = ""
+
         if len(genderList) + len(classList) > 0:
             genderQualification = " and ".join(genderList)
             classQualification = " and ".join(classList)
 
             qualification = " ".join([genderQualification, classQualification])
 
-            answer.text += f"{next(it_be)} a {qualification}. "
+            text += f"{next(it_be)} a {qualification}. "
 
         colorInfo = colorObj.tell(p)
         if colorInfo is not None:
-            answer.text += colorInfo
+            text += colorInfo
 
         if len(friendList) > 0:
-            answer.text += (
+            text += (
                 f"{next(it_be)} friend with {formatEnumeration(friendList)}. "
             )
 
         for relation, targetList in otherRelationDict.items():
-            rel = relation.replace("_", " ")
-            answer.text += (
-                f"{next(it_be)} {rel} {formatEnumeration(targetList)}. "
+            text += (
+                f"{next(it_be)} {relation} {formatEnumeration(targetList)}. "
             )
 
-        answer.text = answer.text.strip() + "\n\n"
+        text = re.sub(r"(?<!\s)\s+$", "\n", text)
+
+        answer.text += text.replace('_', ' ')
 
 
 class KnowledgeRecipeGroup:

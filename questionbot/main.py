@@ -5,7 +5,7 @@ from typing import Any
 from . import answer as a
 from . import lexic as lx
 from . import ontology as o
-from .context import Context
+from . import context as c
 from .matchableSentence import matchableSentence
 from .queryLogger import QueryLogger
 from .recipe.recipeGetter import RecipeGetter
@@ -44,6 +44,8 @@ class Questionbot:
         Process the given message
 
         >>> from asyncio import run; q = Questionbot()
+        >>> run(q.process("Who is friend with Twilight Sparkle?")).status
+        'ok'
         >>> run(q.process("Who is Pinkie Pie?")).status
         'ok'
         >>> run(q.process("Who is child of Pear Butter?")).status
@@ -56,6 +58,8 @@ class Questionbot:
         'failure'
         >>> run(q.process("Who is friend with Twilight Sparkle?")).status
         'ok'
+        >>> run(q.process("Who is Rainbow Dash?")).status
+        'ok'
         """
         sentenceList = await self.parser.parse(message)
 
@@ -65,7 +69,8 @@ class Questionbot:
             )
         wordList = sentenceList[0]
 
-        context = Context(
+        context = c.Context(
+            questionbot=self,
             lexic=self.lexic,
             ontology=self.ontology,
             sentence=matchableSentence(wordList),
@@ -73,7 +78,7 @@ class Questionbot:
         )
 
         recipeList = RecipeGetter().get()
-        answer = RecipeRunner(context, recipeList).run()
+        answer = await RecipeRunner(context, recipeList).run()
 
         answer.text = re.sub(r"(?<!\n)\n*$", "\n", answer.text)
 

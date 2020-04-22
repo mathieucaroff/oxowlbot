@@ -24,6 +24,8 @@ tra
 !/vendor/
 !/static/
 
+!/design/
+
 ## Root Files ##
 
 # Git
