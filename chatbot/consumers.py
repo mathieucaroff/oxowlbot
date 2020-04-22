@@ -2,8 +2,9 @@ import json
 
 from channels.generic.websocket import AsyncWebsocketConsumer
 
+from questionbot.answer import Answer
 from questionbot.main import Questionbot
-
+from questionbot.util.eprint import eprint
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
@@ -21,7 +22,14 @@ class ChatConsumer(AsyncWebsocketConsumer):
 
         await self.send(text_data=json_data)
 
-        answer = await self.bot.process(message)
+        try:
+            answer = await self.bot.process(message)
+        except Exception as e:
+            eprint('-' * 42)
+            import traceback as tb; tb.print_exc()
+            eprint(f"\nCaused by message: {repr(message)}")
+            eprint('=' * 42)
+            answer = Answer("failure", text="I bugged\n", info=f"Server Error: {e}")
 
         json_data = json.dumps({"author": "bot", **answer.asdict()})
 
